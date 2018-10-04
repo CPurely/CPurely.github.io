@@ -6,55 +6,9 @@
     <description>Recent content in Tags on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Dec 2017 13:37:06 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>3d建模</title>
-      <link>https://CPurely.github.io/tags/3d%E5%BB%BA%E6%A8%A1/</link>
-      <pubDate>Mon, 04 Dec 2017 13:37:06 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/3d%E5%BB%BA%E6%A8%A1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Atom</title>
-      <link>https://CPurely.github.io/tags/atom/</link>
-      <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/atom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://CPurely.github.io/tags/linux/</link>
-      <pubDate>Thu, 30 Nov 2017 14:09:05 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://CPurely.github.io/tags/markdown/</link>
-      <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programing</title>
-      <link>https://CPurely.github.io/tags/programing/</link>
-      <pubDate>Fri, 08 Dec 2017 05:01:04 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/programing/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
