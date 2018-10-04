@@ -92,17 +92,5 @@
       <description>配置Linux安装citespace的环境 安装java环境与.7z解压工具 下载并安装java因为我用的是openSUSE因此下载rpm包安装</description>
     </item>
     
-    <item>
-      <title>Hello World</title>
-      <link>https://CPurely.github.io/post/hello-world/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/post/hello-world/</guid>
-      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick Start Create a new post $ hexo new &amp;quot;My New Post&amp;quot;  More info: Writing
-Run server $ hexo server  More info: Server
-Generate static files $ hexo generate  More info: Generating</description>
-    </item>
-    
   </channel>
 </rss>
