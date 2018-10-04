@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="CPurely" />
-  <meta name="description" content="hugo安装与配置 ubuntu为例 &amp;ldquo;&amp;rsquo; bash suao snap install hugo &amp;ldquo;&amp;rsquo; 新建站点 &amp;ldquo;&amp;rsquo; bash hugo new site Blog &amp;ldquo;&amp;rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的" />
+  <meta name="description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h" />
 
   <meta name="keywords" content="Hugo, theme, even" />
 
@@ -50,7 +50,7 @@
 
 
 <meta property="og:title" content="Hugo-github配置指南" />
-<meta property="og:description" content="hugo安装与配置 ubuntu为例 &ldquo;&rsquo; bash suao snap install hugo &ldquo;&rsquo; 新建站点 &ldquo;&rsquo; bash hugo new site Blog &ldquo;&rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的" />
+<meta property="og:description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" />
 
@@ -71,19 +71,19 @@
 
 
 <meta itemprop="name" content="Hugo-github配置指南">
-<meta itemprop="description" content="hugo安装与配置 ubuntu为例 &ldquo;&rsquo; bash suao snap install hugo &ldquo;&rsquo; 新建站点 &ldquo;&rsquo; bash hugo new site Blog &ldquo;&rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的">
+<meta itemprop="description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h">
 
 
 <meta itemprop="datePublished" content="2018-10-04T19:41:03&#43;08:00" />
 <meta itemprop="dateModified" content="2018-10-04T19:41:03&#43;08:00" />
-<meta itemprop="wordCount" content="1784">
+<meta itemprop="wordCount" content="1717">
 
 
 
 <meta itemprop="keywords" content="hugo,博客,Linux," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo-github配置指南"/>
-<meta name="twitter:description" content="hugo安装与配置 ubuntu为例 &ldquo;&rsquo; bash suao snap install hugo &ldquo;&rsquo; 新建站点 &ldquo;&rsquo; bash hugo new site Blog &ldquo;&rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的"/>
+<meta name="twitter:description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -151,7 +151,7 @@
       <div class="post-meta">
         <span class="post-time"> 2018-10-04 </span>
         
-        <span class="more-meta"> 约 1784 字 </span>
+        <span class="more-meta"> 约 1717 字 </span>
         <span class="more-meta"> 预计阅读 4 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -174,17 +174,6 @@
 <li><a href="#域名购买">域名购买</a></li>
 <li><a href="#github配置域名解析">github配置域名解析</a></li>
 <li><a href="#快捷发布文章">快捷发布文章</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#build-the-project">Build the project.</a></li>
-<li><a href="#go-to-public-folder">Go To Public folder</a></li>
-<li><a href="#add-changes-to-git">Add changes to git.</a></li>
-<li><a href="#commit-changes">Commit changes.</a></li>
-<li><a href="#push-source-and-build-repos">Push source and build repos.</a></li>
-<li><a href="#come-back">Come Back</a>
-<ul>
-<li>
-<ul>
 <li><a href="#结语">结语</a></li>
 </ul></li>
 </ul></li>
@@ -202,20 +191,23 @@
 
 <h3 id="hugo安装与配置">hugo安装与配置</h3>
 
-<p>ubuntu为例
-&ldquo;&rsquo; bash
-suao snap install hugo
-&ldquo;&rsquo;
-新建站点
-&ldquo;&rsquo; bash
-hugo new site Blog
-&ldquo;&rsquo;
-此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造.
-因为hugo默认是不带主题的,因此为了显示内容我们需要先下载一个主题,首先要用cd命令进入Blog文件夹
-&ldquo;&rsquo; bash
-git clone <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a> themes/even
-&ldquo;&rsquo;
-我使用的是Ever主题,更多主题可以在<a href="https://themes.gohugo.io">hugo主题</a>上下载.
+<p>ubuntu为例</p>
+
+<pre><code class="language-bash">suao snap install hugo
+</code></pre>
+
+<p>新建站点</p>
+
+<pre><code class="language-bash">hugo new site Blog
+</code></pre>
+
+<p>此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造.
+因为hugo默认是不带主题的,因此为了显示内容我们需要先下载一个主题,首先要用cd命令进入Blog文件夹</p>
+
+<pre><code class="language-bash">git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+</code></pre>
+
+<p>我使用的是Ever主题,更多主题可以在<a href="https://themes.gohugo.io">hugo主题</a>上下载.
 下载好主题后,将主题文件夹/themes/even/exampleSite中的config.toml拷贝到网站根目录,这里也即是Blog目录下替换
 原始配置文件.
 然后根据config.toml按照需求配置网站.
@@ -228,15 +220,16 @@ git clone <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.co
 1. 首先github新建一个仓库,名字为yourname.github.io
 2. 在网站根目录使用hugo生成public文件夹(需要把这个文件夹同步到github上)
 3. cd进入public文件夹
-4. 在public文件夹中布置git
-&ldquo;&rsquo; bash
-git init   # 初始化
-git remote add origin <a href="https://github.com/yourname/yourname.github.io.git">https://github.com/yourname/yourname.github.io.git</a>  # 连接远程仓库
-git add -A  #  将工作目录文件修改添加到暂存区
-git commit -m &ldquo;first commit&rdquo;  # 将暂存区的所有内容提交到当前分支。-m 参数后面的字符串表示本次的提交说明
+4. 在public文件夹中布置git</p>
+
+<pre><code class="language-bash">git init   # 初始化
+git remote add origin https://github.com/yourname/yourname.github.io.git  # 连接远程仓库
+git add -A  #  将工作目录文件修改添加到暂存区 
+git commit -m &quot;first commit&quot;  # 将暂存区的所有内容提交到当前分支。-m 参数后面的字符串表示本次的提交说明
 git push -u origin master   # 把本地仓库分支推送到远程仓库分支
-&ldquo;&rsquo;
-这样public应该就算是上传到你的github远程仓库中了.
+</code></pre>
+
+<p>这样public应该就算是上传到你的github远程仓库中了.
 通过访问<a href="https://yourname.github.io应该就可以打开你的网站了">https://yourname.github.io应该就可以打开你的网站了</a></p>
 
 <h3 id="域名购买">域名购买</h3>
@@ -260,66 +253,64 @@ namesilo上可以进行域名解析,在域名列表中可以看到一个蓝色�
 
 <h3 id="快捷发布文章">快捷发布文章</h3>
 
-<p>由于上一步我们在github仓库增加了一个文件,因此我们首先需要更新一下本地仓库与它同步
-&ldquo;&rsquo; bash
-git pull &ndash;rebase origin master
-&ldquo;&rsquo;
-如果我们在网站根目录下的content/post增加了新的文章,我们需要先使用命令重新生成一次public,这样public中就包含
-最新的文章了.
-&ldquo;&rsquo; bash
-hugo<br />
-&rdquo;&rsquo;
-然后cd进入public目录,使用
-&ldquo;&rsquo; bash
-git add -A
-git commit -m &ldquo;new commit&rdquo;
+<p>由于上一步我们在github仓库增加了一个文件,因此我们首先需要更新一下本地仓库与它同步</p>
+
+<pre><code class="language-bash">git pull --rebase origin master
+</code></pre>
+
+<p>如果我们在网站根目录下的content/post增加了新的文章,我们需要先使用命令重新生成一次public,这样public中就包含
+最新的文章了.</p>
+
+<pre><code class="language-bash">hugo  
+</code></pre>
+
+<p>然后cd进入public目录,使用</p>
+
+<pre><code class="language-bash">git add -A
+git commit -m &quot;new commit&quot;
 git push -u origin master
-&ldquo;&rsquo;
-来更新远程仓库. 这样做有点繁琐,并且期间还需要输入github的用户名和密码,使得写文章的体验大打折扣.我们使用更加
+</code></pre>
+
+<p>来更新远程仓库. 这样做有点繁琐,并且期间还需要输入github的用户名和密码,使得写文章的体验大打折扣.我们使用更加
 便捷的方法.
-首先我们需要取消git push是需要输入用户名和密码的问题.我们先cd进入public目录,然后使用
-&ldquo;&rsquo; bash
-git config &ndash;global credential.helper store
-&ldquo;&rsquo;
-然后你会在你本地生成一个文本，上边记录你的账号和密码.然后你使用上述的命令配置好之后，
+首先我们需要取消git push是需要输入用户名和密码的问题.我们先cd进入public目录,然后使用</p>
+
+<pre><code class="language-bash">git config --global credential.helper store
+</code></pre>
+
+<p>然后你会在你本地生成一个文本，上边记录你的账号和密码.然后你使用上述的命令配置好之后，
 再操作一次git pull，然后它会提示你输入账号密码，这一次之后就不需要再次输入密码了。
 <a href="https://github.com/yonyouyc/blog/issues/6">解决git pull/push每次都需要输入密码问题</a>
 虽然解决了不用输入用户名和密码的问题,但是还要一次次输入重复的命令还是太烦了,因此我们需要写一deploy.sh脚本
-帮你完成这件事.脚本如下
-&ldquo;&rsquo; bash
-#!/bin/bash</p>
+帮你完成这件事.脚本如下</p>
 
-<p>echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;</p>
+<pre><code class="language-bash">#!/bin/bash
 
-<h1 id="build-the-project">Build the project.</h1>
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
 
-<p>hugo # if using a theme, replace by <code>hugo -t &lt;yourtheme&gt;</code></p>
+# Build the project.
+hugo # if using a theme, replace by `hugo -t &lt;yourtheme&gt;`
 
-<h1 id="go-to-public-folder">Go To Public folder</h1>
+# Go To Public folder
+cd public
+# Add changes to git.
+git add -A
 
-<p>cd public</p>
-
-<h1 id="add-changes-to-git">Add changes to git.</h1>
-
-<p>git add -A</p>
-
-<h1 id="commit-changes">Commit changes.</h1>
-
-<p>msg=&ldquo;rebuilding site <code>date</code>&ldquo;
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
 if [ $# -eq 1 ]
-  then msg=&ldquo;$1&rdquo;
+  then msg=&quot;$1&quot;
 fi
-git commit -m &ldquo;$msg&rdquo;</p>
+git commit -m &quot;$msg&quot;
 
-<h1 id="push-source-and-build-repos">Push source and build repos.</h1>
+# Push source and build repos.
+git push origin master
 
-<p>git push origin master</p>
+# Come Back
+cd ..
+</code></pre>
 
-<h1 id="come-back">Come Back</h1>
-
-<p>cd ..
-&ldquo;&rsquo;
-执行之前先用chmod +x deploy.sh赋予其权限.详情请见
+<p>执行之前先用chmod +x deploy.sh赋予其权限.详情请见
 <a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub Pages</a></p>
 
 <h3 id="结语">结语</h3>
