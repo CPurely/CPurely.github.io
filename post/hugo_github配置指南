@@ -1,0 +1,111 @@
+---
+title: "Hugo_github配置指南"
+date: 2018-10-04T19:41:03+08:00
+---
+### hugo安装与配置
+ubuntu为例
+''' bash
+suao snap install hugo
+'''
+新建站点
+''' bash
+hugo new site Blog
+'''
+此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造.
+因为hugo默认是不带主题的,因此为了显示内容我们需要先下载一个主题,首先要用cd命令进入Blog文件夹
+''' bash
+git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+'''
+我使用的是Ever主题,更多主题可以在[hugo主题](https://themes.gohugo.io)上下载.
+下载好主题后,将主题文件夹/themes/even/exampleSite中的config.toml拷贝到网站根目录,这里也即是Blog目录下替换
+原始配置文件.
+然后根据config.toml按照需求配置网站.
+(有的主题模板包含一些索引比如about,moment等,这时候你需要在主题/themes/even/exampleSite/content目录下把about
+文件夹,moment文件夹复制到Blog目录下的content里面)
+### 部署到github
+首先需要安装git工具以及有一个github账号
+1. 首先github新建一个仓库,名字为yourname.github.io
+2. 在网站根目录使用hugo生成public文件夹(需要把这个文件夹同步到github上)
+3. cd进入public文件夹
+4. 在public文件夹中布置git
+''' bash
+git init   # 初始化
+git remote add origin https://github.com/yourname/yourname.github.io.git  # 连接远程仓库
+git add -A  #  将工作目录文件修改添加到暂存区 
+git commit -m "first commit"  # 将暂存区的所有内容提交到当前分支。-m 参数后面的字符串表示本次的提交说明
+git push -u origin master   # 把本地仓库分支推送到远程仓库分支
+'''
+这样public应该就算是上传到你的github远程仓库中了.
+通过访问https://yourname.github.io应该就可以打开你的网站了
+### 域名购买
+这里我在namesilo上购买的域名,大概13元一年.
+该网站购买域名的教程可以参考[Namesilo 域名购买](https://www.jianshu.com/p/27b0ebdcec2c),需要注意的是使用支付宝
+付款时,需要支付宝已经绑定了邮箱.
+购买域名之后,点击网站中的Manage My Domains会出现你购买的域名列表.
+namesilo上可以进行域名解析,在域名列表中可以看到一个蓝色小球,点击即可进入域名解析页面.
+![Selection_005.png](https://i.loli.net/2018/10/04/5bb6055b482e8.png)
+为了使得域名能够指向yourname.github.io,我们需要添加2个A一个CNANE来进行解析,
+![Selection_006.png](https://i.loli.net/2018/10/04/5bb6064b2645e.png)
+点击EDIT进行编辑,前两个A最开头的HOSTNAME不要填,只需要填后面的IPV4 ADDRESS,分别填写192.30.252.153和192.30.252.154
+.这两个ip是指向github的ip. CNAME我们需要填写HOSTNAME为www, 以及后面的为yourname.github.io
+这样算是做好了域名解析,接下来就是到github进行配置(同意namesilo的域名解析)
+### github配置域名解析
+在网站仓库文件夹下建立一个CNAME没有后缀的文件,然后第一行写入你购买的域名,注意不要前面的www.
+这样域名绑定算是做好了.
+### 快捷发布文章
+由于上一步我们在github仓库增加了一个文件,因此我们首先需要更新一下本地仓库与它同步
+''' bash
+git pull --rebase origin master
+'''
+如果我们在网站根目录下的content/post增加了新的文章,我们需要先使用命令重新生成一次public,这样public中就包含
+最新的文章了.
+''' bash
+hugo  
+'''
+然后cd进入public目录,使用
+''' bash
+git add -A
+git commit -m "new commit"
+git push -u origin master
+'''
+来更新远程仓库. 这样做有点繁琐,并且期间还需要输入github的用户名和密码,使得写文章的体验大打折扣.我们使用更加
+便捷的方法. 
+首先我们需要取消git push是需要输入用户名和密码的问题.我们先cd进入public目录,然后使用
+''' bash
+git config --global credential.helper store
+'''
+然后你会在你本地生成一个文本，上边记录你的账号和密码.然后你使用上述的命令配置好之后，
+再操作一次git pull，然后它会提示你输入账号密码，这一次之后就不需要再次输入密码了。
+[解决git pull/push每次都需要输入密码问题](https://github.com/yonyouyc/blog/issues/6)
+虽然解决了不用输入用户名和密码的问题,但是还要一次次输入重复的命令还是太烦了,因此我们需要写一deploy.sh脚本
+帮你完成这件事.脚本如下
+''' bash
+#!/bin/bash
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+# Build the project.
+hugo # if using a theme, replace by `hugo -t <yourtheme>`
+
+# Go To Public folder
+cd public
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+
+# Push source and build repos.
+git push origin master
+
+# Come Back
+cd ..
+'''
+执行之前先用chmod +x deploy.sh赋予其权限.详情请见
+[Hosting on GitHub Pages](http://www.gohugo.org/doc/tutorials/github-pages-blog/)
+### 结语
+至此,终于可以轻松的撰写博客了.
