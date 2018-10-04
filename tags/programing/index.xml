@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programing on Wellcome</title>
-    <link>/tags/programing/</link>
+    <link>https://CPurely.github.io/tags/programing/</link>
     <description>Recent content in Programing on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 08 Dec 2017 05:01:04 +0000</lastBuildDate>
     
-	<atom:link href="/tags/programing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://CPurely.github.io/tags/programing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>eclipse添加libcufft.so动态库到project</title>
-      <link>/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</link>
+      <link>https://CPurely.github.io/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</link>
       <pubDate>Fri, 08 Dec 2017 05:01:04 +0000</pubDate>
       
-      <guid>/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</guid>
+      <guid>https://CPurely.github.io/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</guid>
       <description>今天使用cuda的cufft进行复数矩阵的快速傅立叶变换却被如何包含.so动态库到工程文件这个问题中给挡住了，频繁报错&amp;hellip; /root/cuda-workspace/cufft_diffraction/Debug/../cufft_diffraction.cu:81: undefined reference</description>
     </item>
     

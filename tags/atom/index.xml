@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atom on Wellcome</title>
-    <link>/tags/atom/</link>
+    <link>https://CPurely.github.io/tags/atom/</link>
     <description>Recent content in Atom on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 29 Dec 2017 21:02:35 +0000</lastBuildDate>
     
-	<atom:link href="/tags/atom/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://CPurely.github.io/tags/atom/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>atom markdown配置与输出包含数学公式的pdf方法</title>
-      <link>/post/atom-markdown%E9%85%8D%E7%BD%AE/</link>
+      <link>https://CPurely.github.io/post/atom-markdown%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
       
-      <guid>/post/atom-markdown%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://CPurely.github.io/post/atom-markdown%E9%85%8D%E7%BD%AE/</guid>
       <description>因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学术 on Wellcome</title>
-    <link>/categories/%E5%AD%A6%E6%9C%AF/</link>
+    <link>https://CPurely.github.io/categories/%E5%AD%A6%E6%9C%AF/</link>
     <description>Recent content in 学术 on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 24 Nov 2017 20:20:39 +0000</lastBuildDate>
     
-	<atom:link href="/categories/%E5%AD%A6%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://CPurely.github.io/categories/%E5%AD%A6%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux下文献分析工具citespace安装使用</title>
-      <link>/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
+      <link>https://CPurely.github.io/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 24 Nov 2017 20:20:39 +0000</pubDate>
       
-      <guid>/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://CPurely.github.io/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
       <description>配置Linux安装citespace的环境 安装java环境与.7z解压工具 下载并安装java因为我用的是openSUSE因此下载rpm包安装</description>
     </item>
     

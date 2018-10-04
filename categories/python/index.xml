@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Wellcome</title>
-    <link>/categories/python/</link>
+    <link>https://CPurely.github.io/categories/python/</link>
     <description>Recent content in Python on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 28 Nov 2017 05:13:14 +0000</lastBuildDate>
     
-	<atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://CPurely.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux中安装pycuda</title>
-      <link>/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</link>
+      <link>https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</link>
       <pubDate>Tue, 28 Nov 2017 05:13:14 +0000</pubDate>
       
-      <guid>/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</guid>
+      <guid>https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</guid>
       <description>前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p</description>
     </item>
     

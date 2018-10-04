@@ -2,94 +2,106 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wellcome</title>
-    <link>/</link>
+    <link>https://CPurely.github.io/</link>
     <description>Recent content on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 29 Dec 2017 21:02:35 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://CPurely.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>atom markdown配置与输出包含数学公式的pdf方法</title>
-      <link>/post/atom-markdown%E9%85%8D%E7%BD%AE/</link>
+      <link>https://CPurely.github.io/post/atom-markdown%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
       
-      <guid>/post/atom-markdown%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://CPurely.github.io/post/atom-markdown%E9%85%8D%E7%BD%AE/</guid>
       <description>因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说</description>
     </item>
     
     <item>
       <title>Linux下软件不能以root用户运行解决方法总结</title>
-      <link>/post/linux%E4%B8%8B%E8%BD%AF%E4%BB%B6%E4%B8%8D%E8%83%BD%E4%BB%A5root%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/</link>
+      <link>https://CPurely.github.io/post/linux%E4%B8%8B%E8%BD%AF%E4%BB%B6%E4%B8%8D%E8%83%BD%E4%BB%A5root%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/</link>
       <pubDate>Fri, 22 Dec 2017 21:23:52 +0000</pubDate>
       
-      <guid>/post/linux%E4%B8%8B%E8%BD%AF%E4%BB%B6%E4%B8%8D%E8%83%BD%E4%BB%A5root%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://CPurely.github.io/post/linux%E4%B8%8B%E8%BD%AF%E4%BB%B6%E4%B8%8D%E8%83%BD%E4%BB%A5root%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/</guid>
       <description>视频播放器vlc不能在root用户下运行 解决方法：运行 sed -i &#39;s/geteuid/getppid/&#39; /usr/bin/vlc 参考How to run VLC player in root</description>
     </item>
     
     <item>
       <title>Linux gnome桌面更新nvidia显卡驱动</title>
-      <link>/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</link>
+      <link>https://CPurely.github.io/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</link>
       <pubDate>Sat, 16 Dec 2017 02:24:25 +0000</pubDate>
       
-      <guid>/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</guid>
+      <guid>https://CPurely.github.io/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</guid>
       <description>前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，</description>
     </item>
     
     <item>
       <title>eclipse添加libcufft.so动态库到project</title>
-      <link>/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</link>
+      <link>https://CPurely.github.io/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</link>
       <pubDate>Fri, 08 Dec 2017 05:01:04 +0000</pubDate>
       
-      <guid>/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</guid>
+      <guid>https://CPurely.github.io/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</guid>
       <description>今天使用cuda的cufft进行复数矩阵的快速傅立叶变换却被如何包含.so动态库到工程文件这个问题中给挡住了，频繁报错&amp;hellip; /root/cuda-workspace/cufft_diffraction/Debug/../cufft_diffraction.cu:81: undefined reference</description>
     </item>
     
     <item>
       <title>Linux安装教育版maya</title>
-      <link>/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/</link>
+      <link>https://CPurely.github.io/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/</link>
       <pubDate>Mon, 04 Dec 2017 13:37:06 +0000</pubDate>
       
-      <guid>/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/</guid>
+      <guid>https://CPurely.github.io/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/</guid>
       <description>在autodesk官网注册帐号并下载linux版maya 通过注册Autodesk的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号</description>
     </item>
     
     <item>
       <title>Linux gnome桌面下创建sh文件的desktop文件快速启动</title>
-      <link>/post/linux-gnome%E6%A1%8C%E9%9D%A2%E4%B8%8B%E5%88%9B%E5%BB%BAsh%E6%96%87%E4%BB%B6%E7%9A%84desktop%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</link>
+      <link>https://CPurely.github.io/post/linux-gnome%E6%A1%8C%E9%9D%A2%E4%B8%8B%E5%88%9B%E5%BB%BAsh%E6%96%87%E4%BB%B6%E7%9A%84desktop%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</link>
       <pubDate>Thu, 30 Nov 2017 14:09:05 +0000</pubDate>
       
-      <guid>/post/linux-gnome%E6%A1%8C%E9%9D%A2%E4%B8%8B%E5%88%9B%E5%BB%BAsh%E6%96%87%E4%BB%B6%E7%9A%84desktop%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</guid>
+      <guid>https://CPurely.github.io/post/linux-gnome%E6%A1%8C%E9%9D%A2%E4%B8%8B%E5%88%9B%E5%BB%BAsh%E6%96%87%E4%BB%B6%E7%9A%84desktop%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8/</guid>
       <description>本文以wine-TIM为例，创建sh文件启动TIM，以及创建desktop文件在启动栏快速启动 安装wine-TIM，创建sh文件启动 安装wi</description>
     </item>
     
     <item>
       <title>Linux中安装pycuda</title>
-      <link>/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</link>
+      <link>https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</link>
       <pubDate>Tue, 28 Nov 2017 05:13:14 +0000</pubDate>
       
-      <guid>/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</guid>
+      <guid>https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</guid>
       <description>前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p</description>
     </item>
     
     <item>
       <title>如何利用github与hexo建立个人博客</title>
-      <link>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://CPurely.github.io/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 24 Nov 2017 21:14:54 +0000</pubDate>
       
-      <guid>/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://CPurely.github.io/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>安装git以及注册github帐号 安装git zypper in git git --version //查看版本 注册github帐号不用多说，主要是利用它建立一个仓库来建站使用，git用</description>
     </item>
     
     <item>
       <title>Linux下文献分析工具citespace安装使用</title>
-      <link>/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
+      <link>https://CPurely.github.io/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Fri, 24 Nov 2017 20:20:39 +0000</pubDate>
       
-      <guid>/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://CPurely.github.io/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</guid>
       <description>配置Linux安装citespace的环境 安装java环境与.7z解压工具 下载并安装java因为我用的是openSUSE因此下载rpm包安装</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://CPurely.github.io/post/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/post/hello-world/</guid>
+      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start Create a new post $ hexo new &amp;quot;My New Post&amp;quot;  More info: Writing
+Run server $ hexo server  More info: Server
+Generate static files $ hexo generate  More info: Generating</description>
     </item>
     
   </channel>
