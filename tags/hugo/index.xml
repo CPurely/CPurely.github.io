@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Wellcome</title>
+    <link>https://CPurely.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Wellcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 04 Oct 2018 19:41:03 +0800</lastBuildDate>
+    
+	<atom:link href="https://CPurely.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo-github配置指南</title>
+      <link>https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Thu, 04 Oct 2018 19:41:03 +0800</pubDate>
+      
+      <guid>https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</guid>
+      <description>hugo安装与配置 ubuntu为例 &amp;ldquo;&amp;rsquo; bash suao snap install hugo &amp;ldquo;&amp;rsquo; 新建站点 &amp;ldquo;&amp;rsquo; bash hugo new site Blog &amp;ldquo;&amp;rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的</description>
+    </item>
+    
+  </channel>
+</rss>
