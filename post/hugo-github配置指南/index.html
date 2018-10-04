@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Hugo_github配置指南 - Wellcome</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="CPurely" />
+  <meta name="description" content="hugo安装与配置 ubuntu为例 &amp;ldquo;&amp;rsquo; bash suao snap install hugo &amp;ldquo;&amp;rsquo; 新建站点 &amp;ldquo;&amp;rsquo; bash hugo new site Blog &amp;ldquo;&amp;rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="canonical" href="https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Hugo_github配置指南" />
+<meta property="og:description" content="hugo安装与配置 ubuntu为例 &ldquo;&rsquo; bash suao snap install hugo &ldquo;&rsquo; 新建站点 &ldquo;&rsquo; bash hugo new site Blog &ldquo;&rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" />
+
+
+
+<meta property="article:published_time" content="2018-10-04T19:41:03&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-10-04T19:41:03&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Hugo_github配置指南">
+<meta itemprop="description" content="hugo安装与配置 ubuntu为例 &ldquo;&rsquo; bash suao snap install hugo &ldquo;&rsquo; 新建站点 &ldquo;&rsquo; bash hugo new site Blog &ldquo;&rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的">
+
+
+<meta itemprop="datePublished" content="2018-10-04T19:41:03&#43;08:00" />
+<meta itemprop="dateModified" content="2018-10-04T19:41:03&#43;08:00" />
+<meta itemprop="wordCount" content="1784">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo_github配置指南"/>
+<meta name="twitter:description" content="hugo安装与配置 ubuntu为例 &ldquo;&rsquo; bash suao snap install hugo &ldquo;&rsquo; 新建站点 &ldquo;&rsquo; bash hugo new site Blog &ldquo;&rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">CPurely</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">CPurely</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Hugo_github配置指南</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-10-04 </span>
+        
+        <span class="more-meta"> 约 1784 字 </span>
+        <span class="more-meta"> 预计阅读 4 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#hugo安装与配置">hugo安装与配置</a></li>
+<li><a href="#部署到github">部署到github</a></li>
+<li><a href="#域名购买">域名购买</a></li>
+<li><a href="#github配置域名解析">github配置域名解析</a></li>
+<li><a href="#快捷发布文章">快捷发布文章</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#build-the-project">Build the project.</a></li>
+<li><a href="#go-to-public-folder">Go To Public folder</a></li>
+<li><a href="#add-changes-to-git">Add changes to git.</a></li>
+<li><a href="#commit-changes">Commit changes.</a></li>
+<li><a href="#push-source-and-build-repos">Push source and build repos.</a></li>
+<li><a href="#come-back">Come Back</a>
+<ul>
+<li>
+<ul>
+<li><a href="#结语">结语</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<h3 id="hugo安装与配置">hugo安装与配置</h3>
+
+<p>ubuntu为例
+&ldquo;&rsquo; bash
+suao snap install hugo
+&ldquo;&rsquo;
+新建站点
+&ldquo;&rsquo; bash
+hugo new site Blog
+&ldquo;&rsquo;
+此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造.
+因为hugo默认是不带主题的,因此为了显示内容我们需要先下载一个主题,首先要用cd命令进入Blog文件夹
+&ldquo;&rsquo; bash
+git clone <a href="https://github.com/olOwOlo/hugo-theme-even">https://github.com/olOwOlo/hugo-theme-even</a> themes/even
+&ldquo;&rsquo;
+我使用的是Ever主题,更多主题可以在<a href="https://themes.gohugo.io">hugo主题</a>上下载.
+下载好主题后,将主题文件夹/themes/even/exampleSite中的config.toml拷贝到网站根目录,这里也即是Blog目录下替换
+原始配置文件.
+然后根据config.toml按照需求配置网站.
+(有的主题模板包含一些索引比如about,moment等,这时候你需要在主题/themes/even/exampleSite/content目录下把about
+文件夹,moment文件夹复制到Blog目录下的content里面)</p>
+
+<h3 id="部署到github">部署到github</h3>
+
+<p>首先需要安装git工具以及有一个github账号
+1. 首先github新建一个仓库,名字为yourname.github.io
+2. 在网站根目录使用hugo生成public文件夹(需要把这个文件夹同步到github上)
+3. cd进入public文件夹
+4. 在public文件夹中布置git
+&ldquo;&rsquo; bash
+git init   # 初始化
+git remote add origin <a href="https://github.com/yourname/yourname.github.io.git">https://github.com/yourname/yourname.github.io.git</a>  # 连接远程仓库
+git add -A  #  将工作目录文件修改添加到暂存区
+git commit -m &ldquo;first commit&rdquo;  # 将暂存区的所有内容提交到当前分支。-m 参数后面的字符串表示本次的提交说明
+git push -u origin master   # 把本地仓库分支推送到远程仓库分支
+&ldquo;&rsquo;
+这样public应该就算是上传到你的github远程仓库中了.
+通过访问<a href="https://yourname.github.io应该就可以打开你的网站了">https://yourname.github.io应该就可以打开你的网站了</a></p>
+
+<h3 id="域名购买">域名购买</h3>
+
+<p>这里我在namesilo上购买的域名,大概13元一年.
+该网站购买域名的教程可以参考<a href="https://www.jianshu.com/p/27b0ebdcec2c">Namesilo 域名购买</a>,需要注意的是使用支付宝
+付款时,需要支付宝已经绑定了邮箱.
+购买域名之后,点击网站中的Manage My Domains会出现你购买的域名列表.
+namesilo上可以进行域名解析,在域名列表中可以看到一个蓝色小球,点击即可进入域名解析页面.
+<img src="https://i.loli.net/2018/10/04/5bb6055b482e8.png" alt="Selection_005.png" />
+为了使得域名能够指向yourname.github.io,我们需要添加2个A一个CNANE来进行解析,
+<img src="https://i.loli.net/2018/10/04/5bb6064b2645e.png" alt="Selection_006.png" />
+点击EDIT进行编辑,前两个A最开头的HOSTNAME不要填,只需要填后面的IPV4 ADDRESS,分别填写192.30.252.153和192.30.252.154
+.这两个ip是指向github的ip. CNAME我们需要填写HOSTNAME为www, 以及后面的为yourname.github.io
+这样算是做好了域名解析,接下来就是到github进行配置(同意namesilo的域名解析)</p>
+
+<h3 id="github配置域名解析">github配置域名解析</h3>
+
+<p>在网站仓库文件夹下建立一个CNAME没有后缀的文件,然后第一行写入你购买的域名,注意不要前面的www.
+这样域名绑定算是做好了.</p>
+
+<h3 id="快捷发布文章">快捷发布文章</h3>
+
+<p>由于上一步我们在github仓库增加了一个文件,因此我们首先需要更新一下本地仓库与它同步
+&ldquo;&rsquo; bash
+git pull &ndash;rebase origin master
+&ldquo;&rsquo;
+如果我们在网站根目录下的content/post增加了新的文章,我们需要先使用命令重新生成一次public,这样public中就包含
+最新的文章了.
+&ldquo;&rsquo; bash
+hugo<br />
+&rdquo;&rsquo;
+然后cd进入public目录,使用
+&ldquo;&rsquo; bash
+git add -A
+git commit -m &ldquo;new commit&rdquo;
+git push -u origin master
+&ldquo;&rsquo;
+来更新远程仓库. 这样做有点繁琐,并且期间还需要输入github的用户名和密码,使得写文章的体验大打折扣.我们使用更加
+便捷的方法.
+首先我们需要取消git push是需要输入用户名和密码的问题.我们先cd进入public目录,然后使用
+&ldquo;&rsquo; bash
+git config &ndash;global credential.helper store
+&ldquo;&rsquo;
+然后你会在你本地生成一个文本，上边记录你的账号和密码.然后你使用上述的命令配置好之后，
+再操作一次git pull，然后它会提示你输入账号密码，这一次之后就不需要再次输入密码了。
+<a href="https://github.com/yonyouyc/blog/issues/6">解决git pull/push每次都需要输入密码问题</a>
+虽然解决了不用输入用户名和密码的问题,但是还要一次次输入重复的命令还是太烦了,因此我们需要写一deploy.sh脚本
+帮你完成这件事.脚本如下
+&ldquo;&rsquo; bash
+#!/bin/bash</p>
+
+<p>echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;</p>
+
+<h1 id="build-the-project">Build the project.</h1>
+
+<p>hugo # if using a theme, replace by <code>hugo -t &lt;yourtheme&gt;</code></p>
+
+<h1 id="go-to-public-folder">Go To Public folder</h1>
+
+<p>cd public</p>
+
+<h1 id="add-changes-to-git">Add changes to git.</h1>
+
+<p>git add -A</p>
+
+<h1 id="commit-changes">Commit changes.</h1>
+
+<p>msg=&ldquo;rebuilding site <code>date</code>&ldquo;
+if [ $# -eq 1 ]
+  then msg=&ldquo;$1&rdquo;
+fi
+git commit -m &ldquo;$msg&rdquo;</p>
+
+<h1 id="push-source-and-build-repos">Push source and build repos.</h1>
+
+<p>git push origin master</p>
+
+<h1 id="come-back">Come Back</h1>
+
+<p>cd ..
+&ldquo;&rsquo;
+执行之前先用chmod +x deploy.sh赋予其权限.详情请见
+<a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub Pages</a></p>
+
+<h3 id="结语">结语</h3>
+
+<p>至此,终于可以轻松的撰写博客了.</p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">CPurely</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-10-04</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/atom-markdown%E9%85%8D%E7%BD%AE/">
+            <span class="next-text nav-default">atom markdown配置与输出包含数学公式的pdf方法</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="Rchenchun@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/CPurely" class="iconfont icon-github" title="github"></a>
+  <a href="https://CPurely.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    
+    
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">CPurely</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
