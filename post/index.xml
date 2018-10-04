@@ -6,19 +6,10 @@
     <description>Recent content in Posts on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Oct 2018 19:41:03 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Dec 2017 21:02:35 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hugo_github配置指南</title>
-      <link>https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Thu, 04 Oct 2018 19:41:03 +0800</pubDate>
-      
-      <guid>https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</guid>
-      <description>hugo安装与配置 ubuntu为例 &amp;ldquo;&amp;rsquo; bash suao snap install hugo &amp;ldquo;&amp;rsquo; 新建站点 &amp;ldquo;&amp;rsquo; bash hugo new site Blog &amp;ldquo;&amp;rsquo; 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的</description>
-    </item>
     
     <item>
       <title>atom markdown配置与输出包含数学公式的pdf方法</title>
