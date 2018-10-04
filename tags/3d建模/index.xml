@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3d建模 on Wellcome</title>
+    <link>/tags/3d%E5%BB%BA%E6%A8%A1/</link>
+    <description>Recent content in 3d建模 on Wellcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 04 Dec 2017 13:37:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/3d%E5%BB%BA%E6%A8%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux安装教育版maya</title>
+      <link>/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/</link>
+      <pubDate>Mon, 04 Dec 2017 13:37:06 +0000</pubDate>
+      
+      <guid>/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/</guid>
+      <description>在autodesk官网注册帐号并下载linux版maya 通过注册Autodesk的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号</description>
+    </item>
+    
+  </channel>
+</rss>

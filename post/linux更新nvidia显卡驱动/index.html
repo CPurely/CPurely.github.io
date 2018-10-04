@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux gnome桌面更新nvidia显卡驱动 - Wellcome</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="CPurely" />
+  <meta name="description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="canonical" href="/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Linux gnome桌面更新nvidia显卡驱动" />
+<meta property="og:description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/" />
+
+
+
+<meta property="article:published_time" content="2017-12-16T02:24:25&#43;00:00"/>
+
+<meta property="article:modified_time" content="2017-12-16T02:24:25&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Linux gnome桌面更新nvidia显卡驱动">
+<meta itemprop="description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，">
+
+
+<meta itemprop="datePublished" content="2017-12-16T02:24:25&#43;00:00" />
+<meta itemprop="dateModified" content="2017-12-16T02:24:25&#43;00:00" />
+<meta itemprop="wordCount" content="1328">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux gnome桌面更新nvidia显卡驱动"/>
+<meta name="twitter:description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">CPurely</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">CPurely</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux gnome桌面更新nvidia显卡驱动</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2017-12-16 </span>
+        <div class="post-category">
+            
+              <a href="/categories/linux/"> Linux </a>
+            
+              <a href="/categories/nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/"> Nvidia显卡驱动 </a>
+            
+              <a href="/categories/x-server/"> X server </a>
+            
+              <a href="/categories/gnome/"> gnome </a>
+            
+          </div>
+        <span class="more-meta"> 约 1328 字 </span>
+        <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#前言">前言</a></li>
+<li><a href="#重新安装显卡驱动">重新安装显卡驱动</a>
+<ul>
+<li>
+<ul>
+<li><a href="#关闭x-server">关闭x server</a></li>
+<li><a href="#安装kernel-headers">安装kernel headers</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#2018-1-14更新">2018.1.14更新</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<h2 id="前言">前言</h2>
+
+<p>在下载安装好arrayfire这个库之后，运行了一个示例程序，提示</p>
+
+<pre><code class="language-bash">libGL error: No matching fbConfigs or visuals found
+libGL error: failed to load driver: swrast
+</code></pre>
+
+<p>google发现说的是显卡驱动需要更新，我的显卡驱动是381.xx最新的是384.98
+因此我就开始更新显卡驱动。使用命令</p>
+
+<pre><code class="language-bash">zypper update nvidia*
+</code></pre>
+
+<p>之后显示说缺少几个包，因此我就顺着它装</p>
+
+<pre><code class="language-bash">zypper install nvidia-glG04-384.98-29.1.x86_64 nvidia-computeG04-384.98-29.1.x86_64
+</code></pre>
+
+<p>安装好之后并没有发现我的显卡驱动的版本提升，故直接使用了</p>
+
+<pre><code class="language-bash">zypper install nvidia*
+</code></pre>
+
+<p>这下直接各种包与之前安装的冲突，导致无法进入图形界面，驱动无法运行。ctrl+alt+f7从终端切换到图形界面，显示错误信息，重新登录还是如此。
+遂决定重新安装驱动，因为我的显卡驱动是在安装cuda的时候顺带安装好了，我怕把cuda环境玻怀了，比较小心。（事实证明重新安装驱动不会破坏cuda环境）</p>
+
+<h2 id="重新安装显卡驱动">重新安装显卡驱动</h2>
+
+<h4 id="关闭x-server">关闭x server</h4>
+
+<p>好在之前在官网上下载好了最新的显卡驱动.run文件，即使在只有终端下安装应该也很方便,终端输入</p>
+
+<pre><code class="language-bash">cd Downloads
+sh NVIDIA-Linux-x86_64-384.98.run
+</code></pre>
+
+<p>可以打开驱动安装程序，但是有一个错误提示：ERROR：You appear to be running an X server;please exit Xbefore installing.
+大意是需要关闭X server服务，google一搜，找到几个关闭x server的命令</p>
+
+<pre><code class="language-bash">service lightdm stop
+service kdm stop
+service gdm stop
+service mdm stop
+/etc/init.d/gdm stop
+/etc/init.d/kdm stop
+/etc/init.d/mdm stop
+</code></pre>
+
+<p>(使用service &ndash;status-all命令查看运行的所有服务)
+仍然关不掉X server，因为init.d文件夹里没有这几个服务只有下面几个，可能我是openSUSE和gnome桌面吧。gnome桌面按理说应该会有gdm,kde桌面应该会有kdm</p>
+
+<pre><code class="language-bash">after.local    boot.d      cifs    halt.local  jexec  rc1.d  rc3.d  rc5.d  rcS.d
+boot.apparmor  boot.local  esound  hddtemp     rc0.d  rc2.d  rc4.d  rc6.d  rpmconfigcheck
+</code></pre>
+
+<p>我还尝试过通过安装驱动错误的log文件找到X server的PID使用kill -s 9 PID杀掉进程，虽然有用但是会造成系统重新载入，x server又复活了。
+最终在<a href="https://zhidao.baidu.com/question/453448087.html">linux 怎样关闭x server 安显卡驱动</a>这个回答下发现了关闭x server服务的方法</p>
+
+<pre><code class="language-bash">init 3
+</code></pre>
+
+<p>这个种命令还有一系列，参考<a href="https://zhidao.baidu.com/question/591017435.html">init 0 init1 init 3 init 5 init 6 这几个启动级别都代表什么意思</a>
+现在终于可以进行下一步安装了</p>
+
+<h4 id="安装kernel-headers">安装kernel headers</h4>
+
+<p>正当我再次运行驱动安装程序，却又提示需要安装kernel headers,因为之前安装cuda的时候有这一步，以为是查看kernel版本的就掠过了。。。
+这里参考<a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">NVIDIA CUDA Installation Guide for Linux</a>
+openSUSE下先查看kernel版本</p>
+
+<pre><code class="language-bash">uname -r
+4.4.92-31-default
+</code></pre>
+
+<p>安装kernel headers这需要核心的版本信息，sudo zypper install kernel-<variant>-devel=<version>然后替代<variant><version>（尖括号一并替换掉）</p>
+
+<pre><code class="language-bash">zypper install kernel-default-devel=4.4.76-1
+</code></pre>
+
+<p>安装好之后终于可以正常安装显卡驱动了</p>
+
+<p>安装显卡驱动的时候有几个选项，只要注意不要选择使用nvidia的x server来链接与更新系统自带的x server服务即可，否则可能无法进入图形界面，一启动就是终端ctrl+alt+f7无法进入图形界面
+终端输入xinit提示x server connect refuse（我重新安装一遍驱动才解决）
+重新安装好显卡驱动后，最后运行arrayfire示例程序终于没有报错，折腾没有白费。。。欣慰</p>
+
+<h2 id="2018-1-14更新">2018.1.14更新</h2>
+
+<p>老问题又发生了，这次重新安装驱动不行，我估计要安装最新的驱动，于是在其他电脑上到NVIADIA官网下载好了最新的驱动到u盘里。插上电脑，执行以下命令查找u盘位置</p>
+
+<pre><code class="language-bash">fdisk -l
+</code></pre>
+
+<p>我的u盘在/dev/sdc1
+使用以下命令挂载u盘到/media以及进入目录读取u盘文件,运行驱动程序安装，重启后应该就能进入桌面了。</p>
+
+<pre><code class="language-bash">mount -t vfat /dev/sdc1 /media
+cd /media
+ls
+sh NVIDIA-Linux-x86_64-384.111.run
+</code></pre>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">CPurely</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2017-12-16</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/linux%E4%B8%8B%E8%BD%AF%E4%BB%B6%E4%B8%8D%E8%83%BD%E4%BB%A5root%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Linux下软件不能以root用户运行解决方法总结</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/">
+            <span class="next-text nav-default">eclipse添加libcufft.so动态库到project</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="Rchenchun@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/CPurely" class="iconfont icon-github" title="github"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    
+    
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">CPurely</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

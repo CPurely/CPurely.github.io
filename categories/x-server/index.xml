@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>X server on Wellcome</title>
+    <link>/categories/x-server/</link>
+    <description>Recent content in X server on Wellcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 16 Dec 2017 02:24:25 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/x-server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux gnome桌面更新nvidia显卡驱动</title>
+      <link>/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</link>
+      <pubDate>Sat, 16 Dec 2017 02:24:25 +0000</pubDate>
+      
+      <guid>/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</guid>
+      <description>前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，</description>
+    </item>
+    
+  </channel>
+</rss>

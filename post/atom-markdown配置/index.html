@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>atom markdown配置与输出包含数学公式的pdf方法 - Wellcome</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="CPurely" />
+  <meta name="description" content="因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="canonical" href="/post/atom-markdown%E9%85%8D%E7%BD%AE/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="atom markdown配置与输出包含数学公式的pdf方法" />
+<meta property="og:description" content="因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/atom-markdown%E9%85%8D%E7%BD%AE/" />
+
+
+
+<meta property="article:published_time" content="2017-12-29T21:02:35&#43;00:00"/>
+
+<meta property="article:modified_time" content="2017-12-29T21:02:35&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="atom markdown配置与输出包含数学公式的pdf方法">
+<meta itemprop="description" content="因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说">
+
+
+<meta itemprop="datePublished" content="2017-12-29T21:02:35&#43;00:00" />
+<meta itemprop="dateModified" content="2017-12-29T21:02:35&#43;00:00" />
+<meta itemprop="wordCount" content="743">
+
+
+
+<meta itemprop="keywords" content="atom,markdown," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="atom markdown配置与输出包含数学公式的pdf方法"/>
+<meta name="twitter:description" content="因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">CPurely</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">CPurely</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">atom markdown配置与输出包含数学公式的pdf方法</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2017-12-29 </span>
+        <div class="post-category">
+            
+              <a href="/categories/linux/"> Linux </a>
+            
+              <a href="/categories/%E5%86%99%E4%BD%9C/"> 写作 </a>
+            
+          </div>
+        <span class="more-meta"> 约 743 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#配置latex">配置latex</a></li>
+<li><a href="#配置支持数学公式的markdown">配置支持数学公式的markdown</a></li>
+<li><a href="#参考">参考</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p>因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程</p>
+
+<h3 id="配置latex">配置latex</h3>
+
+<p>安装与下载atom自然不用多说，之后就是安装各种插件了
+因为markdown写作有时会用latex，因此系统中必须预先安装texlive。</p>
+
+<p>linux下安装过程参考<a href="https://zhuanlan.zhihu.com/LaTeX/20069414">Linux 发行版下原版 TeX Live 2015 的安装</a></p>
+
+<p>atom latex插件安装我参考了<a href="http://blog.csdn.net/sdujava2011/article/details/53784790">Atom Latex Settings</a></p>
+
+<h3 id="配置支持数学公式的markdown">配置支持数学公式的markdown</h3>
+
+<p>在此之前，由于我的系统一直是英文，打开中文的.md文件一直是乱码的方框，通过在系统上安装文泉驿字体然后修改atom配置文件可以解决，参考这里<a href="http://imziv.com/blog/article/read.htm?id=65">Atom在Ubuntu上中文乱码解决</a></p>
+
+<p>安装Markdown Preview Enhanced实时预览插件，该插件支持latex公式渲染。
+更多功能参见<a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">Markdown Preview Enhanced</a>,
+为了可以输出含有数学公式的pdf，这里提供两种方案。</p>
+
+<ol>
+<li>终端下使用pandoc将.md转化为pdf</li>
+<li>使用Markdown Preview Enhanced插件转化为HTML(cdn hosted)然后使用firefox打开，将其打印为pdf即可。</li>
+</ol>
+
+<p>第一种方法我尝试失败了&hellip;提示如下。终端使用了fmtutil-sys &ndash;all依然无法解决。</p>
+
+<pre><code class="language-bash">Error producing PDF.
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+---! /var/lib/texmf/web2c/pdftex/pdflatex.fmt doesn't match pdftex.pool
+(Fatal format file error; I'm stymied)
+</code></pre>
+
+<p>第二种方法我一开始也是失败了,因为使用的也是pandoc只不过在插件中，提示：Output format needs to be specified.
+。但是我发现保存为HTML(cdn hosted)格式用浏览器打开可以很好的渲染公式，使用firefox则可以打印网页为pdf。</p>
+
+<p>到此终于算是如愿以偿啦，后续如果找到Output format needs to be specified.的原因我会继续更新，毕竟更加方便和更多的输出可操作性</p>
+
+<h3 id="参考">参考</h3>
+
+<p><a href="https://zhuanlan.zhihu.com/LaTeX/20069414">Linux 发行版下原版 TeX Live 2015 的安装</a></p>
+
+<p><a href="http://blog.csdn.net/sdujava2011/article/details/53784790">Atom Latex Settings</a></p>
+
+<p><a href="http://imziv.com/blog/article/read.htm?id=65">Atom在Ubuntu上中文乱码解决</a></p>
+
+<p><a href="http://saili.science/2016/10/17/markdown-user-guide/">Markdown 使用指南</a></p>
+
+<p><a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">Markdown Preview Enhanced</a></p>
+
+<p><a href="https://zh.wikipedia.org/wiki/Pandoc">Pandoc</a></p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">CPurely</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2017-12-29</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/atom/">atom</a>
+          
+          <a href="/tags/markdown/">markdown</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/linux%E4%B8%8B%E8%BD%AF%E4%BB%B6%E4%B8%8D%E8%83%BD%E4%BB%A5root%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/">
+            <span class="next-text nav-default">Linux下软件不能以root用户运行解决方法总结</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="Rchenchun@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/CPurely" class="iconfont icon-github" title="github"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    
+    
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">CPurely</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

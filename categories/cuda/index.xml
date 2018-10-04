@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CUDA on Wellcome</title>
+    <link>/categories/cuda/</link>
+    <description>Recent content in CUDA on Wellcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 08 Dec 2017 05:01:04 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/cuda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eclipse添加libcufft.so动态库到project</title>
+      <link>/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</link>
+      <pubDate>Fri, 08 Dec 2017 05:01:04 +0000</pubDate>
+      
+      <guid>/post/eclipse%E6%B7%BB%E5%8A%A0libcufft-so%E5%8A%A8%E6%80%81%E5%BA%93%E5%88%B0project/</guid>
+      <description>今天使用cuda的cufft进行复数矩阵的快速傅立叶变换却被如何包含.so动态库到工程文件这个问题中给挡住了，频繁报错&amp;hellip; /root/cuda-workspace/cufft_diffraction/Debug/../cufft_diffraction.cu:81: undefined reference</description>
+    </item>
+    
+    <item>
+      <title>Linux中安装pycuda</title>
+      <link>/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</link>
+      <pubDate>Tue, 28 Nov 2017 05:13:14 +0000</pubDate>
+      
+      <guid>/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</guid>
+      <description>前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p</description>
+    </item>
+    
+  </channel>
+</rss>
