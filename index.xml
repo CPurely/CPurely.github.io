@@ -6,10 +6,19 @@
     <description>Recent content on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Oct 2018 19:41:03 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Oct 2018 21:23:39 +0800</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gnome去除恼人的窗口顶栏应用按钮</title>
+      <link>https://CPurely.github.io/post/gnome%E5%8E%BB%E9%99%A4%E6%81%BC%E4%BA%BA%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B6%E6%A0%8F%E5%BA%94%E7%94%A8%E6%8C%89%E9%92%AE/</link>
+      <pubDate>Sun, 07 Oct 2018 21:23:39 +0800</pubDate>
+      
+      <guid>https://CPurely.github.io/post/gnome%E5%8E%BB%E9%99%A4%E6%81%BC%E4%BA%BA%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B6%E6%A0%8F%E5%BA%94%E7%94%A8%E6%8C%89%E9%92%AE/</guid>
+      <description>当安装好gnome桌面的美化应用gnome-tweaks-tool后,终端窗口顶栏突然多了一个硕大的 终端图标.如下图所示: 非常的影响美观,当</description>
+    </item>
     
     <item>
       <title>Hugo-github配置指南</title>
