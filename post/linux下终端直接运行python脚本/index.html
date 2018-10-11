@@ -76,7 +76,7 @@
 
 <meta itemprop="datePublished" content="2018-10-11T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-10-11T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="158">
+<meta itemprop="wordCount" content="153">
 
 
 
@@ -151,7 +151,7 @@
       <div class="post-meta">
         <span class="post-time"> 2018-10-11 </span>
         
-        <span class="more-meta"> 约 158 字 </span>
+        <span class="more-meta"> 约 153 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -168,9 +168,6 @@
 <li>
 <ul>
 <li><a href="#python脚本顶部特殊注释的作用">python脚本顶部特殊注释的作用</a></li>
-</ul></li>
-<li><a href="#coding-utf-8">-<em>- coding: utf-8 -</em>-</a>
-<ul>
 <li><a href="#赋予文件执行权限">赋予文件执行权限</a></li>
 </ul></li>
 </ul>
@@ -191,22 +188,21 @@
 的注释,现在才明白这个注释的意思就是为了让你可以直接运行python脚本,而不用在
 终端指定解释器.</p>
 
-<p>比如下面这个python脚本hello.py:
-&ldquo;&rsquo; python
-#!/usr/bin/env python3</p>
+<p>比如下面这个python脚本hello.py:</p>
 
-<h1 id="coding-utf-8">-<em>- coding: utf-8 -</em>-</h1>
+<pre><code class="language-python">#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-<p>print(&lsquo;hello world&rsquo;)
-&ldquo;&rsquo;</p>
+print('hello world')
+</code></pre>
 
 <h2 id="赋予文件执行权限">赋予文件执行权限</h2>
 
-<p>通过使用chmod命定给文件赋予执行权限,然后就可以直接执行.
-&ldquo;&rsquo; bash
-chmod u+x hello.py
+<p>通过使用chmod命定给文件赋予执行权限,然后就可以直接执行.</p>
+
+<pre><code class="language-bash">chmod u+x hello.py
 ./hello.py
-&ldquo;&rsquo;</p>
+</code></pre>
 
     </div>
 
