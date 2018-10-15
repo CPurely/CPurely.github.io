@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://CPurely.github.io/post/%E7%BB%88%E7%AB%AF%E5%BD%A9%E8%99%B9%E7%8C%AB%E5%B1%8F%E4%BF%9D/</loc>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8ultisnips%E5%BF%AB%E9%80%9F%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%A4%B4%E4%BB%A5%E5%8F%8Ass%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2018-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -137,14 +144,14 @@
   
   <url>
     <loc>https://CPurely.github.io/tags/linux/</loc>
-    <lastmod>2018-10-07T21:23:39+08:00</lastmod>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://CPurely.github.io/tags/linux/</loc>
-    <lastmod>2018-10-07T21:23:39+08:00</lastmod>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -179,7 +186,7 @@
   
   <url>
     <loc>https://CPurely.github.io/post/</loc>
-    <lastmod>2018-10-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -221,7 +228,7 @@
   
   <url>
     <loc>https://CPurely.github.io/</loc>
-    <lastmod>2018-10-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
