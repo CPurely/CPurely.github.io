@@ -76,7 +76,7 @@
 
 <meta itemprop="datePublished" content="2018-10-14T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-10-14T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="374">
+<meta itemprop="wordCount" content="494">
 
 
 
@@ -151,7 +151,7 @@
       <div class="post-meta">
         <span class="post-time"> 2018-10-14 </span>
         
-        <span class="more-meta"> 约 374 字 </span>
+        <span class="more-meta"> 约 494 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -247,6 +247,24 @@ endsnippet
 </code></pre>
 
 <p>这样通过使用ss-c,和ss-s就可以很容易的配置ss了.</p>
+
+<hr />
+
+<p>2018-10-19更新</p>
+
+<p>更改在markdown.snippets中增加的head,为了自动填写文件名称</p>
+
+<p>写Python代码的时候给文件前面加描述的时候突然想起来得给markdown加一个自动填写文件名.</p>
+
+<pre><code>snippet head &quot;hugo blog head&quot; b
+---
+title: ${1:`!p snip.rv = snip.basename`}
+date: ${2:`date +%Y-%m-%d`}
+tags: $3
+---
+$0
+endsnippet
+</code></pre>
 
 <h2 id="参考">参考</h2>
 
