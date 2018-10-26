@@ -169,14 +169,11 @@
 <ul>
 <li>
 <ul>
-<li>
-<ul>
 <li><a href="#安装nemo">安装nemo</a></li>
 <li><a href="#将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</a></li>
 <li><a href="#nemo管理桌面文件">nemo管理桌面文件</a></li>
 <li><a href="#还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</a></li>
 <li><a href="#参考">参考</a></li>
-</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -193,7 +190,7 @@
 
 <p>为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径</p>
 
-<h4 id="安装nemo">安装nemo</h4>
+<h3 id="安装nemo">安装nemo</h3>
 
 <p>系统: ubuntu18.04</p>
 
@@ -204,17 +201,17 @@ sudo add-apt-repository ppa:embrosyn/cinnamon
 sudo apt install nemo
 </code></pre>
 
-<h4 id="将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</h4>
+<h3 id="将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</h3>
 
 <pre><code class="language-bash">xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 </code></pre>
 
-<h4 id="nemo管理桌面文件">nemo管理桌面文件</h4>
+<h3 id="nemo管理桌面文件">nemo管理桌面文件</h3>
 
 <pre><code class="language-bash">gsettings set org.gnome.desktop.background show-desktop-icons false
 </code></pre>
 
-<h4 id="还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</h4>
+<h3 id="还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</h3>
 
 <pre><code class="language-bash">xdg-mime default nautilus.desktop inode/directory application/x-gnome-saved-search
 
@@ -224,7 +221,7 @@ sudo apt purge nemo nemo*
 sudo apt autoremove
 </code></pre>
 
-<h4 id="参考">参考</h4>
+<h3 id="参考">参考</h3>
 
 <p><a href="https://www.linuxuprising.com/2018/07/how-to-replace-nautilus-with-nemo-file.html">How To Replace Nautilus With Nemo File Manager On Ubuntu 18.04 Gnome Desktop</a></p>
 
