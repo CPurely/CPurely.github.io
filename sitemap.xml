@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2018-10-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://CPurely.github.io/post/%E5%B0%86gnome%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86nautilus%E7%94%A8nemo%E4%BB%A3%E6%9B%BF/</loc>
     <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -136,8 +143,8 @@
   </url>
   
   <url>
-    <loc>https://CPurely.github.io/tags/gnome/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+    <loc>https://CPurely.github.io/tags/debug/</loc>
+    <lastmod>2018-10-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -150,6 +157,13 @@
   </url>
   
   <url>
+    <loc>https://CPurely.github.io/tags/gnome/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://CPurely.github.io/tags/hugo/</loc>
     <lastmod>2018-10-04T19:41:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -157,22 +171,22 @@
   </url>
   
   <url>
-    <loc>https://CPurely.github.io/tags/linux/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://CPurely.github.io/tags/linux/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://CPurely.github.io/categories/linux/</loc>
     <lastmod>2017-12-29T21:02:35+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/tags/linux/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/tags/linux/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -200,7 +214,7 @@
   
   <url>
     <loc>https://CPurely.github.io/post/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -213,15 +227,15 @@
   </url>
   
   <url>
-    <loc>https://CPurely.github.io/tags/python/</loc>
-    <lastmod>2018-10-11T00:00:00+00:00</lastmod>
+    <loc>https://CPurely.github.io/categories/python/</loc>
+    <lastmod>2017-11-28T05:13:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://CPurely.github.io/categories/python/</loc>
-    <lastmod>2017-11-28T05:13:14+00:00</lastmod>
+    <loc>https://CPurely.github.io/tags/python/</loc>
+    <lastmod>2018-10-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -242,7 +256,7 @@
   
   <url>
     <loc>https://CPurely.github.io/</loc>
-    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>CPurely</copyright>
-    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使用logging代替print调试python代码</title>
+      <link>https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/</guid>
+      <description>引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，</description>
+    </item>
     
     <item>
       <title>将gnome默认文件管理Nautilus用nemo代替</title>

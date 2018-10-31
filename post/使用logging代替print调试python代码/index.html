@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>将gnome默认文件管理Nautilus用nemo代替 - Wellcome</title>
+  <title>使用logging代替print调试python代码 - Wellcome</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="CPurely" />
-  <meta name="description" content="为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&amp;hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 sudo apt install nemo # 或者添加pp" />
+  <meta name="description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，" />
 
   <meta name="keywords" content="Hugo, theme, even" />
 
@@ -29,7 +29,7 @@
 <meta name="generator" content="Hugo 0.40.1" />
 
 
-<link rel="canonical" href="https://CPurely.github.io/post/%E5%B0%86gnome%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86nautilus%E7%94%A8nemo%E4%BB%A3%E6%9B%BF/" />
+<link rel="canonical" href="https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -49,20 +49,16 @@
 
 
 
-<meta property="og:title" content="将gnome默认文件管理Nautilus用nemo代替" />
-<meta property="og:description" content="为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 sudo apt install nemo # 或者添加pp" />
+<meta property="og:title" content="使用logging代替print调试python代码" />
+<meta property="og:description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://CPurely.github.io/post/%E5%B0%86gnome%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86nautilus%E7%94%A8nemo%E4%BB%A3%E6%9B%BF/" />
+<meta property="og:url" content="https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/" />
 
 
 
-<meta property="article:published_time" content="2018-10-26T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2018-10-31T00:00:00&#43;00:00"/>
 
-<meta property="article:modified_time" content="2018-10-26T00:00:00&#43;00:00"/>
-
-
-
-
+<meta property="article:modified_time" content="2018-10-31T00:00:00&#43;00:00"/>
 
 
 
@@ -70,20 +66,24 @@
 
 
 
-<meta itemprop="name" content="将gnome默认文件管理Nautilus用nemo代替">
-<meta itemprop="description" content="为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 sudo apt install nemo # 或者添加pp">
-
-
-<meta itemprop="datePublished" content="2018-10-26T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-10-26T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="163">
 
 
 
-<meta itemprop="keywords" content="gnome,Linux," />
+
+<meta itemprop="name" content="使用logging代替print调试python代码">
+<meta itemprop="description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，">
+
+
+<meta itemprop="datePublished" content="2018-10-31T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-10-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="845">
+
+
+
+<meta itemprop="keywords" content="python,debug," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="将gnome默认文件管理Nautilus用nemo代替"/>
-<meta name="twitter:description" content="为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 sudo apt install nemo # 或者添加pp"/>
+<meta name="twitter:title" content="使用logging代替print调试python代码"/>
+<meta name="twitter:description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -146,13 +146,13 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">将gnome默认文件管理Nautilus用nemo代替</h1>
+      <h1 class="post-title">使用logging代替print调试python代码</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-10-26 </span>
+        <span class="post-time"> 2018-10-31 </span>
         
-        <span class="more-meta"> 约 163 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span class="more-meta"> 约 845 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -169,10 +169,10 @@
 <ul>
 <li>
 <ul>
-<li><a href="#安装nemo">安装nemo</a></li>
-<li><a href="#将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</a></li>
-<li><a href="#nemo管理桌面文件">nemo管理桌面文件</a></li>
-<li><a href="#还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</a></li>
+<li><a href="#引言">引言</a></li>
+<li><a href="#使用logging">使用logging</a></li>
+<li><a href="#使用logging-1">使用logging</a></li>
+<li><a href="#为vim添加代码片段-更加便捷的使用logging">为vim添加代码片段，更加便捷的使用logging</a></li>
 <li><a href="#参考">参考</a></li>
 </ul></li>
 </ul></li>
@@ -188,42 +188,138 @@
     <div class="post-content">
       
 
-<p>为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径</p>
+<h3 id="引言">引言</h3>
 
-<h3 id="安装nemo">安装nemo</h3>
+<p>一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉，
+这样既不美观，也不方便．本文主要介绍了如何使用python自带的logging库创建log实例来代替print函数进行debug,
+以及创建代码片段供vim方便调用．</p>
 
-<p>系统: ubuntu18.04</p>
+<h3 id="使用logging">使用logging</h3>
 
-<pre><code class="language-bash">sudo apt install nemo
+<p>首先需要在你的python代码里导入这个库</p>
 
-# 或者添加ppa源安装最新的nemo
-sudo add-apt-repository ppa:embrosyn/cinnamon
-sudo apt install nemo
+<pre><code class="language-python">import logging
 </code></pre>
 
-<h3 id="将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</h3>
+<p>导入这个库之后，首先需要新建一个log实例</p>
 
-<pre><code class="language-bash">xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+<pre><code class="language-python">logger = logging.getLogger('log')
 </code></pre>
 
-<h3 id="nemo管理桌面文件">nemo管理桌面文件</h3>
+<p>创建了实例之后可以设置log的级别（后面也可以更改级别），可以设置的级别如下：</p>
 
-<pre><code class="language-bash">gsettings set org.gnome.desktop.background show-desktop-icons false
+<table>
+<thead>
+<tr>
+<th>级别</th>
+<th>如何使用</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>DEBUG</td>
+<td>详细信息，典型地调试问题时会感兴趣.</td>
+</tr>
+
+<tr>
+<td>INFO</td>
+<td>证明事情按预期工作.</td>
+</tr>
+
+<tr>
+<td>WARNING</td>
+<td>表明发生了一些意外,或者不久的将来会发生问题（如‘磁盘满了’）.软件还是在正常工作.</td>
+</tr>
+
+<tr>
+<td>ERROR</td>
+<td>由于更严重的问题,软件已不能执行一些功能了.</td>
+</tr>
+
+<tr>
+<td>CRITICAL</td>
+<td>严重错误，表明软件已不能继续运行了.</td>
+</tr>
+</tbody>
+</table>
+
+<p>因为我们要调试，这里暂且就设置为DEBUG级别．</p>
+
+<pre><code class="language-python">logger.setLevel(logging.DEBUG) 
 </code></pre>
 
-<h3 id="还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</h3>
+<p>设置完log级别之后，我们创建一个handler(处理器)．</p>
 
-<pre><code class="language-bash">xdg-mime default nautilus.desktop inode/directory application/x-gnome-saved-search
-
-gsettings set org.gnome.desktop.background show-desktop-icons true
-
-sudo apt purge nemo nemo*
-sudo apt autoremove
+<pre><code class="language-python">handler = logging.StreamHandler()
 </code></pre>
+
+<p>处理器还可以设置格式化器用于日志输出格式．</p>
+
+<pre><code class="language-python"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息
+# formatter = logging.Formatter('[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s')
+formatter = logging.Formatter('%(message)s') 
+# 设置格式化器
+handler.setFormatter(formatter)
+</code></pre>
+
+<p>最后为logger添加handler．</p>
+
+<pre><code class="language-python">logger.addHandler(handler)
+</code></pre>
+
+<p>完整代码如下：</p>
+
+<pre><code class="language-python"># 创建logger实例
+logger = logging.getLogger('log')
+# 设置log级别
+logger.setLevel(logging.DEBUG)
+# 创建handler(处理器)
+handler = logging.StreamHandler()
+# 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息
+# formatter = logging.Formatter('[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s')
+formatter = logging.Formatter('%(message)s')
+# 设置格式化器
+handler.setFormatter(formatter)
+# 为Logger实例增加一个处理器
+logger.addHandler(handler)
+</code></pre>
+
+<h3 id="使用logging-1">使用logging</h3>
+
+<p>例子：</p>
+
+<pre><code class="language-python">a = 30
+b = 10
+c = a - b
+logger.debug(c)
+logger.warning(c)
+logger.info(c)
+</code></pre>
+
+<p>如果不想显示debug的信息，只要改变之前设置的日志级别为更低的级别即可．</p>
+
+<h3 id="为vim添加代码片段-更加便捷的使用logging">为vim添加代码片段，更加便捷的使用logging</h3>
+
+<p>在此之前需要安装UltiSnips与vim-snippets插件，然后找到UltiSnips文件夹中的python.snippets，再其中加入：</p>
+
+<pre><code>snippet log &quot;using logging to replace print&quot; b
+logger = logging.getLogger('log')
+logger.setLevel(logging.${1:DEBUG})
+handler = logging.StreamHandler()
+formatter = logging.Formatter('[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+$0
+endsnippet
+</code></pre>
+
+<p>这样在用vim编辑python文件的时候输入log然后启动代码片段触发快捷键（我这里为<leader><tab>就可以直接插入上面的代码．</p>
 
 <h3 id="参考">参考</h3>
 
-<p><a href="https://www.linuxuprising.com/2018/07/how-to-replace-nautilus-with-nemo-file.html">How To Replace Nautilus With Nemo File Manager On Ubuntu 18.04 Gnome Desktop</a></p>
+<p><a href="https://www.jianshu.com/p/feb86c06c4f4">python logging模块使用教程</a>
+<a href="http://www.zlovezl.cn/articles/replacing-print-simple-introduction-to-logging/">替换你的print（logging模块超简明指南)</a></p>
 
     </div>
 
@@ -235,7 +331,7 @@ sudo apt autoremove
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2018-10-26</span>
+    <span class="item-content">2018-10-31</span>
   </p>
   
   
@@ -247,23 +343,18 @@ sudo apt autoremove
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/tags/gnome/">gnome</a>
+          <a href="/tags/python/">python</a>
           
-          <a href="/tags/linux/">Linux</a>
+          <a href="/tags/debug/">debug</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">使用logging代替print调试python代码</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/%E7%BB%88%E7%AB%AF%E5%BD%A9%E8%99%B9%E7%8C%AB%E5%B1%8F%E4%BF%9D/">
-            <span class="next-text nav-default">终端彩虹猫屏保</span>
+          <a class="next" href="/post/%E5%B0%86gnome%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86nautilus%E7%94%A8nemo%E4%BB%A3%E6%9B%BF/">
+            <span class="next-text nav-default">将gnome默认文件管理Nautilus用nemo代替</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
