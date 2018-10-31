@@ -80,7 +80,7 @@
 
 
 
-<meta itemprop="keywords" content="python,debug," />
+<meta itemprop="keywords" content="python,debug,vim," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="使用logging代替print调试python代码"/>
 <meta name="twitter:description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，"/>
@@ -170,8 +170,8 @@
 <li>
 <ul>
 <li><a href="#引言">引言</a></li>
+<li><a href="#设置logging">设置logging</a></li>
 <li><a href="#使用logging">使用logging</a></li>
-<li><a href="#使用logging-1">使用logging</a></li>
 <li><a href="#为vim添加代码片段-更加便捷的使用logging">为vim添加代码片段，更加便捷的使用logging</a></li>
 <li><a href="#参考">参考</a></li>
 </ul></li>
@@ -194,7 +194,7 @@
 这样既不美观，也不方便．本文主要介绍了如何使用python自带的logging库创建log实例来代替print函数进行debug,
 以及创建代码片段供vim方便调用．</p>
 
-<h3 id="使用logging">使用logging</h3>
+<h3 id="设置logging">设置logging</h3>
 
 <p>首先需要在你的python代码里导入这个库</p>
 
@@ -285,7 +285,7 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 </code></pre>
 
-<h3 id="使用logging-1">使用logging</h3>
+<h3 id="使用logging">使用logging</h3>
 
 <p>例子：</p>
 
@@ -347,6 +347,8 @@ endsnippet
           <a href="/tags/python/">python</a>
           
           <a href="/tags/debug/">debug</a>
+          
+          <a href="/tags/vim/">vim</a>
           
         </div>
 
