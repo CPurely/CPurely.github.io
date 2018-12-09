@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>CPurely</copyright>
-    <lastBuildDate>Wed, 31 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>搬瓦工ip更换与ss安装</title>
+      <link>https://CPurely.github.io/post/%E6%90%AC%E7%93%A6%E5%B7%A5ip%E6%9B%B4%E6%8D%A2%E4%B8%8Ess%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/post/%E6%90%AC%E7%93%A6%E5%B7%A5ip%E6%9B%B4%E6%8D%A2%E4%B8%8Ess%E5%AE%89%E8%A3%85/</guid>
+      <description>今天一大早就发现了ip被封的噩耗,好在bwg对于用了十周的主机可以提供免费更换ip的服务.详情: bwg-iptest 搬瓦工的ss安装主界面上也找不到了,需要在</description>
+    </item>
     
     <item>
       <title>使用logging代替print调试python代码</title>
