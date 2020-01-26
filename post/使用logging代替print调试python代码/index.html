@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/" />
-
-
-
-<meta property="article:published_time" content="2018-10-31T00:00:00&#43;00:00"/>
-
-<meta property="article:modified_time" content="2018-10-31T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2018-10-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-31T00:00:00+00:00" />
 <meta itemprop="name" content="使用logging代替print调试python代码">
 <meta itemprop="description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，">
-
-
 <meta itemprop="datePublished" content="2018-10-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-10-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="845">
+<meta itemprop="wordCount" content="903">
 
 
 
-<meta itemprop="keywords" content="python,debug,vim," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="python,debug,vim," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="使用logging代替print调试python代码"/>
 <meta name="twitter:description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，"/>
 
@@ -151,7 +133,7 @@
       <div class="post-meta">
         <span class="post-time"> 2018-10-31 </span>
         
-        <span class="more-meta"> 约 845 字 </span>
+        <span class="more-meta"> 约 903 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -164,19 +146,17 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#引言">引言</a></li>
-<li><a href="#设置logging">设置logging</a></li>
-<li><a href="#使用logging">使用logging</a></li>
-<li><a href="#为vim添加代码片段-更加便捷的使用logging">为vim添加代码片段，更加便捷的使用logging</a></li>
-<li><a href="#参考">参考</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#引言">引言</a></li>
+        <li><a href="#设置logging">设置logging</a></li>
+        <li><a href="#使用logging">使用logging</a></li>
+        <li><a href="#为vim添加代码片段更加便捷的使用logging">为vim添加代码片段，更加便捷的使用logging</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -186,28 +166,16 @@
 
     
     <div class="post-content">
-      
-
-<h3 id="引言">引言</h3>
-
+      <h3 id="引言">引言</h3>
 <p>一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉，
 这样既不美观，也不方便．本文主要介绍了如何使用python自带的logging库创建log实例来代替print函数进行debug,
 以及创建代码片段供vim方便调用．</p>
-
 <h3 id="设置logging">设置logging</h3>
-
 <p>首先需要在你的python代码里导入这个库</p>
-
-<pre><code class="language-python">import logging
-</code></pre>
-
-<p>导入这个库之后，首先需要新建一个log实例</p>
-
-<pre><code class="language-python">logger = logging.getLogger('log')
-</code></pre>
-
-<p>创建了实例之后可以设置log的级别（后面也可以更改级别），可以设置的级别如下：</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> logging
+</code></pre></div><p>导入这个库之后，首先需要新建一个log实例</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">log</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><p>创建了实例之后可以设置log的级别（后面也可以更改级别），可以设置的级别如下：</p>
 <table>
 <thead>
 <tr>
@@ -215,94 +183,66 @@
 <th>如何使用</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>DEBUG</td>
 <td>详细信息，典型地调试问题时会感兴趣.</td>
 </tr>
-
 <tr>
 <td>INFO</td>
 <td>证明事情按预期工作.</td>
 </tr>
-
 <tr>
 <td>WARNING</td>
 <td>表明发生了一些意外,或者不久的将来会发生问题（如‘磁盘满了’）.软件还是在正常工作.</td>
 </tr>
-
 <tr>
 <td>ERROR</td>
 <td>由于更严重的问题,软件已不能执行一些功能了.</td>
 </tr>
-
 <tr>
 <td>CRITICAL</td>
 <td>严重错误，表明软件已不能继续运行了.</td>
 </tr>
 </tbody>
 </table>
-
 <p>因为我们要调试，这里暂且就设置为DEBUG级别．</p>
-
-<pre><code class="language-python">logger.setLevel(logging.DEBUG) 
-</code></pre>
-
-<p>设置完log级别之后，我们创建一个handler(处理器)．</p>
-
-<pre><code class="language-python">handler = logging.StreamHandler()
-</code></pre>
-
-<p>处理器还可以设置格式化器用于日志输出格式．</p>
-
-<pre><code class="language-python"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息
-# formatter = logging.Formatter('[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s')
-formatter = logging.Formatter('%(message)s') 
-# 设置格式化器
-handler.setFormatter(formatter)
-</code></pre>
-
-<p>最后为logger添加handler．</p>
-
-<pre><code class="language-python">logger.addHandler(handler)
-</code></pre>
-
-<p>完整代码如下：</p>
-
-<pre><code class="language-python"># 创建logger实例
-logger = logging.getLogger('log')
-# 设置log级别
-logger.setLevel(logging.DEBUG)
-# 创建handler(处理器)
-handler = logging.StreamHandler()
-# 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息
-# formatter = logging.Formatter('[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s')
-formatter = logging.Formatter('%(message)s')
-# 设置格式化器
-handler.setFormatter(formatter)
-# 为Logger实例增加一个处理器
-logger.addHandler(handler)
-</code></pre>
-
-<h3 id="使用logging">使用logging</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG) 
+</code></pre></div><p>设置完log级别之后，我们创建一个handler(处理器)．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">handler <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
+</code></pre></div><p>处理器还可以设置格式化器用于日志输出格式．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息</span>
+<span style="color:#75715e"># formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)</span>
+formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>) 
+<span style="color:#75715e"># 设置格式化器</span>
+handler<span style="color:#f92672">.</span>setFormatter(formatter)
+</code></pre></div><p>最后为logger添加handler．</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">logger<span style="color:#f92672">.</span>addHandler(handler)
+</code></pre></div><p>完整代码如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 创建logger实例</span>
+logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">log</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#75715e"># 设置log级别</span>
+logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG)
+<span style="color:#75715e"># 创建handler(处理器)</span>
+handler <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
+<span style="color:#75715e"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息</span>
+<span style="color:#75715e"># formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)</span>
+formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#75715e"># 设置格式化器</span>
+handler<span style="color:#f92672">.</span>setFormatter(formatter)
+<span style="color:#75715e"># 为Logger实例增加一个处理器</span>
+logger<span style="color:#f92672">.</span>addHandler(handler)
+</code></pre></div><h3 id="使用logging">使用logging</h3>
 <p>例子：</p>
-
-<pre><code class="language-python">a = 30
-b = 10
-c = a - b
-logger.debug(c)
-logger.warning(c)
-logger.info(c)
-</code></pre>
-
-<p>如果不想显示debug的信息，只要改变之前设置的日志级别为更低的级别即可．</p>
-
-<h3 id="为vim添加代码片段-更加便捷的使用logging">为vim添加代码片段，更加便捷的使用logging</h3>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
+b <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+c <span style="color:#f92672">=</span> a <span style="color:#f92672">-</span> b
+logger<span style="color:#f92672">.</span>debug(c)
+logger<span style="color:#f92672">.</span>warning(c)
+logger<span style="color:#f92672">.</span>info(c)
+</code></pre></div><p>如果不想显示debug的信息，只要改变之前设置的日志级别为更低的级别即可．</p>
+<h3 id="为vim添加代码片段更加便捷的使用logging">为vim添加代码片段，更加便捷的使用logging</h3>
 <p>在此之前需要安装UltiSnips与vim-snippets插件，然后找到UltiSnips文件夹中的python.snippets，再其中加入：</p>
-
 <pre><code>snippet log &quot;using logging to replace print&quot; b
 logger = logging.getLogger('log')
 logger.setLevel(logging.${1:DEBUG})
@@ -312,14 +252,9 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 $0
 endsnippet
-</code></pre>
-
-<p>这样在用vim编辑python文件的时候输入log然后启动代码片段触发快捷键（我这里为<leader><tab>就可以直接插入上面的代码．</p>
-
+</code></pre><p>这样在用vim编辑python文件的时候输入log然后启动代码片段触发快捷键（我这里为<!-- raw HTML omitted --><!-- raw HTML omitted -->就可以直接插入上面的代码．</p>
 <h3 id="参考">参考</h3>
-
 <p><a href="https://www.jianshu.com/p/feb86c06c4f4">python logging模块使用教程</a></p>
-
 <p><a href="http://www.zlovezl.cn/articles/replacing-print-simple-introduction-to-logging/">替换你的print（logging模块超简明指南)</a></p>
 
     </div>
@@ -417,7 +352,7 @@ endsnippet
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

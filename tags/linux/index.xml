@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Wellcome</title>
@@ -37,6 +37,15 @@
       
       <guid>https://CPurely.github.io/post/%E7%BB%88%E7%AB%AF%E5%BD%A9%E8%99%B9%E7%8C%AB%E5%B1%8F%E4%BF%9D/</guid>
       <description>安装与启动 apt-get install nynacat nynacat 退出 ctrl+c</description>
+    </item>
+    
+    <item>
+      <title>linux下终端直接运行python脚本</title>
+      <link>https://CPurely.github.io/post/linux%E4%B8%8B%E7%BB%88%E7%AB%AF%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8Cpython%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/post/linux%E4%B8%8B%E7%BB%88%E7%AB%AF%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8Cpython%E8%84%9A%E6%9C%AC/</guid>
+      <description>python脚本顶部特殊注释的作用 打开一个网上找的python脚本,总是会发现最顶上有一行#!/usr/bin/env python3 的注释,现在才明白这</description>
     </item>
     
     <item>

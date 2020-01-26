@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/%E5%B0%86gnome%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86nautilus%E7%94%A8nemo%E4%BB%A3%E6%9B%BF/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 sudo apt install nemo # 或者添加pp" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/%E5%B0%86gnome%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86nautilus%E7%94%A8nemo%E4%BB%A3%E6%9B%BF/" />
-
-
-
-<meta property="article:published_time" content="2018-10-26T00:00:00&#43;00:00"/>
-
-<meta property="article:modified_time" content="2018-10-26T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2018-10-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-26T00:00:00+00:00" />
 <meta itemprop="name" content="将gnome默认文件管理Nautilus用nemo代替">
 <meta itemprop="description" content="为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 sudo apt install nemo # 或者添加pp">
-
-
 <meta itemprop="datePublished" content="2018-10-26T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-10-26T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="163">
+<meta itemprop="wordCount" content="174">
 
 
 
-<meta itemprop="keywords" content="gnome,Linux," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="gnome,Linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="将gnome默认文件管理Nautilus用nemo代替"/>
 <meta name="twitter:description" content="为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 sudo apt install nemo # 或者添加pp"/>
 
@@ -151,7 +133,7 @@
       <div class="post-meta">
         <span class="post-time"> 2018-10-26 </span>
         
-        <span class="more-meta"> 约 163 字 </span>
+        <span class="more-meta"> 约 174 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -164,19 +146,17 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#安装nemo">安装nemo</a></li>
-<li><a href="#将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</a></li>
-<li><a href="#nemo管理桌面文件">nemo管理桌面文件</a></li>
-<li><a href="#还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</a></li>
-<li><a href="#参考">参考</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#安装nemo">安装nemo</a></li>
+        <li><a href="#将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</a></li>
+        <li><a href="#nemo管理桌面文件">nemo管理桌面文件</a></li>
+        <li><a href="#还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -186,43 +166,26 @@
 
     
     <div class="post-content">
-      
-
-<p>为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径</p>
-
+      <p>为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&hellip;甚至不能拷贝路径</p>
 <h3 id="安装nemo">安装nemo</h3>
-
 <p>系统: ubuntu18.04</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install nemo
 
-<pre><code class="language-bash">sudo apt install nemo
-
-# 或者添加ppa源安装最新的nemo
+<span style="color:#75715e"># 或者添加ppa源安装最新的nemo</span>
 sudo add-apt-repository ppa:embrosyn/cinnamon
 sudo apt install nemo
-</code></pre>
-
-<h3 id="将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</h3>
-
-<pre><code class="language-bash">xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
-</code></pre>
-
-<h3 id="nemo管理桌面文件">nemo管理桌面文件</h3>
-
-<pre><code class="language-bash">gsettings set org.gnome.desktop.background show-desktop-icons false
-</code></pre>
-
-<h3 id="还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</h3>
-
-<pre><code class="language-bash">xdg-mime default nautilus.desktop inode/directory application/x-gnome-saved-search
+</code></pre></div><h3 id="将nemo作为默认的文件浏览器">将nemo作为默认的文件浏览器</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+</code></pre></div><h3 id="nemo管理桌面文件">nemo管理桌面文件</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gsettings set org.gnome.desktop.background show-desktop-icons false
+</code></pre></div><h3 id="还原nautilus作为默认文件管理">还原Nautilus作为默认文件管理</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xdg-mime default nautilus.desktop inode/directory application/x-gnome-saved-search
 
 gsettings set org.gnome.desktop.background show-desktop-icons true
 
 sudo apt purge nemo nemo*
 sudo apt autoremove
-</code></pre>
-
-<h3 id="参考">参考</h3>
-
+</code></pre></div><h3 id="参考">参考</h3>
 <p><a href="https://www.linuxuprising.com/2018/07/how-to-replace-nautilus-with-nemo-file.html">How To Replace Nautilus With Nemo File Manager On Ubuntu 18.04 Gnome Desktop</a></p>
 
     </div>
@@ -318,7 +281,7 @@ sudo apt autoremove
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

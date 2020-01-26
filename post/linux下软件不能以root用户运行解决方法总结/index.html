@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="CPurely" />
-  <meta name="description" content="vlc 解决方法：在终端运行 sed -i &#39;s/geteuid/getppid/&#39; /usr/bin/vlc 2018-11-01更新 Chromium 在/usr/share/applications找到Chromium图标，然后用文本" />
+  <meta name="description" content="vlc 解决方法：在终端运行 sed -i &amp;#39;s/geteuid/getppid/&amp;#39; /usr/bin/vlc 2018-11-01更新 Chromium 在/usr/share/applications找到Chromium图标，然后用文本" />
 
   <meta name="keywords" content="Hugo, theme, even" />
 
@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/linux%E4%B8%8B%E8%BD%AF%E4%BB%B6%E4%B8%8D%E8%83%BD%E4%BB%A5root%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="vlc 解决方法：在终端运行 sed -i &#39;s/geteuid/getppid/&#39; /usr/bin/vlc 2018-11-01更新 Chromium 在/usr/share/applications找到Chromium图标，然后用文本" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/linux%E4%B8%8B%E8%BD%AF%E4%BB%B6%E4%B8%8D%E8%83%BD%E4%BB%A5root%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/" />
-
-
-
-<meta property="article:published_time" content="2017-12-27T23:28:52&#43;00:00"/>
-
-<meta property="article:modified_time" content="2017-12-27T23:28:52&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2017-12-27T23:28:52+00:00" />
+<meta property="article:modified_time" content="2017-12-27T23:28:52+00:00" />
 <meta itemprop="name" content="Linux下软件不能以root用户运行解决方法总结">
 <meta itemprop="description" content="vlc 解决方法：在终端运行 sed -i &#39;s/geteuid/getppid/&#39; /usr/bin/vlc 2018-11-01更新 Chromium 在/usr/share/applications找到Chromium图标，然后用文本">
-
-
 <meta itemprop="datePublished" content="2017-12-27T23:28:52&#43;00:00" />
 <meta itemprop="dateModified" content="2017-12-27T23:28:52&#43;00:00" />
-<meta itemprop="wordCount" content="160">
+<meta itemprop="wordCount" content="166">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux下软件不能以root用户运行解决方法总结"/>
 <meta name="twitter:description" content="vlc 解决方法：在终端运行 sed -i &#39;s/geteuid/getppid/&#39; /usr/bin/vlc 2018-11-01更新 Chromium 在/usr/share/applications找到Chromium图标，然后用文本"/>
 
@@ -155,7 +137,7 @@
               <a href="/categories/linux/"> Linux </a>
             
           </div>
-        <span class="more-meta"> 约 160 字 </span>
+        <span class="more-meta"> 约 166 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -168,14 +150,11 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#vlc">vlc</a></li>
-<li><a href="#chromium">Chromium</a></li>
-<li><a href="#参考">参考</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#vlc">vlc</a></li>
+    <li><a href="#chromium">Chromium</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -185,34 +164,19 @@
 
     
     <div class="post-content">
-      
-
-<h2 id="vlc">vlc</h2>
-
+      <h2 id="vlc">vlc</h2>
 <p>解决方法：在终端运行</p>
-
-<pre><code class="language-bash">sed -i 's/geteuid/getppid/' /usr/bin/vlc
-</code></pre>
-
-<hr />
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sed -i <span style="color:#e6db74">&#39;s/geteuid/getppid/&#39;</span> /usr/bin/vlc
+</code></pre></div><hr>
 <p>2018-11-01更新</p>
-
 <h2 id="chromium">Chromium</h2>
-
 <p>在/usr/share/applications找到Chromium图标，然后用文本编辑器打开．
 在其中的Exec=chromium-browser %U 后面加上&ndash;no-sandbox &ndash;user-data-dir
 改完后如下：</p>
-
 <pre><code>Exec=chromium-browser %U --no-sandbox --user-data-dir
-</code></pre>
-
-<p>这样就可以以root身份运行了</p>
-
+</code></pre><p>这样就可以以root身份运行了</p>
 <h2 id="参考">参考</h2>
-
 <p><a href="https://stackoverflow.com/questions/12258086/how-do-i-run-google-chrome-as-root">How do I run Google Chrome as root?</a></p>
-
 <p><a href="https://unix.stackexchange.com/questions/125546/how-to-run-vlc-player-in-root">How to run VLC player in root</a></p>
 
     </div>
@@ -302,7 +266,7 @@
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

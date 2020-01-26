@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="安装git以及注册github帐号 安装git zypper in git git --version //查看版本 注册github帐号不用多说，主要是利用它建立一个仓库来建站使用，git用" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
-
-
-
-<meta property="article:published_time" content="2017-11-24T21:14:54&#43;00:00"/>
-
-<meta property="article:modified_time" content="2017-11-24T21:14:54&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2017-11-24T21:14:54+00:00" />
+<meta property="article:modified_time" content="2017-11-24T21:14:54+00:00" />
 <meta itemprop="name" content="如何利用github与hexo建立个人博客">
 <meta itemprop="description" content="安装git以及注册github帐号 安装git zypper in git git --version //查看版本 注册github帐号不用多说，主要是利用它建立一个仓库来建站使用，git用">
-
-
 <meta itemprop="datePublished" content="2017-11-24T21:14:54&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-24T21:14:54&#43;00:00" />
-<meta itemprop="wordCount" content="1284">
+<meta itemprop="wordCount" content="1290">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何利用github与hexo建立个人博客"/>
 <meta name="twitter:description" content="安装git以及注册github帐号 安装git zypper in git git --version //查看版本 注册github帐号不用多说，主要是利用它建立一个仓库来建站使用，git用"/>
 
@@ -155,7 +137,7 @@
               <a href="/categories/linux/"> Linux </a>
             
           </div>
-        <span class="more-meta"> 约 1284 字 </span>
+        <span class="more-meta"> 约 1290 字 </span>
         <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -168,39 +150,24 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#安装git以及注册github帐号">安装git以及注册github帐号</a>
-<ul>
-<li>
-<ul>
-<li><a href="#安装git">安装git</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#使用git生成ssh-key与github关联">使用git生成SSH key与github关联</a>
-<ul>
-<li>
-<ul>
-<li><a href="#生成ssh-key">生成SSH key</a></li>
-<li><a href="#在github中添加ssh-key">在github中添加SSH key</a></li>
-<li><a href="#测试ssh-是否成功">测试SSH 是否成功</a></li>
-<li><a href="#配置git的配置文件-username和email">配置git的配置文件，username和email</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#安装nodejs与hexo">安装nodejs与hexo</a>
-<ul>
-<li>
-<ul>
-<li><a href="#安装nodejs">安装nodejs</a></li>
-<li><a href="#安装hexo-建站">安装hexo，建站</a></li>
-<li><a href="#hexo与github关联">hexo与github关联</a></li>
-<li><a href="#hexo简单配置">hexo简单配置</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#参考">参考</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#安装git以及注册github帐号">安装git以及注册github帐号</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#使用git生成ssh-key与github关联">使用git生成SSH key与github关联</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#安装nodejs与hexo">安装nodejs与hexo</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -210,146 +177,75 @@
 
     
     <div class="post-content">
-      
-
-<h2 id="安装git以及注册github帐号">安装git以及注册github帐号</h2>
-
+      <h2 id="安装git以及注册github帐号">安装git以及注册github帐号</h2>
 <h4 id="安装git">安装git</h4>
-
-<pre><code class="language-bash">zypper in git
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper in git
 git --version   //查看版本
-</code></pre>
-
-<p>注册github帐号不用多说，主要是利用它建立一个仓库来建站使用，git用来生成SSH key使得本地网站与github能够同步</p>
-
+</code></pre></div><p>注册github帐号不用多说，主要是利用它建立一个仓库来建站使用，git用来生成SSH key使得本地网站与github能够同步</p>
 <h2 id="使用git生成ssh-key与github关联">使用git生成SSH key与github关联</h2>
-
 <h4 id="生成ssh-key">生成SSH key</h4>
-
-<pre><code class="language-bash">ssh-keygen -t rsa -C &quot;your_email@xxx.com&quot;
-</code></pre>
-
-<p>会出现以下文字，意思是生成的key安放到哪个文件夹中</p>
-
-<pre><code class="language-bash">Generating public/private rsa key pair.
-Enter file in which to save the key (/root/.ssh/id_rsa):
-</code></pre>
-
-<p>直接按默认位置即可，需要注意的的是.ssh文件夹是隐藏文件夹（.开头的文件都是），需要开启隐藏文件可见才可看见</p>
-
-<pre><code class="language-bash">/root/.ssh/id_rsa
-</code></pre>
-
-<p>随后进入SSH key生成的文件夹打开id_rsa.pub文件，复制里面的内容</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;your_email@xxx.com&#34;</span>
+</code></pre></div><p>会出现以下文字，意思是生成的key安放到哪个文件夹中</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Generating public/private rsa key pair.
+Enter file in which to save the key <span style="color:#f92672">(</span>/root/.ssh/id_rsa<span style="color:#f92672">)</span>:
+</code></pre></div><p>直接按默认位置即可，需要注意的的是.ssh文件夹是隐藏文件夹（.开头的文件都是），需要开启隐藏文件可见才可看见</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/root/.ssh/id_rsa
+</code></pre></div><p>随后进入SSH key生成的文件夹打开id_rsa.pub文件，复制里面的内容</p>
 <h4 id="在github中添加ssh-key">在github中添加SSH key</h4>
-
 <p>转到你的github主页的profile然后点击edit profile
 在其中有SSH and GPG keys，添加SSH key，将刚才复制的内容粘贴进去</p>
-
 <h4 id="测试ssh-是否成功">测试SSH 是否成功</h4>
-
-<pre><code class="language-bash">ssh -T git@github.com
-</code></pre>
-
-<p>如果出现You’ve successfully authenticated, but GitHub does not provide shell access 表示已经连接成功。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -T git@github.com
+</code></pre></div><p>如果出现You’ve successfully authenticated, but GitHub does not provide shell access 表示已经连接成功。
 如果出现The authenticity of host &lsquo;github.com (192.30.255.113)&rsquo; can&rsquo;t be established，则通过执行以下命令解决，详见<a href="https://github.com/openmicroscopy/devspace/issues/38">joshmoore的回答</a></p>
-
-<pre><code class="language-bash">ssh-keyscan github.com &gt;&gt; ~/.ssh/known_hosts
-</code></pre>
-
-<p>然后再次测试SSH key应该会成功</p>
-
-<h4 id="配置git的配置文件-username和email">配置git的配置文件，username和email</h4>
-
-<pre><code class="language-bash">git config --global user.name &quot;your name&quot;
-git config --global user.email &quot;your email&quot;
-</code></pre>
-
-<h2 id="安装nodejs与hexo">安装nodejs与hexo</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-keyscan github.com &gt;&gt; ~/.ssh/known_hosts
+</code></pre></div><p>然后再次测试SSH key应该会成功</p>
+<h4 id="配置git的配置文件username和email">配置git的配置文件，username和email</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global user.name <span style="color:#e6db74">&#34;your name&#34;</span>
+git config --global user.email <span style="color:#e6db74">&#34;your email&#34;</span>
+</code></pre></div><h2 id="安装nodejs与hexo">安装nodejs与hexo</h2>
 <h4 id="安装nodejs">安装nodejs</h4>
-
 <p>openSUSE下package里面有最新的nodejs8与nodejs9因此没有去<a href="https://nodejs.org/zh-cn/">nodejs官网下载文件</a>
 直接zypper in 安装</p>
-
-<pre><code class="language-bash">zypper in nodejs8
-</code></pre>
-
-<p>另外还需要安装npm8</p>
-
-<pre><code class="language-bash">zypper in npm8
-</code></pre>
-
-<p>安装完nodejs8与npm8之后为了能在terminal使用npm与node命令需要建立软连接在/user/local/bin中
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper in nodejs8
+</code></pre></div><p>另外还需要安装npm8</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper in npm8
+</code></pre></div><p>安装完nodejs8与npm8之后为了能在terminal使用npm与node命令需要建立软连接在/user/local/bin中
 你需要找到安装后npm与node的位置</p>
-
-<pre><code class="language-bash">ln -s /home/node-v8.9.1-linux-x64/bin/node /usr/local/bin/node  
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ln -s /home/node-v8.9.1-linux-x64/bin/node /usr/local/bin/node  
 ln -s /home/node-v8.9.1-linux-x64/bin/npm /usr/local/bin/npm
-</code></pre>
-
-<h4 id="安装hexo-建站">安装hexo，建站</h4>
-
+</code></pre></div><h4 id="安装hexo建站">安装hexo，建站</h4>
 <p>有了npm与nodejs的安装你应该能够顺利地使用如下命令安装hexo</p>
-
-<pre><code class="language-bash">npm install hexo-cli -g
-</code></pre>
-
-<p>建站参考<a href="https://hexo.io/zh-cn/docs/setup.html">hexo开始使用</a></p>
-
-<pre><code class="language-bash">hexo init /usr/MyBlog   //init后为建站目录
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install hexo-cli -g
+</code></pre></div><p>建站参考<a href="https://hexo.io/zh-cn/docs/setup.html">hexo开始使用</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hexo init /usr/MyBlog   //init后为建站目录
 cd /usr/MyBlog
 npm install
-</code></pre>
-
-<p>生成网站静态文件，启动服务器</p>
-
-<pre><code class="language-bash">hexo g
+</code></pre></div><p>生成网站静态文件，启动服务器</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hexo g
 hexo s
-</code></pre>
-
-<p>打开terminal中的地址即可访问生成好的网页</p>
-
+</code></pre></div><p>打开terminal中的地址即可访问生成好的网页</p>
 <h4 id="hexo与github关联">hexo与github关联</h4>
-
 <p>这里还需要使用github提供一个所有人都能访问的地址，可以在github中新建一个repository
 项目命名</p>
-
-<pre><code class="language-bash">github账户名.github.io
-</code></pre>
-
-<p>之后修改/usr/MyBlog目录下_config.yml网站配置文件信息</p>
-
-<pre><code class="language-bash">deploy:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">github账户名.github.io
+</code></pre></div><p>之后修改/usr/MyBlog目录下_config.yml网站配置文件信息</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">deploy:
   type: git
   repository: https://github.com/CPurely/CPurely.github.io.git   //clone or download下的地址
   branch: master
-</code></pre>
-
-<p>修改好配置文件后输入</p>
-
-<pre><code class="language-bash">hexo d
-</code></pre>
-
-<p>发布本地网站到github，会提示你输入github的用户名与密码
+</code></pre></div><p>修改好配置文件后输入</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hexo d
+</code></pre></div><p>发布本地网站到github，会提示你输入github的用户名与密码
 访问博客</p>
-
-<pre><code class="language-bash">https://用户名.github.io 
-</code></pre>
-
-<h4 id="hexo简单配置">hexo简单配置</h4>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">https://用户名.github.io 
+</code></pre></div><h4 id="hexo简单配置">hexo简单配置</h4>
 <p>通过更改/usr/MyBlog中_config.yml可以更改网站的基本配置，theme可以更改<a href="https://www.zhihu.com/question/24422335">主题</a>我使用的是第一个。去往主题的github页面</p>
-
-<pre><code class="language-bash">git clone https://github.com/iissnan/hexo-theme-next.git
-</code></pre>
-
-<p>即可下载主题到当前terminal所在目录
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/iissnan/hexo-theme-next.git
+</code></pre></div><p>即可下载主题到当前terminal所在目录
 放入/usr/MyBlog/themes中，然后在在_config.yml更改theme: hexo-theme-next即可使用
 在hexo-theme-next中有主题的配置文件_config.yml，文件里面有比较详细的属性介绍</p>
-
 <h2 id="参考">参考</h2>
-
 <p><a href="http://www.jianshu.com/p/fdd16152d1a8">Linux下搭建hexo博客</a>
 <a href="https://williamyi96.github.io/2016/12/22/%E4%BD%BF%E7%94%A8github%E4%B8%8Ehexo%E5%9C%A8Linux%E4%B8%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">使用github与hexo在Linux下搭建博客</a>
 <a href="https://hexo.io/zh-cn/docs/commands.html">开始使用hexo</a></p>
@@ -441,7 +337,7 @@ hexo s
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

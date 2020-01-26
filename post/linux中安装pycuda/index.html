@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/" />
-
-
-
-<meta property="article:published_time" content="2017-11-28T05:13:14&#43;00:00"/>
-
-<meta property="article:modified_time" content="2017-11-28T05:13:14&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2017-11-28T05:13:14+00:00" />
+<meta property="article:modified_time" content="2017-11-28T05:13:14+00:00" />
 <meta itemprop="name" content="Linux中安装pycuda">
 <meta itemprop="description" content="前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p">
-
-
 <meta itemprop="datePublished" content="2017-11-28T05:13:14&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-28T05:13:14&#43;00:00" />
-<meta itemprop="wordCount" content="496">
+<meta itemprop="wordCount" content="542">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux中安装pycuda"/>
 <meta name="twitter:description" content="前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p"/>
 
@@ -159,8 +141,8 @@
               <a href="/categories/cuda/"> CUDA </a>
             
           </div>
-        <span class="more-meta"> 约 496 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span class="more-meta"> 约 542 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -171,7 +153,7 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 
@@ -184,60 +166,37 @@
 由于openSUSE自带两个版本的python,一个是python2.7.13一个是python3.4.6,因此之前python环境的配置十分方便.
 openSUSE虽然自带两个版本的python但是只有一个版本的pip即python3的pip(pip,pip3,pip3.4都是python3的pip）
 使用时需要注意，默认使用pip install会安装到python3的sitepackge目录下</p>
-
-<pre><code class="language-bash">pip install pycuda
-</code></pre>
-
-<p>如果没有安装boost-devel与python3-devel可能会有如下错误</p>
-
-<pre><code class="language-bash">In file included from bpl-subset/bpl_subset/boost/python/detail/prefix.hpp:13:0,
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install pycuda
+</code></pre></div><p>如果没有安装boost-devel与python3-devel可能会有如下错误</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">In file included from bpl-subset/bpl_subset/boost/python/detail/prefix.hpp:13:0,
                      from bpl-subset/bpl_subset/boost/python/args.hpp:8,
                      from bpl-subset/bpl_subset/boost/python.hpp:11,
                      from src/cpp/cuda.hpp:36,
                      from src/cpp/cuda.cpp:1:
     bpl-subset/bpl_subset/boost/python/detail/wrap_python.hpp:75:24: fatal error: patchlevel.h: No such file or directory
-     #include &lt;patchlevel.h&gt;
+     <span style="color:#75715e">#include &lt;patchlevel.h&gt;</span>
                             ^
     compilation terminated.
-    error: command 'gcc' failed with exit status 1
+    error: command <span style="color:#e6db74">&#39;gcc&#39;</span> failed with exit status <span style="color:#ae81ff">1</span>
     
     ----------------------------------------
-Command &quot;/usr/bin/python3 -u -c &quot;import setuptools, tokenize;__file__='/tmp/pip-build-kjhruz5r/pycuda/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))&quot; install --record /tmp/pip-2_n06qxu-record/install-record.txt --single-version-externally-managed --compile&quot; failed with error code 1 in /tmp/pip-build-kjhruz5r/pycuda/
-</code></pre>
-
-<p>安装这两个包即可解决</p>
-
-<pre><code class="language-bash">zypper in python3-devel
+Command <span style="color:#e6db74">&#34;/usr/bin/python3 -u -c &#34;</span>import setuptools, tokenize;__file__<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/tmp/pip-build-kjhruz5r/pycuda/setup.py&#39;</span>;f<span style="color:#f92672">=</span>getattr<span style="color:#f92672">(</span>tokenize, <span style="color:#e6db74">&#39;open&#39;</span>, open<span style="color:#f92672">)</span><span style="color:#f92672">(</span>__file__<span style="color:#f92672">)</span>;code<span style="color:#f92672">=</span>f.read<span style="color:#f92672">(</span><span style="color:#f92672">)</span>.replace<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;\r\n&#39;</span>, <span style="color:#e6db74">&#39;\n&#39;</span><span style="color:#f92672">)</span>;f.close<span style="color:#f92672">(</span><span style="color:#f92672">)</span>;exec<span style="color:#f92672">(</span>compile<span style="color:#f92672">(</span>code, __file__, <span style="color:#e6db74">&#39;exec&#39;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#e6db74">&#34; install --record /tmp/pip-2_n06qxu-record/install-record.txt --single-version-externally-managed --compile&#34;</span> failed with error code <span style="color:#ae81ff">1</span> in /tmp/pip-build-kjhruz5r/pycuda/
+</code></pre></div><p>安装这两个包即可解决</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper in python3-devel
 zypper in boost_1_61-devel-1.61.0-4.2.x86_64
-</code></pre>
+</code></pre></div><p>注意steuptools也需要安装，要不然可能也会报错</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install setuptools/etc/bash.bashrc
 
-<p>注意steuptools也需要安装，要不然可能也会报错</p>
-
-<pre><code class="language-bash">pip install setuptools/etc/bash.bashrc
-
-</code></pre>
-
-<p>下面就可以成功安装pycuda了</p>
-
-<pre><code class="language-bash">pip install pycuda
-</code></pre>
-
-<p>安装好pycuda为了确保能够使用需要安装<a href="https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64">cuda</a>，以及安装好之后带入环境变量，这里需要注意的是直接在终端使用export导入环境变量只有一段有效时间&hellip;可以在目录</p>
-
-<pre><code class="language-bash">/etc/bash.bashrc
-</code></pre>
-
-<p>中加入</p>
-
-<pre><code class="language-bash">export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-</code></pre>
-
-<p>然后使用命令使得环境变量生效，但是要立刻使用pycuda的话，电脑需要重启</p>
-
-<pre><code class="language-bash">source /etc/bash.bashrc
-</code></pre>
-
+</code></pre></div><p>下面就可以成功安装pycuda了</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install pycuda
+</code></pre></div><p>安装好pycuda为了确保能够使用需要安装<a href="https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64">cuda</a>，以及安装好之后带入环境变量，这里需要注意的是直接在终端使用export导入环境变量只有一段有效时间&hellip;可以在目录</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/etc/bash.bashrc
+</code></pre></div><p>中加入</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export PATH<span style="color:#f92672">=</span>/usr/local/cuda-9.0/bin<span style="color:#e6db74">${</span>PATH:+:<span style="color:#e6db74">${</span>PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">}</span>
+export LD_LIBRARY_PATH<span style="color:#f92672">=</span>/usr/local/cuda-9.0/lib64<span style="color:#e6db74">${</span>LD_LIBRARY_PATH:+:<span style="color:#e6db74">${</span>LD_LIBRARY_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">}</span>
+</code></pre></div><p>然后使用命令使得环境变量生效，但是要立刻使用pycuda的话，电脑需要重启</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source /etc/bash.bashrc
+</code></pre></div>
     </div>
 
     
@@ -325,7 +284,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8ultisnips%E5%BF%AB%E9%80%9F%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%A4%B4%E4%BB%A5%E5%8F%8Ass%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="为vim添加UltiSnips插件 使用Vundle来安装插件,将下面两个插件放入.vimrc中Vundle配置位置 Plugin &#39;SirVer/ultisnips&#39; &quot; Track the engine. Plugin &#39;honza/vim-snippets&#39; &quot; Snippets are separated from" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8ultisnips%E5%BF%AB%E9%80%9F%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%A4%B4%E4%BB%A5%E5%8F%8Ass%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" />
-
-
-
-<meta property="article:published_time" content="2018-10-14T00:00:00&#43;00:00"/>
-
-<meta property="article:modified_time" content="2018-10-14T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2018-10-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-14T00:00:00+00:00" />
 <meta itemprop="name" content="使用UltiSnips快速填写博客开头以及ss配置文件">
 <meta itemprop="description" content="为vim添加UltiSnips插件 使用Vundle来安装插件,将下面两个插件放入.vimrc中Vundle配置位置 Plugin &#39;SirVer/ultisnips&#39; &quot; Track the engine. Plugin &#39;honza/vim-snippets&#39; &quot; Snippets are separated from">
-
-
 <meta itemprop="datePublished" content="2018-10-14T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-10-14T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="494">
 
 
 
-<meta itemprop="keywords" content="vim," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="vim," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="使用UltiSnips快速填写博客开头以及ss配置文件"/>
 <meta name="twitter:description" content="为vim添加UltiSnips插件 使用Vundle来安装插件,将下面两个插件放入.vimrc中Vundle配置位置 Plugin &#39;SirVer/ultisnips&#39; &quot; Track the engine. Plugin &#39;honza/vim-snippets&#39; &quot; Snippets are separated from"/>
 
@@ -164,14 +146,11 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#为vim添加ultisnips插件">为vim添加UltiSnips插件</a></li>
-<li><a href="#为-md文件与-json文件增加代码片段">为.md文件与.json文件增加代码片段</a></li>
-<li><a href="#参考">参考</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#为vim添加ultisnips插件">为vim添加UltiSnips插件</a></li>
+    <li><a href="#为md文件与json文件增加代码片段">为.md文件与.json文件增加代码片段</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -181,28 +160,17 @@
 
     
     <div class="post-content">
-      
-
-<h2 id="为vim添加ultisnips插件">为vim添加UltiSnips插件</h2>
-
+      <h2 id="为vim添加ultisnips插件">为vim添加UltiSnips插件</h2>
 <p>使用Vundle来安装插件,将下面两个插件放入.vimrc中Vundle配置位置</p>
-
 <pre><code>Plugin 'SirVer/ultisnips'        &quot; Track the engine.
 Plugin 'honza/vim-snippets'      &quot; Snippets are separated from the engine. Add this if you want them:
-</code></pre>
-
-<p>配置快捷键来启动代码片段以及代码片段内跳转位置,注意需要与YouCompleteMe的启动键位不一样</p>
-
+</code></pre><p>配置快捷键来启动代码片段以及代码片段内跳转位置,注意需要与YouCompleteMe的启动键位不一样</p>
 <pre><code>let g:UltiSnipsExpandTrigger=&quot;&lt;leader&gt;&lt;tab&gt;&quot;
 let g:UltiSnipsJumpForwardTrigger=&quot;&lt;c-j&gt;&quot;
 let g:UltiSnipsJumpBackwardTrigger=&quot;&lt;c-k&gt;&quot;
-</code></pre>
-
-<h2 id="为-md文件与-json文件增加代码片段">为.md文件与.json文件增加代码片段</h2>
-
+</code></pre><h2 id="为md文件与json文件增加代码片段">为.md文件与.json文件增加代码片段</h2>
 <p>代码片段所在的位置为~/.vim/bundle/vim-snippets/UltiSnips,我们需要为.md以及.json格式文件增加代码片段.
 为.md增加的代码片段如下:</p>
-
 <pre><code>snippet head &quot;hugo blog head&quot; b 
 ---
 title: ${1:title}
@@ -211,12 +179,8 @@ tags: $3
 ---
 $0
 endsnippet
-</code></pre>
-
-<p>通过输入head,然后使用<leader><tab>即可生成代码片段.</p>
-
+</code></pre><p>通过输入head,然后使用<!-- raw HTML omitted --><!-- raw HTML omitted -->即可生成代码片段.</p>
 <p>为.json增加的代码片段如下:</p>
-
 <pre><code>snippet ss-s &quot;shadowsocks-server&quot; b
 {
 &quot;server&quot;: ${1:&quot;216.189.174.152&quot;},
@@ -244,18 +208,11 @@ snippet ss-c &quot;shadowsocks-client&quot; b
 &quot;method&quot;:${4:&quot;aes-256-cfb&quot;}
 }$0
 endsnippet
-</code></pre>
-
-<p>这样通过使用ss-c,和ss-s就可以很容易的配置ss了.</p>
-
-<hr />
-
+</code></pre><p>这样通过使用ss-c,和ss-s就可以很容易的配置ss了.</p>
+<hr>
 <p>2018-10-19更新</p>
-
 <p>更改在markdown.snippets中增加的head,为了自动填写文件名称</p>
-
 <p>写Python代码的时候给文件前面加描述的时候突然想起来得给markdown加一个自动填写文件名.</p>
-
 <pre><code>snippet head &quot;hugo blog head&quot; b
 ---
 title: ${1:`!p snip.rv = snip.basename`}
@@ -264,12 +221,8 @@ tags: $3
 ---
 $0
 endsnippet
-</code></pre>
-
-<h2 id="参考">参考</h2>
-
+</code></pre><h2 id="参考">参考</h2>
 <p><a href="http://vimcasts.org/episodes/meet-ultisnips">Meet UltiSnips</a></p>
-
 <p><a href="http://mednoter.com/UltiSnips.html">UltiSnips 让 Vim 飞起来</a></p>
 
     </div>
@@ -363,7 +316,7 @@ endsnippet
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

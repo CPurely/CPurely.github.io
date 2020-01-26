@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" />
-
-
-
-<meta property="article:published_time" content="2018-10-04T19:41:03&#43;08:00"/>
-
-<meta property="article:modified_time" content="2018-10-04T19:41:03&#43;08:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2018-10-04T19:41:03+08:00" />
+<meta property="article:modified_time" content="2018-10-04T19:41:03+08:00" />
 <meta itemprop="name" content="Hugo-github配置指南">
 <meta itemprop="description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h">
-
-
 <meta itemprop="datePublished" content="2018-10-04T19:41:03&#43;08:00" />
 <meta itemprop="dateModified" content="2018-10-04T19:41:03&#43;08:00" />
-<meta itemprop="wordCount" content="1937">
+<meta itemprop="wordCount" content="1978">
 
 
 
-<meta itemprop="keywords" content="hugo,博客,Linux," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="hugo,博客,Linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo-github配置指南"/>
 <meta name="twitter:description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h"/>
 
@@ -151,7 +133,7 @@
       <div class="post-meta">
         <span class="post-time"> 2018-10-04 </span>
         
-        <span class="more-meta"> 约 1937 字 </span>
+        <span class="more-meta"> 约 1978 字 </span>
         <span class="more-meta"> 预计阅读 4 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -164,20 +146,18 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#hugo安装与配置">hugo安装与配置</a></li>
-<li><a href="#部署到github">部署到github</a></li>
-<li><a href="#域名购买">域名购买</a></li>
-<li><a href="#github配置域名解析">github配置域名解析</a></li>
-<li><a href="#快捷发布文章">快捷发布文章</a></li>
-<li><a href="#结语">结语</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#hugo安装与配置">hugo安装与配置</a></li>
+        <li><a href="#部署到github">部署到github</a></li>
+        <li><a href="#域名购买">域名购买</a></li>
+        <li><a href="#github配置域名解析">github配置域名解析</a></li>
+        <li><a href="#快捷发布文章">快捷发布文章</a></li>
+        <li><a href="#结语">结语</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -187,153 +167,110 @@
 
     
     <div class="post-content">
-      
-
-<h3 id="hugo安装与配置">hugo安装与配置</h3>
-
+      <h3 id="hugo安装与配置">hugo安装与配置</h3>
 <p>ubuntu为例</p>
-
-<pre><code class="language-bash">suao snap install hugo
-</code></pre>
-
-<p>新建站点</p>
-
-<pre><code class="language-bash">hugo new site Blog
-</code></pre>
-
-<p>此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">suao snap install hugo
+</code></pre></div><p>新建站点</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site Blog
+</code></pre></div><p>此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造.
 因为hugo默认是不带主题的,因此为了显示内容我们需要先下载一个主题,首先要用cd命令进入Blog文件夹</p>
-
-<pre><code class="language-bash">git clone https://github.com/olOwOlo/hugo-theme-even themes/even
-</code></pre>
-
-<p>我使用的是Even主题,更多主题可以在<a href="https://themes.gohugo.io">hugo主题</a>上下载.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+</code></pre></div><p>我使用的是Even主题,更多主题可以在<a href="https://themes.gohugo.io">hugo主题</a>上下载.
 下载好主题后,将主题文件夹/themes/even/exampleSite中的config.toml拷贝到网站根目录,这里也即是Blog目录下替换
 原始配置文件.
 然后根据config.toml按照需求配置网站.
 (有的主题模板包含一些索引比如about,moment等,这时候你需要在主题/themes/even/exampleSite/content目录下把about
 文件夹,moment文件夹复制到Blog目录下的content里面)</p>
-
 <h3 id="部署到github">部署到github</h3>
-
-<p>首先需要安装git工具以及有一个github账号
-1. 首先github新建一个仓库,名字为yourname.github.io
-2. 在网站根目录使用hugo生成public文件夹(需要把这个文件夹同步到github上)
-3. cd进入public文件夹
-4. 在public文件夹中布置git</p>
-
-<pre><code class="language-bash">git init   # 初始化
-git remote add origin https://github.com/yourname/yourname.github.io.git  # 连接远程仓库
-git add -A  #  将工作目录文件修改添加到暂存区 
-git commit -m &quot;first commit&quot;  # 将暂存区的所有内容提交到当前分支。-m 参数后面的字符串表示本次的提交说明
-git push -u origin master   # 把本地仓库分支推送到远程仓库分支
-</code></pre>
-
-<p>这样public应该就算是上传到你的github远程仓库中了.
-通过访问<a href="https://yourname.github.io应该就可以打开你的网站了">https://yourname.github.io应该就可以打开你的网站了</a></p>
-
+<p>首先需要安装git工具以及有一个github账号</p>
+<ol>
+<li>首先github新建一个仓库,名字为yourname.github.io</li>
+<li>在网站根目录使用hugo生成public文件夹(需要把这个文件夹同步到github上)</li>
+<li>cd进入public文件夹</li>
+<li>在public文件夹中布置git</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init   <span style="color:#75715e"># 初始化</span>
+git remote add origin https://github.com/yourname/yourname.github.io.git  <span style="color:#75715e"># 连接远程仓库</span>
+git add -A  <span style="color:#75715e">#  将工作目录文件修改添加到暂存区</span> 
+git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>  <span style="color:#75715e"># 将暂存区的所有内容提交到当前分支。-m 参数后面的字符串表示本次的提交说明</span>
+git push -u origin master   <span style="color:#75715e"># 把本地仓库分支推送到远程仓库分支</span>
+</code></pre></div><p>这样public应该就算是上传到你的github远程仓库中了.
+通过访问https://yourname.github.io应该就可以打开你的网站了</p>
 <h3 id="域名购买">域名购买</h3>
-
 <p>这里我在namesilo上购买的域名,大概13元一年.
 该网站购买域名的教程可以参考<a href="https://www.jianshu.com/p/27b0ebdcec2c">Namesilo 域名购买</a>,需要注意的是使用支付宝
 付款时,需要支付宝已经绑定了邮箱.
 购买域名之后,点击网站中的Manage My Domains会出现你购买的域名列表.
 namesilo上可以进行域名解析,在域名列表中可以看到一个蓝色小球,点击即可进入域名解析页面.
-<img src="https://i.loli.net/2018/10/04/5bb6055b482e8.png" alt="Selection_005.png" />为了使得域名能够指向yourname.github.io,我们需要添加2个A和一个CNANE来进行解析,
-<img src="https://i.loli.net/2018/10/04/5bb6064b2645e.png" alt="Selection_006.png" />
-<img src="https://i.loli.net/2018/10/04/5bb6126b7e661.png" alt="Selection_008.png" />点击EDIT进行编辑,前两个A最开头的HOSTNAME不要填,只需要填后面的IPV4 ADDRESS,分别填写192.30.252.153和192.30.252.154
+<img src="https://i.loli.net/2018/10/04/5bb6055b482e8.png" alt="Selection_005.png">为了使得域名能够指向yourname.github.io,我们需要添加2个A和一个CNANE来进行解析,
+<img src="https://i.loli.net/2018/10/04/5bb6064b2645e.png" alt="Selection_006.png">
+<img src="https://i.loli.net/2018/10/04/5bb6126b7e661.png" alt="Selection_008.png">点击EDIT进行编辑,前两个A最开头的HOSTNAME不要填,只需要填后面的IPV4 ADDRESS,分别填写192.30.252.153和192.30.252.154
 .</p>
-
-<p>2018 年 5 月 1 日，Github 支持自定义域名的 HTTPS 请求:
-1. 185.199.108.153
-2. 185.199.109.153
-3. 185.199.110.153
-4. 185.199.111.153
-可以将两个A指向上面ip中的两个.</p>
-
+<p>2018 年 5 月 1 日，Github 支持自定义域名的 HTTPS 请求:</p>
+<ol>
+<li>185.199.108.153</li>
+<li>185.199.109.153</li>
+<li>185.199.110.153</li>
+<li>185.199.111.153
+可以将两个A指向上面ip中的两个.</li>
+</ol>
 <p>这两个ip是指向github的ip. CNAME我们需要填写HOSTNAME为www, 以及后面的为yourname.github.io
 这样算是做好了域名解析,接下来就是到github进行配置(同意namesilo的域名解析)</p>
-
 <h3 id="github配置域名解析">github配置域名解析</h3>
-
 <p>在网站仓库文件夹下建立一个CNAME没有后缀的文件,然后第一行写入你购买的域名,注意不要前面的www.
 这样域名绑定算是做好了.</p>
-
 <h3 id="快捷发布文章">快捷发布文章</h3>
-
 <p>由于上一步我们在github仓库增加了一个文件,因此我们首先需要更新一下本地仓库与它同步</p>
-
-<pre><code class="language-bash">git pull --rebase origin master
-</code></pre>
-
-<p>如果我们在网站根目录下的content/post增加了新的文章,我们需要先使用命令重新生成一次public,这样public中就包含
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull --rebase origin master
+</code></pre></div><p>如果我们在网站根目录下的content/post增加了新的文章,我们需要先使用命令重新生成一次public,这样public中就包含
 最新的文章了.</p>
-
-<pre><code class="language-bash">hugo  
-</code></pre>
-
-<p>然后cd进入public目录,使用</p>
-
-<pre><code class="language-bash">git add -A
-git commit -m &quot;new commit&quot;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo  
+</code></pre></div><p>然后cd进入public目录,使用</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add -A
+git commit -m <span style="color:#e6db74">&#34;new commit&#34;</span>
 git push -u origin master
-</code></pre>
-
-<p>来更新远程仓库. 这样做有点繁琐,并且期间还需要输入github的用户名和密码,使得写文章的体验大打折扣.我们使用更加
+</code></pre></div><p>来更新远程仓库. 这样做有点繁琐,并且期间还需要输入github的用户名和密码,使得写文章的体验大打折扣.我们使用更加
 便捷的方法.
 首先我们需要取消git push是需要输入用户名和密码的问题.我们先cd进入public目录,然后使用</p>
-
-<pre><code class="language-bash">git config --global credential.helper store
-</code></pre>
-
-<p>然后你会在你本地生成一个文本，上边记录你的账号和密码.然后你使用上述的命令配置好之后，
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global credential.helper store
+</code></pre></div><p>然后你会在你本地生成一个文本，上边记录你的账号和密码.然后你使用上述的命令配置好之后，
 再操作一次git pull，然后它会提示你输入账号密码，这一次之后就不需要再次输入密码了。
 <a href="https://github.com/yonyouyc/blog/issues/6">解决git pull/push每次都需要输入密码问题</a>
 虽然解决了不用输入用户名和密码的问题,但是还要一次次输入重复的命令还是太烦了,因此我们需要写一deploy.sh脚本
 帮你完成这件事.脚本如下</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 
-<pre><code class="language-bash">#!/bin/bash
+<span style="color:#75715e"># Build the project.</span>
+hugo <span style="color:#75715e"># if using a theme, replace by `hugo -t &lt;yourtheme&gt;`</span>
 
-echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
-
-# Build the project.
-hugo # if using a theme, replace by `hugo -t &lt;yourtheme&gt;`
-
-# Go To Public folder
+<span style="color:#75715e"># Go To Public folder</span>
 cd public
-# Add changes to git.
+<span style="color:#75715e"># Add changes to git.</span>
 git add -A
 
-# Commit changes.
-msg=&quot;rebuilding site `date`&quot;
-if [ $# -eq 1 ]
-  then msg=&quot;$1&quot;
-fi
-git commit -m &quot;$msg&quot;
+<span style="color:#75715e"># Commit changes.</span>
+msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
 
-# Push source and build repos.
+<span style="color:#75715e"># Push source and build repos.</span>
 git push origin master
 
-# Come Back
+<span style="color:#75715e"># Come Back</span>
 cd ..
-</code></pre>
-
-<p>执行之前先用chmod +x deploy.sh赋予其权限.详情请见
+</code></pre></div><p>执行之前先用chmod +x deploy.sh赋予其权限.详情请见
 <a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub Pages</a></p>
-
 <h3 id="结语">结语</h3>
-
 <p>至此,终于可以轻松的撰写博客了.</p>
-
-<hr />
-
+<hr>
 <p>2018-10-14更新</p>
-
 <p>在github开启了https支持,去网站仓库的设置里面,可以找到开启https的选项.</p>
-
 <p>添加了disqus评论支持,进入网站-&gt;注册账号-&gt;geting start-&gt;I want to install disqus-&gt;
 填写website name-&gt;去hugo模板的配置文件里面加上website name(disqusShortname)</p>
-
 <p>向google提交了sitemap,让搜索引擎抓取网站.</p>
 
     </div>
@@ -431,7 +368,7 @@ cd ..
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

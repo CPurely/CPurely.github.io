@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="在autodesk官网注册帐号并下载linux版maya 通过注册Autodesk的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/" />
-
-
-
-<meta property="article:published_time" content="2017-12-04T13:37:06&#43;00:00"/>
-
-<meta property="article:modified_time" content="2017-12-04T13:37:06&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2017-12-04T13:37:06+00:00" />
+<meta property="article:modified_time" content="2017-12-04T13:37:06+00:00" />
 <meta itemprop="name" content="Linux安装教育版maya">
 <meta itemprop="description" content="在autodesk官网注册帐号并下载linux版maya 通过注册Autodesk的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号">
-
-
 <meta itemprop="datePublished" content="2017-12-04T13:37:06&#43;00:00" />
 <meta itemprop="dateModified" content="2017-12-04T13:37:06&#43;00:00" />
-<meta itemprop="wordCount" content="313">
+<meta itemprop="wordCount" content="342">
 
 
 
-<meta itemprop="keywords" content="3d建模," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="3d建模," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux安装教育版maya"/>
 <meta name="twitter:description" content="在autodesk官网注册帐号并下载linux版maya 通过注册Autodesk的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号"/>
 
@@ -157,7 +139,7 @@
               <a href="/categories/maya/"> Maya </a>
             
           </div>
-        <span class="more-meta"> 约 313 字 </span>
+        <span class="more-meta"> 约 342 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -170,15 +152,13 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#在autodesk官网注册帐号并下载linux版maya">在autodesk官网注册帐号并下载linux版maya</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#在autodesk官网注册帐号并下载linux版maya">在autodesk官网注册帐号并下载linux版maya</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -188,21 +168,15 @@
 
     
     <div class="post-content">
-      
-
-<h3 id="在autodesk官网注册帐号并下载linux版maya">在autodesk官网注册帐号并下载linux版maya</h3>
-
+      <h3 id="在autodesk官网注册帐号并下载linux版maya">在autodesk官网注册帐号并下载linux版maya</h3>
 <p>通过注册<a href="https://www.autodesk.com.cn/education/free-software/maya?referrer=%2Feducation%2Ffree-software%2Fmaya">Autodesk</a>的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号的邮件发到你的注册邮箱之中，我的使用年限是3年，足够使用。
 下载好了压缩包，解压然后运行里面的setup即可安装
 但是安装好之后有可能不能运行，因为缺少相关的libraries</p>
-
-<pre><code class="language-bash">/usr/autodesk/maya2017/bin/maya.bin: error while loading shared libraries: libXp.so.6: cannot open shared object file: No such file or directory
-/usr/autodesk/maya2017/bin/maya.bin: error while loading shared libraries: libtiff.so.3: cannot open shared object file: No such file or directory
-/usr/autodesk/maya2017/bin/maya.bin: error while loading shared libraries: libssl.so.10: cannot open shared object file: No such file or directory
-/usr/autodesk/maya2017/bin/maya.bin: error while loading shared libraries: libcrypto.so.10: cannot open shared object file: No such file or directory
-</code></pre>
-
-<p>我的系统运行maya缺少这么几个libraries
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/autodesk/maya2017/bin/maya.bin: error <span style="color:#66d9ef">while</span> loading shared libraries: libXp.so.6: cannot open shared object file: No such file or directory
+/usr/autodesk/maya2017/bin/maya.bin: error <span style="color:#66d9ef">while</span> loading shared libraries: libtiff.so.3: cannot open shared object file: No such file or directory
+/usr/autodesk/maya2017/bin/maya.bin: error <span style="color:#66d9ef">while</span> loading shared libraries: libssl.so.10: cannot open shared object file: No such file or directory
+/usr/autodesk/maya2017/bin/maya.bin: error <span style="color:#66d9ef">while</span> loading shared libraries: libcrypto.so.10: cannot open shared object file: No such file or directory
+</code></pre></div><p>我的系统运行maya缺少这么几个libraries
 但是我在系统中搜索这几个libraries其实都有，因此我直接将系统已有的libXp.so.6 libtiff.so.3 libssl.so.10 libcrypto.so.10
 复制到/usr/autodesk/maya2017/lib即可
 现在就可以打开maya了</p>
@@ -298,7 +272,7 @@
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="配置Linux安装citespace的环境 安装java环境与.7z解压工具 下载并安装java因为我用的是openSUSE因此下载rpm包安装" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/linux%E4%B8%8Bcitespace%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/" />
-
-
-
-<meta property="article:published_time" content="2017-11-24T20:20:39&#43;00:00"/>
-
-<meta property="article:modified_time" content="2017-11-24T20:20:39&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2017-11-24T20:20:39+00:00" />
+<meta property="article:modified_time" content="2017-11-24T20:20:39+00:00" />
 <meta itemprop="name" content="Linux下文献分析工具citespace安装使用">
 <meta itemprop="description" content="配置Linux安装citespace的环境 安装java环境与.7z解压工具 下载并安装java因为我用的是openSUSE因此下载rpm包安装">
-
-
 <meta itemprop="datePublished" content="2017-11-24T20:20:39&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-24T20:20:39&#43;00:00" />
-<meta itemprop="wordCount" content="209">
+<meta itemprop="wordCount" content="249">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux下文献分析工具citespace安装使用"/>
 <meta name="twitter:description" content="配置Linux安装citespace的环境 安装java环境与.7z解压工具 下载并安装java因为我用的是openSUSE因此下载rpm包安装"/>
 
@@ -157,7 +139,7 @@
               <a href="/categories/%E5%AD%A6%E6%9C%AF/"> 学术 </a>
             
           </div>
-        <span class="more-meta"> 约 209 字 </span>
+        <span class="more-meta"> 约 249 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -170,17 +152,15 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#配置linux安装citespace的环境">配置Linux安装citespace的环境</a>
-<ul>
-<li><a href="#安装java环境与-7z解压工具">安装java环境与.7z解压工具</a></li>
-</ul></li>
-<li><a href="#下载citespace压缩文件">下载citespace压缩文件</a></li>
-<li><a href="#解压与运行">解压与运行</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#配置linux安装citespace的环境">配置Linux安装citespace的环境</a>
+      <ul>
+        <li><a href="#安装java环境与7z解压工具">安装java环境与.7z解压工具</a></li>
+      </ul>
+    </li>
+    <li><a href="#下载citespace压缩文件">下载citespace压缩文件</a></li>
+    <li><a href="#解压与运行">解压与运行</a></li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -190,39 +170,20 @@
 
     
     <div class="post-content">
-      
-
-<h2 id="配置linux安装citespace的环境">配置Linux安装citespace的环境</h2>
-
-<h3 id="安装java环境与-7z解压工具">安装java环境与.7z解压工具</h3>
-
+      <h2 id="配置linux安装citespace的环境">配置Linux安装citespace的环境</h2>
+<h3 id="安装java环境与7z解压工具">安装java环境与.7z解压工具</h3>
 <p>下载并安装<a href="https://java.com/en/download/linux_manual.jsp">java</a>因为我用的是openSUSE因此下载rpm包安装即可，安装好了在terminal中运行以下命令检查一下java是否可以被正常调用</p>
-
-<pre><code class="language-bash">java -version
-</code></pre>
-
-<p>安装.7z解压工具</p>
-
-<pre><code class="language-bash">zypper in p7zip
-</code></pre>
-
-<h2 id="下载citespace压缩文件">下载citespace压缩文件</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">java -version
+</code></pre></div><p>安装.7z解压工具</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper in p7zip
+</code></pre></div><h2 id="下载citespace压缩文件">下载citespace压缩文件</h2>
 <p>首先前往<a href="http://cluster.ischool.drexel.edu/~cchen/citespace/download/">citespace</a>下载最新的.7压缩文件</p>
-
 <h2 id="解压与运行">解压与运行</h2>
-
 <p>使用cd命令转移到压缩文件目录执行下面的命令解压文件</p>
-
-<pre><code class="language-bash">7z x filename.7z
-</code></pre>
-
-<p>cd进入解压后的文件夹，使用以下命令执行CiteSpaceV.jar</p>
-
-<pre><code class="language-bash">java -jar CiteSpaceV.jar
-</code></pre>
-
-<p>到此即可运行citespace</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">7z x filename.7z
+</code></pre></div><p>cd进入解压后的文件夹，使用以下命令执行CiteSpaceV.jar</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">java -jar CiteSpaceV.jar
+</code></pre></div><p>到此即可运行citespace</p>
 
     </div>
 
@@ -306,7 +267,7 @@
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

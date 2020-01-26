@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Wellcome</title>
@@ -7,31 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>CPurely</copyright>
-    <lastBuildDate>Mon, 04 Dec 2017 13:37:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>3d建模</title>
-      <link>https://CPurely.github.io/tags/3d%E5%BB%BA%E6%A8%A1/</link>
-      <pubDate>Mon, 04 Dec 2017 13:37:06 +0000</pubDate>
+      <title>python</title>
+      <link>https://CPurely.github.io/tags/python/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/tags/3d%E5%BB%BA%E6%A8%A1/</guid>
+      <guid>https://CPurely.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Atom</title>
-      <link>https://CPurely.github.io/tags/atom/</link>
-      <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
+      <title>画图</title>
+      <link>https://CPurely.github.io/tags/%E7%94%BB%E5%9B%BE/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/tags/atom/</guid>
+      <guid>https://CPurely.github.io/tags/%E7%94%BB%E5%9B%BE/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Debug</title>
+      <title>Linux</title>
+      <link>https://CPurely.github.io/tags/linux/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debug</title>
       <link>https://CPurely.github.io/tags/debug/</link>
       <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -40,7 +49,16 @@
     </item>
     
     <item>
-      <title>Gnome</title>
+      <title>vim</title>
+      <link>https://CPurely.github.io/tags/vim/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gnome</title>
       <link>https://CPurely.github.io/tags/gnome/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -49,7 +67,7 @@
     </item>
     
     <item>
-      <title>Hugo</title>
+      <title>hugo</title>
       <link>https://CPurely.github.io/tags/hugo/</link>
       <pubDate>Thu, 04 Oct 2018 19:41:03 +0800</pubDate>
       
@@ -58,25 +76,25 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://CPurely.github.io/tags/linux/</link>
-      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      <title>博客</title>
+      <link>https://CPurely.github.io/tags/%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 04 Oct 2018 19:41:03 +0800</pubDate>
       
-      <guid>https://CPurely.github.io/tags/linux/</guid>
+      <guid>https://CPurely.github.io/tags/%E5%8D%9A%E5%AE%A2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://CPurely.github.io/tags/linux/</link>
-      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      <title>atom</title>
+      <link>https://CPurely.github.io/tags/atom/</link>
+      <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/tags/linux/</guid>
+      <guid>https://CPurely.github.io/tags/atom/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Markdown</title>
+      <title>markdown</title>
       <link>https://CPurely.github.io/tags/markdown/</link>
       <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
       
@@ -94,38 +112,11 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://CPurely.github.io/tags/python/</link>
-      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
+      <title>3d建模</title>
+      <link>https://CPurely.github.io/tags/3d%E5%BB%BA%E6%A8%A1/</link>
+      <pubDate>Mon, 04 Dec 2017 13:37:06 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vim</title>
-      <link>https://CPurely.github.io/tags/vim/</link>
-      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>博客</title>
-      <link>https://CPurely.github.io/tags/%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Thu, 04 Oct 2018 19:41:03 +0800</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/%E5%8D%9A%E5%AE%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>画图</title>
-      <link>https://CPurely.github.io/tags/%E7%94%BB%E5%9B%BE/</link>
-      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/%E7%94%BB%E5%9B%BE/</guid>
+      <guid>https://CPurely.github.io/tags/3d%E5%BB%BA%E6%A8%A1/</guid>
       <description></description>
     </item>
     

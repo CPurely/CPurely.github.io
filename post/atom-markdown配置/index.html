@@ -26,7 +26,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.63.1" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/atom-markdown%E9%85%8D%E7%BD%AE/" />
@@ -53,35 +53,17 @@
 <meta property="og:description" content="因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/atom-markdown%E9%85%8D%E7%BD%AE/" />
-
-
-
-<meta property="article:published_time" content="2017-12-29T21:02:35&#43;00:00"/>
-
-<meta property="article:modified_time" content="2017-12-29T21:02:35&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
+<meta property="article:published_time" content="2017-12-29T21:02:35+00:00" />
+<meta property="article:modified_time" content="2017-12-29T21:02:35+00:00" />
 <meta itemprop="name" content="atom markdown配置与输出包含数学公式的pdf方法">
 <meta itemprop="description" content="因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说">
-
-
 <meta itemprop="datePublished" content="2017-12-29T21:02:35&#43;00:00" />
 <meta itemprop="dateModified" content="2017-12-29T21:02:35&#43;00:00" />
-<meta itemprop="wordCount" content="743">
+<meta itemprop="wordCount" content="755">
 
 
 
-<meta itemprop="keywords" content="atom,markdown," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="atom,markdown," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="atom markdown配置与输出包含数学公式的pdf方法"/>
 <meta name="twitter:description" content="因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程 配置latex 安装与下载atom自然不用多说"/>
 
@@ -157,7 +139,7 @@
               <a href="/categories/%E5%86%99%E4%BD%9C/"> 写作 </a>
             
           </div>
-        <span class="more-meta"> 约 743 字 </span>
+        <span class="more-meta"> 约 755 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -170,17 +152,15 @@
   
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#配置latex">配置latex</a></li>
-<li><a href="#配置支持数学公式的markdown">配置支持数学公式的markdown</a></li>
-<li><a href="#参考">参考</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#配置latex">配置latex</a></li>
+        <li><a href="#配置支持数学公式的markdown">配置支持数学公式的markdown</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
@@ -190,58 +170,36 @@
 
     
     <div class="post-content">
-      
-
-<p>因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程</p>
-
+      <p>因为最近要进行文献整理与总结，要用到使用数学公式的markdown输出为pdf，故写此文记录过程</p>
 <h3 id="配置latex">配置latex</h3>
-
 <p>安装与下载atom自然不用多说，之后就是安装各种插件了
 因为markdown写作有时会用latex，因此系统中必须预先安装texlive。</p>
-
 <p>linux下安装过程参考<a href="https://zhuanlan.zhihu.com/LaTeX/20069414">Linux 发行版下原版 TeX Live 2015 的安装</a></p>
-
 <p>atom latex插件安装我参考了<a href="http://blog.csdn.net/sdujava2011/article/details/53784790">Atom Latex Settings</a></p>
-
 <h3 id="配置支持数学公式的markdown">配置支持数学公式的markdown</h3>
-
 <p>在此之前，由于我的系统一直是英文，打开中文的.md文件一直是乱码的方框，通过在系统上安装文泉驿字体然后修改atom配置文件可以解决，参考这里<a href="http://imziv.com/blog/article/read.htm?id=65">Atom在Ubuntu上中文乱码解决</a></p>
-
 <p>安装Markdown Preview Enhanced实时预览插件，该插件支持latex公式渲染。
 更多功能参见<a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">Markdown Preview Enhanced</a>,
 为了可以输出含有数学公式的pdf，这里提供两种方案。</p>
-
 <ol>
 <li>终端下使用pandoc将.md转化为pdf</li>
 <li>使用Markdown Preview Enhanced插件转化为HTML(cdn hosted)然后使用firefox打开，将其打印为pdf即可。</li>
 </ol>
-
 <p>第一种方法我尝试失败了&hellip;提示如下。终端使用了fmtutil-sys &ndash;all依然无法解决。</p>
-
-<pre><code class="language-bash">Error producing PDF.
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=pdflatex)
- restricted \write18 enabled.
----! /var/lib/texmf/web2c/pdftex/pdflatex.fmt doesn't match pdftex.pool
-(Fatal format file error; I'm stymied)
-</code></pre>
-
-<p>第二种方法我一开始也是失败了,因为使用的也是pandoc只不过在插件中，提示：Output format needs to be specified.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Error producing PDF.
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 <span style="color:#f92672">(</span>TeX Live 2016/TeX Live <span style="color:#66d9ef">for</span> SUSE Linux<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>preloaded format<span style="color:#f92672">=</span>pdflatex<span style="color:#f92672">)</span>
+ restricted <span style="color:#ae81ff">\w</span>rite18 enabled.
+---! /var/lib/texmf/web2c/pdftex/pdflatex.fmt doesn<span style="color:#e6db74">&#39;t match pdftex.pool
+</span><span style="color:#e6db74">(Fatal format file error; I&#39;</span>m stymied<span style="color:#f92672">)</span>
+</code></pre></div><p>第二种方法我一开始也是失败了,因为使用的也是pandoc只不过在插件中，提示：Output format needs to be specified.
 。但是我发现保存为HTML(cdn hosted)格式用浏览器打开可以很好的渲染公式，使用firefox则可以打印网页为pdf。</p>
-
 <p>到此终于算是如愿以偿啦，后续如果找到Output format needs to be specified.的原因我会继续更新，毕竟更加方便和更多的输出可操作性</p>
-
 <h3 id="参考">参考</h3>
-
 <p><a href="https://zhuanlan.zhihu.com/LaTeX/20069414">Linux 发行版下原版 TeX Live 2015 的安装</a></p>
-
 <p><a href="http://blog.csdn.net/sdujava2011/article/details/53784790">Atom Latex Settings</a></p>
-
 <p><a href="http://imziv.com/blog/article/read.htm?id=65">Atom在Ubuntu上中文乱码解决</a></p>
-
 <p><a href="http://saili.science/2016/10/17/markdown-user-guide/">Markdown 使用指南</a></p>
-
 <p><a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/">Markdown Preview Enhanced</a></p>
-
 <p><a href="https://zh.wikipedia.org/wiki/Pandoc">Pandoc</a></p>
 
     </div>
@@ -337,7 +295,7 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE 
     &copy; 
     
       2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
