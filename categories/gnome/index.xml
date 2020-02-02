@@ -18,7 +18,7 @@
       <pubDate>Sat, 16 Dec 2017 02:24:25 +0000</pubDate>
       
       <guid>https://CPurely.github.io/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</guid>
-      <description>前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，</description>
+      <description>前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 1 2 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更</description>
     </item>
     
   </channel>

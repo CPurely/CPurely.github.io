@@ -33,9 +33,9 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
-<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="使用logging代替print调试python代码" />
@@ -48,7 +48,7 @@
 <meta itemprop="description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，">
 <meta itemprop="datePublished" content="2018-10-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-10-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="903">
+<meta itemprop="wordCount" content="941">
 
 
 
@@ -69,7 +69,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">CPurely</a>
+    <a href="/" class="logo">Even</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -95,7 +95,7 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">CPurely</a>
+  <a href="/" class="logo">Even</a>
 </div>
 
 <nav class="site-navbar">
@@ -126,9 +126,9 @@
       <div class="post-meta">
         <span class="post-time"> 2018-10-31 </span>
         
-          <span class="more-meta"> 约 903 字 </span>
+          <span class="more-meta"> 约 941 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+        
       </div>
     </header>
 
@@ -157,10 +157,24 @@
 以及创建代码片段供vim方便调用．</p>
 <h3 id="设置logging">设置logging</h3>
 <p>首先需要在你的python代码里导入这个库</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> logging
-</code></pre></div><p>导入这个库之后，首先需要新建一个log实例</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">log</span><span style="color:#e6db74">&#39;</span>)
-</code></pre></div><p>创建了实例之后可以设置log的级别（后面也可以更改级别），可以设置的级别如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">logging</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>导入这个库之后，首先需要新建一个log实例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">log</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>创建了实例之后可以设置log的级别（后面也可以更改级别），可以设置的级别如下：</p>
 <table>
 <thead>
 <tr>
@@ -192,52 +206,130 @@
 </tbody>
 </table>
 <p>因为我们要调试，这里暂且就设置为DEBUG级别．</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG) 
-</code></pre></div><p>设置完log级别之后，我们创建一个handler(处理器)．</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">handler <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
-</code></pre></div><p>处理器还可以设置格式化器用于日志输出格式．</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息</span>
-<span style="color:#75715e"># formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)</span>
-formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>) 
-<span style="color:#75715e"># 设置格式化器</span>
-handler<span style="color:#f92672">.</span>setFormatter(formatter)
-</code></pre></div><p>最后为logger添加handler．</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">logger<span style="color:#f92672">.</span>addHandler(handler)
-</code></pre></div><p>完整代码如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 创建logger实例</span>
-logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">log</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#75715e"># 设置log级别</span>
-logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG)
-<span style="color:#75715e"># 创建handler(处理器)</span>
-handler <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
-<span style="color:#75715e"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息</span>
-<span style="color:#75715e"># formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)</span>
-formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#75715e"># 设置格式化器</span>
-handler<span style="color:#f92672">.</span>setFormatter(formatter)
-<span style="color:#75715e"># 为Logger实例增加一个处理器</span>
-logger<span style="color:#f92672">.</span>addHandler(handler)
-</code></pre></div><h3 id="使用logging">使用logging</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span> 
+</code></pre></td></tr></table>
+</div>
+</div><p>设置完log级别之后，我们创建一个handler(处理器)．</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">(</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>处理器还可以设置格式化器用于日志输出格式．</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息</span>
+<span class="c1"># formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)</span>
+<span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span> 
+<span class="c1"># 设置格式化器</span>
+<span class="n">handler</span><span class="o">.</span><span class="n">setFormatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>最后为logger添加handler．</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>完整代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 创建logger实例</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">log</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># 设置log级别</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+<span class="c1"># 创建handler(处理器)</span>
+<span class="n">handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">(</span><span class="p">)</span>
+<span class="c1"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息</span>
+<span class="c1"># formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)</span>
+<span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># 设置格式化器</span>
+<span class="n">handler</span><span class="o">.</span><span class="n">setFormatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
+<span class="c1"># 为Logger实例增加一个处理器</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="使用logging">使用logging</h3>
 <p>例子：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
-b <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-c <span style="color:#f92672">=</span> a <span style="color:#f92672">-</span> b
-logger<span style="color:#f92672">.</span>debug(c)
-logger<span style="color:#f92672">.</span>warning(c)
-logger<span style="color:#f92672">.</span>info(c)
-</code></pre></div><p>如果不想显示debug的信息，只要改变之前设置的日志级别为更低的级别即可．</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">a</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如果不想显示debug的信息，只要改变之前设置的日志级别为更低的级别即可．</p>
 <h3 id="为vim添加代码片段更加便捷的使用logging">为vim添加代码片段，更加便捷的使用logging</h3>
 <p>在此之前需要安装UltiSnips与vim-snippets插件，然后找到UltiSnips文件夹中的python.snippets，再其中加入：</p>
-<pre><code>snippet log &quot;using logging to replace print&quot; b
-logger = logging.getLogger('log')
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">snippet log &#34;using logging to replace print&#34; b
+logger = logging.getLogger(&#39;log&#39;)
 logger.setLevel(logging.${1:DEBUG})
 handler = logging.StreamHandler()
-formatter = logging.Formatter('[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s')
+formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 $0
 endsnippet
-</code></pre><p>这样在用vim编辑python文件的时候输入log然后启动代码片段触发快捷键（我这里为<!-- raw HTML omitted --><!-- raw HTML omitted -->就可以直接插入上面的代码．</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>这样在用vim编辑python文件的时候输入log然后启动代码片段触发快捷键（我这里为<!-- raw HTML omitted --><!-- raw HTML omitted -->就可以直接插入上面的代码．</p>
 <h3 id="参考">参考</h3>
 <p><a href="https://www.jianshu.com/p/feb86c06c4f4">python logging模块使用教程</a></p>
 <p><a href="http://www.zlovezl.cn/articles/replacing-print-simple-introduction-to-logging/">替换你的print（logging模块超简明指南)</a></p>
@@ -305,7 +397,20 @@ endsnippet
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="Rchenchun@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
       <a href="https://github.com/CPurely" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://CPurely.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -319,10 +424,7 @@ endsnippet
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    
-    
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
@@ -340,18 +442,11 @@ endsnippet
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
-  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 
 
 

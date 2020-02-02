@@ -18,7 +18,7 @@
       <pubDate>Thu, 04 Oct 2018 19:41:03 +0800</pubDate>
       
       <guid>https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/</guid>
-      <description>hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h</description>
+      <description>hugo安装与配置 ubuntu为例 1 suao snap install hugo 新建站点 1 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因</description>
     </item>
     
   </channel>

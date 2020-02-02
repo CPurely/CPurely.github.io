@@ -18,7 +18,7 @@
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://CPurely.github.io/post/%E5%B0%86gnome%E9%BB%98%E8%AE%A4%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86nautilus%E7%94%A8nemo%E4%BB%A3%E6%9B%BF/</guid>
-      <description>为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&amp;hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 sudo apt install nemo # 或者添加pp</description>
+      <description>为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&amp;hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 1 2 3 4 5 sudo apt install nemo # 或</description>
     </item>
     
   </channel>

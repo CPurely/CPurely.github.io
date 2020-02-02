@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="CPurely" /><meta name="description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="CPurely" /><meta name="description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 1 2 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -33,28 +33,28 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
-<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux gnome桌面更新nvidia显卡驱动" />
-<meta property="og:description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，" />
+<meta property="og:description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 1 2 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/" />
 <meta property="article:published_time" content="2017-12-16T02:24:25+00:00" />
 <meta property="article:modified_time" content="2017-12-16T02:24:25+00:00" />
 <meta itemprop="name" content="Linux gnome桌面更新nvidia显卡驱动">
-<meta itemprop="description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，">
+<meta itemprop="description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 1 2 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更">
 <meta itemprop="datePublished" content="2017-12-16T02:24:25&#43;00:00" />
 <meta itemprop="dateModified" content="2017-12-16T02:24:25&#43;00:00" />
-<meta itemprop="wordCount" content="1351">
+<meta itemprop="wordCount" content="1376">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux gnome桌面更新nvidia显卡驱动"/>
-<meta name="twitter:description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更新，"/>
+<meta name="twitter:description" content="前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 1 2 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -69,7 +69,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">CPurely</a>
+    <a href="/" class="logo">Even</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -95,7 +95,7 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">CPurely</a>
+  <a href="/" class="logo">Even</a>
 </div>
 
 <nav class="site-navbar">
@@ -129,9 +129,9 @@
             <a href="/categories/linux/"> Linux </a>
             <a href="/categories/gnome/"> gnome </a>
             </div>
-          <span class="more-meta"> 约 1351 字 </span>
+          <span class="more-meta"> 约 1376 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+        
       </div>
     </header>
 
@@ -154,62 +154,159 @@
     <div class="post-content">
       <h2 id="前言">前言</h2>
 <p>在下载安装好arrayfire这个库之后，运行了一个示例程序，提示</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">libGL error: No matching fbConfigs or visuals found
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">libGL error: No matching fbConfigs or visuals found
 libGL error: failed to load driver: swrast
-</code></pre></div><p>google发现说的是显卡驱动需要更新，我的显卡驱动是381.xx最新的是384.98
+</code></pre></td></tr></table>
+</div>
+</div><p>google发现说的是显卡驱动需要更新，我的显卡驱动是381.xx最新的是384.98
 因此我就开始更新显卡驱动。使用命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper update nvidia*
-</code></pre></div><p>之后显示说缺少几个包，因此我就顺着它装</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper install nvidia-glG04-384.98-29.1.x86_64 nvidia-computeG04-384.98-29.1.x86_64
-</code></pre></div><p>安装好之后并没有发现我的显卡驱动的版本提升，故直接使用了</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper install nvidia*
-</code></pre></div><p>这下直接各种包与之前安装的冲突，导致无法进入图形界面，驱动无法运行。ctrl+alt+f7从终端切换到图形界面，显示错误信息，重新登录还是如此。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">zypper update nvidia*
+</code></pre></td></tr></table>
+</div>
+</div><p>之后显示说缺少几个包，因此我就顺着它装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">zypper install nvidia-glG04-384.98-29.1.x86_64 nvidia-computeG04-384.98-29.1.x86_64
+</code></pre></td></tr></table>
+</div>
+</div><p>安装好之后并没有发现我的显卡驱动的版本提升，故直接使用了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">zypper install nvidia*
+</code></pre></td></tr></table>
+</div>
+</div><p>这下直接各种包与之前安装的冲突，导致无法进入图形界面，驱动无法运行。ctrl+alt+f7从终端切换到图形界面，显示错误信息，重新登录还是如此。
 遂决定重新安装驱动，因为我的显卡驱动是在安装cuda的时候顺带安装好了，我怕把cuda环境玻怀了，比较小心。（事实证明重新安装驱动不会破坏cuda环境）</p>
 <h2 id="重新安装显卡驱动">重新安装显卡驱动</h2>
 <h4 id="关闭x-server">关闭x server</h4>
 <p>好在之前在官网上下载好了最新的显卡驱动.run文件，即使在只有终端下安装应该也很方便,终端输入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd Downloads
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> Downloads
 sh NVIDIA-Linux-x86_64-384.98.run
-</code></pre></div><p>可以打开驱动安装程序，但是有一个错误提示：ERROR：You appear to be running an X server;please exit Xbefore installing.
+</code></pre></td></tr></table>
+</div>
+</div><p>可以打开驱动安装程序，但是有一个错误提示：ERROR：You appear to be running an X server;please exit Xbefore installing.
 大意是需要关闭X server服务，google一搜，找到几个关闭x server的命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">service lightdm stop
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">service lightdm stop
 service kdm stop
 service gdm stop
 service mdm stop
 /etc/init.d/gdm stop
 /etc/init.d/kdm stop
 /etc/init.d/mdm stop
-</code></pre></div><p>(使用service &ndash;status-all命令查看运行的所有服务)
+</code></pre></td></tr></table>
+</div>
+</div><p>(使用service &ndash;status-all命令查看运行的所有服务)
 仍然关不掉X server，因为init.d文件夹里没有这几个服务只有下面几个，可能我是openSUSE和gnome桌面吧。gnome桌面按理说应该会有gdm,kde桌面应该会有kdm</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">after.local    boot.d      cifs    halt.local  jexec  rc1.d  rc3.d  rc5.d  rcS.d
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">after.local    boot.d      cifs    halt.local  jexec  rc1.d  rc3.d  rc5.d  rcS.d
 boot.apparmor  boot.local  esound  hddtemp     rc0.d  rc2.d  rc4.d  rc6.d  rpmconfigcheck
-</code></pre></div><p>我还尝试过通过安装驱动错误的log文件找到X server的PID使用kill -s 9 PID杀掉进程，虽然有用但是会造成系统重新载入，x server又复活了。
+</code></pre></td></tr></table>
+</div>
+</div><p>我还尝试过通过安装驱动错误的log文件找到X server的PID使用kill -s 9 PID杀掉进程，虽然有用但是会造成系统重新载入，x server又复活了。
 最终在<a href="https://zhidao.baidu.com/question/453448087.html">linux 怎样关闭x server 安显卡驱动</a>这个回答下发现了关闭x server服务的方法</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">init <span style="color:#ae81ff">3</span>
-</code></pre></div><p>这个种命令还有一系列，参考<a href="https://zhidao.baidu.com/question/591017435.html">init 0 init1 init 3 init 5 init 6 这几个启动级别都代表什么意思</a>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">init <span class="m">3</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这个种命令还有一系列，参考<a href="https://zhidao.baidu.com/question/591017435.html">init 0 init1 init 3 init 5 init 6 这几个启动级别都代表什么意思</a>
 现在终于可以进行下一步安装了</p>
 <h4 id="安装kernel-headers">安装kernel headers</h4>
 <p>正当我再次运行驱动安装程序，却又提示需要安装kernel headers,因为之前安装cuda的时候有这一步，以为是查看kernel版本的就掠过了。。。
 这里参考<a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">NVIDIA CUDA Installation Guide for Linux</a>
 openSUSE下先查看kernel版本</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">uname -r
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">uname -r
 4.4.92-31-default
-</code></pre></div><p>安装kernel headers这需要核心的版本信息，sudo zypper install kernel-<!-- raw HTML omitted -->-devel=<!-- raw HTML omitted -->然后替代<!-- raw HTML omitted --><!-- raw HTML omitted -->（尖括号一并替换掉）</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper install kernel-default-devel<span style="color:#f92672">=</span>4.4.76-1
-</code></pre></div><p>安装好之后终于可以正常安装显卡驱动了</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>安装kernel headers这需要核心的版本信息，sudo zypper install kernel-<!-- raw HTML omitted -->-devel=<!-- raw HTML omitted -->然后替代<!-- raw HTML omitted --><!-- raw HTML omitted -->（尖括号一并替换掉）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">zypper install kernel-default-devel<span class="o">=</span>4.4.76-1
+</code></pre></td></tr></table>
+</div>
+</div><p>安装好之后终于可以正常安装显卡驱动了</p>
 <p>安装显卡驱动的时候有几个选项，只要注意不要选择使用nvidia的x server来链接与更新系统自带的x server服务即可，否则可能无法进入图形界面，一启动就是终端ctrl+alt+f7无法进入图形界面
 终端输入xinit提示x server connect refuse（我重新安装一遍驱动才解决）
 重新安装好显卡驱动后，最后运行arrayfire示例程序终于没有报错，折腾没有白费。。。欣慰</p>
 <h2 id="2018114更新">2018.1.14更新</h2>
 <p>老问题又发生了，这次重新安装驱动不行，我估计要安装最新的驱动，于是在其他电脑上到NVIADIA官网下载好了最新的驱动到u盘里。插上电脑，执行以下命令查找u盘位置</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fdisk -l
-</code></pre></div><p>我的u盘在/dev/sdc1
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">fdisk -l
+</code></pre></td></tr></table>
+</div>
+</div><p>我的u盘在/dev/sdc1
 使用以下命令挂载u盘到/media以及进入目录读取u盘文件,运行驱动程序安装，重启后应该就能进入桌面了。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mount -t vfat /dev/sdc1 /media
-cd /media
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mount -t vfat /dev/sdc1 /media
+<span class="nb">cd</span> /media
 ls
 sh NVIDIA-Linux-x86_64-384.111.run
-</code></pre></div>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -269,7 +366,20 @@ sh NVIDIA-Linux-x86_64-384.111.run
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="Rchenchun@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
       <a href="https://github.com/CPurely" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://CPurely.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -283,10 +393,7 @@ sh NVIDIA-Linux-x86_64-384.111.run
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    
-    
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
@@ -304,18 +411,11 @@ sh NVIDIA-Linux-x86_64-384.111.run
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
-  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 
 
 

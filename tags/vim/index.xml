@@ -27,7 +27,7 @@
       <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8ultisnips%E5%BF%AB%E9%80%9F%E5%A1%AB%E5%86%99%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%A4%B4%E4%BB%A5%E5%8F%8Ass%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</guid>
-      <description>为vim添加UltiSnips插件 使用Vundle来安装插件,将下面两个插件放入.vimrc中Vundle配置位置 Plugin &#39;SirVer/ultisnips&#39; &amp;quot; Track the engine. Plugin &#39;honza/vim-snippets&#39; &amp;quot; Snippets are separated from</description>
+      <description>为vim添加UltiSnips插件 使用Vundle来安装插件,将下面两个插件放入.vimrc中Vundle配置位置 1 2 Plugin &amp;#39;SirVer/ultisnips&amp;#39; &amp;#34; Track the engine. Plugin &amp;#39;honza/vim-snippets&amp;#39; &amp;#34; Snippets are</description>
     </item>
     
   </channel>

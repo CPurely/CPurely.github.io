@@ -33,9 +33,9 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
-<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux安装教育版maya" />
@@ -48,7 +48,7 @@
 <meta itemprop="description" content="在autodesk官网注册帐号并下载linux版maya 通过注册Autodesk的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号">
 <meta itemprop="datePublished" content="2017-12-04T13:37:06&#43;00:00" />
 <meta itemprop="dateModified" content="2017-12-04T13:37:06&#43;00:00" />
-<meta itemprop="wordCount" content="342">
+<meta itemprop="wordCount" content="346">
 
 
 
@@ -69,7 +69,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">CPurely</a>
+    <a href="/" class="logo">Even</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -95,7 +95,7 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">CPurely</a>
+  <a href="/" class="logo">Even</a>
 </div>
 
 <nav class="site-navbar">
@@ -129,9 +129,9 @@
             <a href="/categories/linux/"> Linux </a>
             <a href="/categories/maya/"> Maya </a>
             </div>
-          <span class="more-meta"> 约 342 字 </span>
+          <span class="more-meta"> 约 346 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+        
       </div>
     </header>
 
@@ -154,11 +154,21 @@
 <p>通过注册<a href="https://www.autodesk.com.cn/education/free-software/maya?referrer=%2Feducation%2Ffree-software%2Fmaya">Autodesk</a>的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号的邮件发到你的注册邮箱之中，我的使用年限是3年，足够使用。
 下载好了压缩包，解压然后运行里面的setup即可安装
 但是安装好之后有可能不能运行，因为缺少相关的libraries</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/autodesk/maya2017/bin/maya.bin: error <span style="color:#66d9ef">while</span> loading shared libraries: libXp.so.6: cannot open shared object file: No such file or directory
-/usr/autodesk/maya2017/bin/maya.bin: error <span style="color:#66d9ef">while</span> loading shared libraries: libtiff.so.3: cannot open shared object file: No such file or directory
-/usr/autodesk/maya2017/bin/maya.bin: error <span style="color:#66d9ef">while</span> loading shared libraries: libssl.so.10: cannot open shared object file: No such file or directory
-/usr/autodesk/maya2017/bin/maya.bin: error <span style="color:#66d9ef">while</span> loading shared libraries: libcrypto.so.10: cannot open shared object file: No such file or directory
-</code></pre></div><p>我的系统运行maya缺少这么几个libraries
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">/usr/autodesk/maya2017/bin/maya.bin: error <span class="k">while</span> loading shared libraries: libXp.so.6: cannot open shared object file: No such file or directory
+/usr/autodesk/maya2017/bin/maya.bin: error <span class="k">while</span> loading shared libraries: libtiff.so.3: cannot open shared object file: No such file or directory
+/usr/autodesk/maya2017/bin/maya.bin: error <span class="k">while</span> loading shared libraries: libssl.so.10: cannot open shared object file: No such file or directory
+/usr/autodesk/maya2017/bin/maya.bin: error <span class="k">while</span> loading shared libraries: libcrypto.so.10: cannot open shared object file: No such file or directory
+</code></pre></td></tr></table>
+</div>
+</div><p>我的系统运行maya缺少这么几个libraries
 但是我在系统中搜索这几个libraries其实都有，因此我直接将系统已有的libXp.so.6 libtiff.so.3 libssl.so.10 libcrypto.so.10
 复制到/usr/autodesk/maya2017/lib即可
 现在就可以打开maya了</p>
@@ -224,7 +234,20 @@
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="Rchenchun@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
       <a href="https://github.com/CPurely" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://CPurely.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -238,10 +261,7 @@
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    
-    
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
@@ -259,18 +279,11 @@
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
-  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 
 
 

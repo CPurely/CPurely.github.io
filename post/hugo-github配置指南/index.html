@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="CPurely" /><meta name="description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="CPurely" /><meta name="description" content="hugo安装与配置 ubuntu为例 1 suao snap install hugo 新建站点 1 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -33,28 +33,28 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
-<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Hugo-github配置指南" />
-<meta property="og:description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h" />
+<meta property="og:description" content="hugo安装与配置 ubuntu为例 1 suao snap install hugo 新建站点 1 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://CPurely.github.io/post/hugo-github%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97/" />
 <meta property="article:published_time" content="2018-10-04T19:41:03+08:00" />
 <meta property="article:modified_time" content="2018-10-04T19:41:03+08:00" />
 <meta itemprop="name" content="Hugo-github配置指南">
-<meta itemprop="description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h">
+<meta itemprop="description" content="hugo安装与配置 ubuntu为例 1 suao snap install hugo 新建站点 1 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因">
 <meta itemprop="datePublished" content="2018-10-04T19:41:03&#43;08:00" />
 <meta itemprop="dateModified" content="2018-10-04T19:41:03&#43;08:00" />
-<meta itemprop="wordCount" content="1978">
+<meta itemprop="wordCount" content="2016">
 
 
 
 <meta itemprop="keywords" content="hugo,博客,Linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo-github配置指南"/>
-<meta name="twitter:description" content="hugo安装与配置 ubuntu为例 suao snap install hugo 新建站点 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因为h"/>
+<meta name="twitter:description" content="hugo安装与配置 ubuntu为例 1 suao snap install hugo 新建站点 1 hugo new site Blog 此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造. 因"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -69,7 +69,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">CPurely</a>
+    <a href="/" class="logo">Even</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -95,7 +95,7 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">CPurely</a>
+  <a href="/" class="logo">Even</a>
 </div>
 
 <nav class="site-navbar">
@@ -126,9 +126,9 @@
       <div class="post-meta">
         <span class="post-time"> 2018-10-04 </span>
         
-          <span class="more-meta"> 约 1978 字 </span>
-          <span class="more-meta"> 预计阅读 4 分钟 </span>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+          <span class="more-meta"> 约 2016 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        
       </div>
     </header>
 
@@ -154,13 +154,34 @@
     <div class="post-content">
       <h3 id="hugo安装与配置">hugo安装与配置</h3>
 <p>ubuntu为例</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">suao snap install hugo
-</code></pre></div><p>新建站点</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site Blog
-</code></pre></div><p>此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造.
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">suao snap install hugo
+</code></pre></td></tr></table>
+</div>
+</div><p>新建站点</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site Blog
+</code></pre></td></tr></table>
+</div>
+</div><p>此时会在用户家目录下新建一个Blog的文件夹,打开文件夹可以看到网站的构造.
 因为hugo默认是不带主题的,因此为了显示内容我们需要先下载一个主题,首先要用cd命令进入Blog文件夹</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/olOwOlo/hugo-theme-even themes/even
-</code></pre></div><p>我使用的是Even主题,更多主题可以在<a href="https://themes.gohugo.io">hugo主题</a>上下载.
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+</code></pre></td></tr></table>
+</div>
+</div><p>我使用的是Even主题,更多主题可以在<a href="https://themes.gohugo.io">hugo主题</a>上下载.
 下载好主题后,将主题文件夹/themes/even/exampleSite中的config.toml拷贝到网站根目录,这里也即是Blog目录下替换
 原始配置文件.
 然后根据config.toml按照需求配置网站.
@@ -174,12 +195,23 @@
 <li>cd进入public文件夹</li>
 <li>在public文件夹中布置git</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init   <span style="color:#75715e"># 初始化</span>
-git remote add origin https://github.com/yourname/yourname.github.io.git  <span style="color:#75715e"># 连接远程仓库</span>
-git add -A  <span style="color:#75715e">#  将工作目录文件修改添加到暂存区</span> 
-git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>  <span style="color:#75715e"># 将暂存区的所有内容提交到当前分支。-m 参数后面的字符串表示本次的提交说明</span>
-git push -u origin master   <span style="color:#75715e"># 把本地仓库分支推送到远程仓库分支</span>
-</code></pre></div><p>这样public应该就算是上传到你的github远程仓库中了.
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git init   <span class="c1"># 初始化</span>
+git remote add origin https://github.com/yourname/yourname.github.io.git  <span class="c1"># 连接远程仓库</span>
+git add -A  <span class="c1">#  将工作目录文件修改添加到暂存区</span> 
+git commit -m <span class="s2">&#34;first commit&#34;</span>  <span class="c1"># 将暂存区的所有内容提交到当前分支。-m 参数后面的字符串表示本次的提交说明</span>
+git push -u origin master   <span class="c1"># 把本地仓库分支推送到远程仓库分支</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这样public应该就算是上传到你的github远程仓库中了.
 通过访问https://yourname.github.io应该就可以打开你的网站了</p>
 <h3 id="域名购买">域名购买</h3>
 <p>这里我在namesilo上购买的域名,大概13元一年.
@@ -206,48 +238,108 @@ namesilo上可以进行域名解析,在域名列表中可以看到一个蓝色�
 这样域名绑定算是做好了.</p>
 <h3 id="快捷发布文章">快捷发布文章</h3>
 <p>由于上一步我们在github仓库增加了一个文件,因此我们首先需要更新一下本地仓库与它同步</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull --rebase origin master
-</code></pre></div><p>如果我们在网站根目录下的content/post增加了新的文章,我们需要先使用命令重新生成一次public,这样public中就包含
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git pull --rebase origin master
+</code></pre></td></tr></table>
+</div>
+</div><p>如果我们在网站根目录下的content/post增加了新的文章,我们需要先使用命令重新生成一次public,这样public中就包含
 最新的文章了.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo  
-</code></pre></div><p>然后cd进入public目录,使用</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add -A
-git commit -m <span style="color:#e6db74">&#34;new commit&#34;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo  
+</code></pre></td></tr></table>
+</div>
+</div><p>然后cd进入public目录,使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git add -A
+git commit -m <span class="s2">&#34;new commit&#34;</span>
 git push -u origin master
-</code></pre></div><p>来更新远程仓库. 这样做有点繁琐,并且期间还需要输入github的用户名和密码,使得写文章的体验大打折扣.我们使用更加
+</code></pre></td></tr></table>
+</div>
+</div><p>来更新远程仓库. 这样做有点繁琐,并且期间还需要输入github的用户名和密码,使得写文章的体验大打折扣.我们使用更加
 便捷的方法.
 首先我们需要取消git push是需要输入用户名和密码的问题.我们先cd进入public目录,然后使用</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global credential.helper store
-</code></pre></div><p>然后你会在你本地生成一个文本，上边记录你的账号和密码.然后你使用上述的命令配置好之后，
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git config --global credential.helper store
+</code></pre></td></tr></table>
+</div>
+</div><p>然后你会在你本地生成一个文本，上边记录你的账号和密码.然后你使用上述的命令配置好之后，
 再操作一次git pull，然后它会提示你输入账号密码，这一次之后就不需要再次输入密码了。
 <a href="https://github.com/yonyouyc/blog/issues/6">解决git pull/push每次都需要输入密码问题</a>
 虽然解决了不用输入用户名和密码的问题,但是还要一次次输入重复的命令还是太烦了,因此我们需要写一deploy.sh脚本
 帮你完成这件事.脚本如下</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>
-echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
 
-<span style="color:#75715e"># Build the project.</span>
-hugo <span style="color:#75715e"># if using a theme, replace by `hugo -t &lt;yourtheme&gt;`</span>
+<span class="c1"># Build the project.</span>
+hugo <span class="c1"># if using a theme, replace by `hugo -t &lt;yourtheme&gt;`</span>
 
-<span style="color:#75715e"># Go To Public folder</span>
-cd public
-<span style="color:#75715e"># Add changes to git.</span>
+<span class="c1"># Go To Public folder</span>
+<span class="nb">cd</span> public
+<span class="c1"># Add changes to git.</span>
 git add -A
 
-<span style="color:#75715e"># Commit changes.</span>
-msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
-  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
-<span style="color:#66d9ef">fi</span>
-git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+<span class="c1"># Commit changes.</span>
+<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]</span>
+  <span class="k">then</span> <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+<span class="k">fi</span>
+git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
 
-<span style="color:#75715e"># Push source and build repos.</span>
+<span class="c1"># Push source and build repos.</span>
 git push origin master
 
-<span style="color:#75715e"># Come Back</span>
-cd ..
-</code></pre></div><p>执行之前先用chmod +x deploy.sh赋予其权限.详情请见
+<span class="c1"># Come Back</span>
+<span class="nb">cd</span> ..
+</code></pre></td></tr></table>
+</div>
+</div><p>执行之前先用chmod +x deploy.sh赋予其权限.详情请见
 <a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub Pages</a></p>
 <h3 id="结语">结语</h3>
 <p>至此,终于可以轻松的撰写博客了.</p>
@@ -321,7 +413,20 @@ cd ..
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="Rchenchun@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
       <a href="https://github.com/CPurely" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://CPurely.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -335,10 +440,7 @@ cd ..
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    
-    
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
@@ -356,18 +458,11 @@ cd ..
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
-  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 
 
 

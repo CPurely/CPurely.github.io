@@ -33,9 +33,9 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
-<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
 <meta property="og:title" content="Linux gnome桌面下创建sh文件的desktop文件快速启动" />
@@ -48,7 +48,7 @@
 <meta itemprop="description" content="本文以wine-TIM为例，创建sh文件启动TIM，以及创建desktop文件在启动栏快速启动 安装wine-TIM，创建sh文件启动 安装wi">
 <meta itemprop="datePublished" content="2017-11-30T14:09:05&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-30T14:09:05&#43;00:00" />
-<meta itemprop="wordCount" content="612">
+<meta itemprop="wordCount" content="630">
 
 
 
@@ -69,7 +69,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">CPurely</a>
+    <a href="/" class="logo">Even</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -95,7 +95,7 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">CPurely</a>
+  <a href="/" class="logo">Even</a>
 </div>
 
 <nav class="site-navbar">
@@ -128,9 +128,9 @@
         <div class="post-category">
             <a href="/categories/linux/"> Linux </a>
             </div>
-          <span class="more-meta"> 约 612 字 </span>
+          <span class="more-meta"> 约 630 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+        
       </div>
     </header>
 
@@ -154,36 +154,84 @@
       <h2 id="本文以wine-tim为例创建sh文件启动tim以及创建desktop文件在启动栏快速启动">本文以wine-TIM为例，创建sh文件启动TIM，以及创建desktop文件在启动栏快速启动</h2>
 <h3 id="安装wine-tim创建sh文件启动">安装wine-TIM，创建sh文件启动</h3>
 <p>安装wine</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zypper in wine
-</code></pre></div><p>即安装了wine和winetricks
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">zypper in wine
+</code></pre></td></tr></table>
+</div>
+</div><p>即安装了wine和winetricks
 此时需要更新winetricks，不然之后安装一些win下的文件会报错:
 winetricks sha256sum mismatch on wininet /root/.cache/winetricks/win2ksp4/W2KSP4_EN.EXE</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">winetricks --self-update
-</code></pre></div><p>使用winetricks安装一些win下的文件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">winetricks corefonts cjkfonts
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">winetricks --self-update
+</code></pre></td></tr></table>
+</div>
+</div><p>使用winetricks安装一些win下的文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">winetricks corefonts cjkfonts
 winetricks msxml6 riched20 riched30 vcrun6
-</code></pre></div><p>腾讯官网下载TIM，使用wine打开安装
+</code></pre></td></tr></table>
+</div>
+</div><p>腾讯官网下载TIM，使用wine打开安装
 安装好之后应该在/root/.wine/drive_c/Program Files (x86)/Tencent/TIM/Bin能够找到TIM.exe
 建立sh文件，打开自带的文本编辑器写入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>cd <span style="color:#e6db74">&#34;/root/.wine/drive_c/Program Files (x86)/Tencent/TIM/Bin&#34;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span><span class="nb">cd</span> <span class="s2">&#34;/root/.wine/drive_c/Program Files (x86)/Tencent/TIM/Bin&#34;</span>
 wine TIM.exe
-</code></pre></div><p>保存为.sh文件</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>保存为.sh文件</p>
 <h3 id="创建sh快捷启动">创建sh快捷启动</h3>
 <p>在/usr/share/applications中使用文本编辑器创建一个TIM.desktop的文件
 并在里面写入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>Desktop Entry<span style="color:#f92672">]</span>
-Encoding<span style="color:#f92672">=</span>UTF-8
-Version<span style="color:#f92672">=</span>2.0.0
-Name<span style="color:#f92672">=</span>TIM
-Exec<span style="color:#f92672">=</span>sh /root/bin/TIM.sh
-Terminal<span style="color:#f92672">=</span>false
-Icon<span style="color:#f92672">=</span>TIM
-NoDisplay<span style="color:#f92672">=</span>false
-StartupNotify<span style="color:#f92672">=</span>true
-Type<span style="color:#f92672">=</span>Application
-Categories<span style="color:#f92672">=</span>Network;InstantMessaging;
-</code></pre></div><p>保存
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">[</span>Desktop Entry<span class="o">]</span>
+<span class="nv">Encoding</span><span class="o">=</span>UTF-8
+<span class="nv">Version</span><span class="o">=</span>2.0.0
+<span class="nv">Name</span><span class="o">=</span>TIM
+<span class="nv">Exec</span><span class="o">=</span>sh /root/bin/TIM.sh
+<span class="nv">Terminal</span><span class="o">=</span><span class="nb">false</span>
+<span class="nv">Icon</span><span class="o">=</span>TIM
+<span class="nv">NoDisplay</span><span class="o">=</span><span class="nb">false</span>
+<span class="nv">StartupNotify</span><span class="o">=</span><span class="nb">true</span>
+<span class="nv">Type</span><span class="o">=</span>Application
+<span class="nv">Categories</span><span class="o">=</span>Network<span class="p">;</span>InstantMessaging<span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>保存
 其中Icon我选择的是/root/.wine/drive_c/Program Files (x86)/Tencent/TIM中的TIMUninst.ico图标，我在inkscape中保存为svg格式图片并重命名为TIM.svg,将其放入现在用的图标主题中的apps即可在applications中看到TIM的图标
 现在你就能在gnome applications中看见TIM了，Add to favorites</p>
 <h3 id="参考">参考</h3>
@@ -252,7 +300,20 @@ Categories<span style="color:#f92672">=</span>Network;InstantMessaging;
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="Rchenchun@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
       <a href="https://github.com/CPurely" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://CPurely.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -266,10 +327,7 @@ Categories<span style="color:#f92672">=</span>Network;InstantMessaging;
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    
-    
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
@@ -287,18 +345,11 @@ Categories<span style="color:#f92672">=</span>Network;InstantMessaging;
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
-  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 
 
 
