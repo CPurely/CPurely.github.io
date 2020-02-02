@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vim on 时空胶囊</title>
+    <title>vim on 后院池塘</title>
     <link>https://CPurely.github.io/tags/vim/</link>
-    <description>Recent content in vim on 时空胶囊</description>
+    <description>Recent content in vim on 后院池塘</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>CPurely</copyright>
+    <copyright>后院池塘</copyright>
     <lastBuildDate>Wed, 31 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />

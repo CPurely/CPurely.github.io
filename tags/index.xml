@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 时空胶囊</title>
+    <title>Tags on 后院池塘</title>
     <link>https://CPurely.github.io/tags/</link>
-    <description>Recent content in Tags on 时空胶囊</description>
+    <description>Recent content in Tags on 后院池塘</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>CPurely</copyright>
+    <copyright>后院池塘</copyright>
     <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://CPurely.github.io/tags/python/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -31,7 +31,7 @@
     </item>
     
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://CPurely.github.io/tags/linux/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
