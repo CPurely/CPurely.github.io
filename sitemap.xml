@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://CPurely.github.io/about/</loc>
+    <lastmod>2020-02-02T15:40:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/</loc>
+    <lastmod>2020-02-02T15:40:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://CPurely.github.io/post/plotnine%E7%9A%84%E5%88%9D%E6%AC%A1%E8%B8%A9%E5%9D%91/</loc>
     <lastmod>2019-01-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -24,13 +38,6 @@
   
   <url>
     <loc>https://CPurely.github.io/tags/</loc>
-    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://CPurely.github.io/</loc>
     <lastmod>2019-01-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
