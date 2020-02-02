@@ -205,20 +205,6 @@
   </url>
   
   <url>
-    <loc>https://CPurely.github.io/categories/nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</loc>
-    <lastmod>2017-12-16T02:24:25+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://CPurely.github.io/categories/x-server/</loc>
-    <lastmod>2017-12-16T02:24:25+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://CPurely.github.io/categories/cuda/</loc>
     <lastmod>2017-12-08T05:01:04+00:00</lastmod>
     <changefreq>weekly</changefreq>
