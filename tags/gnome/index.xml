@@ -21,5 +21,23 @@
       <description>为什么要换nemo作为默认文件管理呢? Nautilus功能大幅消减&amp;hellip;甚至不能拷贝路径 安装nemo 系统: ubuntu18.04 1 2 3 4 5 sudo apt install nemo # 或</description>
     </item>
     
+    <item>
+      <title>Gnome去除恼人的窗口顶栏应用按钮</title>
+      <link>https://CPurely.github.io/post/gnome%E5%8E%BB%E9%99%A4%E6%81%BC%E4%BA%BA%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B6%E6%A0%8F%E5%BA%94%E7%94%A8%E6%8C%89%E9%92%AE/</link>
+      <pubDate>Sun, 07 Oct 2018 21:23:39 +0800</pubDate>
+      
+      <guid>https://CPurely.github.io/post/gnome%E5%8E%BB%E9%99%A4%E6%81%BC%E4%BA%BA%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B6%E6%A0%8F%E5%BA%94%E7%94%A8%E6%8C%89%E9%92%AE/</guid>
+      <description>当安装好gnome桌面的美化应用gnome-tweaks-tool后,终端窗口顶栏突然多了一个硕大的 终端图标.如下图所示: 非常的影响美观,当</description>
+    </item>
+    
+    <item>
+      <title>Linux gnome桌面更新nvidia显卡驱动</title>
+      <link>https://CPurely.github.io/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</link>
+      <pubDate>Sat, 16 Dec 2017 02:24:25 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/post/linux%E6%9B%B4%E6%96%B0nvidia%E6%98%BE%E5%8D%A1%E9%A9%B1%E5%8A%A8/</guid>
+      <description>前言 在下载安装好arrayfire这个库之后，运行了一个示例程序，提示 1 2 libGL error: No matching fbConfigs or visuals found libGL error: failed to load driver: swrast google发现说的是显卡驱动需要更</description>
+    </item>
+    
   </channel>
 </rss>

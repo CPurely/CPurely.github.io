@@ -13,20 +13,20 @@
     
     
     <item>
-      <title>python</title>
-      <link>https://CPurely.github.io/tags/python/</link>
+      <title>plotnine</title>
+      <link>https://CPurely.github.io/tags/plotnine/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/tags/python/</guid>
+      <guid>https://CPurely.github.io/tags/plotnine/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>画图</title>
-      <link>https://CPurely.github.io/tags/%E7%94%BB%E5%9B%BE/</link>
+      <title>Python</title>
+      <link>https://CPurely.github.io/tags/python/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/tags/%E7%94%BB%E5%9B%BE/</guid>
+      <guid>https://CPurely.github.io/tags/python/</guid>
       <description></description>
     </item>
     
@@ -76,15 +76,6 @@
     </item>
     
     <item>
-      <title>博客</title>
-      <link>https://CPurely.github.io/tags/%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Thu, 04 Oct 2018 19:41:03 +0800</pubDate>
-      
-      <guid>https://CPurely.github.io/tags/%E5%8D%9A%E5%AE%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>atom</title>
       <link>https://CPurely.github.io/tags/atom/</link>
       <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
@@ -103,20 +94,47 @@
     </item>
     
     <item>
-      <title>Programing</title>
-      <link>https://CPurely.github.io/tags/programing/</link>
-      <pubDate>Fri, 08 Dec 2017 05:01:04 +0000</pubDate>
+      <title>nvidia</title>
+      <link>https://CPurely.github.io/tags/nvidia/</link>
+      <pubDate>Sat, 16 Dec 2017 02:24:25 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/tags/programing/</guid>
+      <guid>https://CPurely.github.io/tags/nvidia/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>3d建模</title>
-      <link>https://CPurely.github.io/tags/3d%E5%BB%BA%E6%A8%A1/</link>
+      <title>CUDA</title>
+      <link>https://CPurely.github.io/tags/cuda/</link>
+      <pubDate>Fri, 08 Dec 2017 05:01:04 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/tags/cuda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maya</title>
+      <link>https://CPurely.github.io/tags/maya/</link>
       <pubDate>Mon, 04 Dec 2017 13:37:06 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/tags/3d%E5%BB%BA%E6%A8%A1/</guid>
+      <guid>https://CPurely.github.io/tags/maya/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hexo</title>
+      <link>https://CPurely.github.io/tags/hexo/</link>
+      <pubDate>Fri, 24 Nov 2017 21:14:54 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/tags/hexo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>citespace</title>
+      <link>https://CPurely.github.io/tags/citespace/</link>
+      <pubDate>Fri, 24 Nov 2017 20:20:39 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/tags/citespace/</guid>
       <description></description>
     </item>
     

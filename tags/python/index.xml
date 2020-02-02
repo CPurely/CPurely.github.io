@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on Wellcome</title>
+    <title>Python on Wellcome</title>
     <link>https://CPurely.github.io/tags/python/</link>
-    <description>Recent content in python on Wellcome</description>
+    <description>Recent content in Python on Wellcome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>CPurely</copyright>
@@ -37,6 +37,15 @@
       
       <guid>https://CPurely.github.io/post/linux%E4%B8%8B%E7%BB%88%E7%AB%AF%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8Cpython%E8%84%9A%E6%9C%AC/</guid>
       <description>python脚本顶部特殊注释的作用 打开一个网上找的python脚本,总是会发现最顶上有一行#!/usr/bin/env python3 的注释,现在才明白这</description>
+    </item>
+    
+    <item>
+      <title>Linux中安装pycuda</title>
+      <link>https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</link>
+      <pubDate>Tue, 28 Nov 2017 05:13:14 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/</guid>
+      <description>前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p</description>
     </item>
     
   </channel>

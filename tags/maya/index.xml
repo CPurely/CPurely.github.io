@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maya on Wellcome</title>
+    <link>https://CPurely.github.io/tags/maya/</link>
+    <description>Recent content in maya on Wellcome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>CPurely</copyright>
+    <lastBuildDate>Mon, 04 Dec 2017 13:37:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://CPurely.github.io/tags/maya/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux安装教育版maya</title>
+      <link>https://CPurely.github.io/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/</link>
+      <pubDate>Mon, 04 Dec 2017 13:37:06 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/post/linux%E5%AE%89%E8%A3%85%E6%95%99%E8%82%B2%E7%89%88maya/</guid>
+      <description>在autodesk官网注册帐号并下载linux版maya 通过注册Autodesk的教育版帐号，通过填写相关信息，会有一封包含产品密钥和序列号</description>
+    </item>
+    
+  </channel>
+</rss>

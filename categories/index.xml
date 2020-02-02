@@ -7,71 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>CPurely</copyright>
-    <lastBuildDate>Fri, 29 Dec 2017 21:02:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Linux</title>
-      <link>https://CPurely.github.io/categories/linux/</link>
-      <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
+      <title>极客</title>
+      <link>https://CPurely.github.io/categories/%E6%9E%81%E5%AE%A2/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://CPurely.github.io/categories/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>写作</title>
-      <link>https://CPurely.github.io/categories/%E5%86%99%E4%BD%9C/</link>
-      <pubDate>Fri, 29 Dec 2017 21:02:35 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/categories/%E5%86%99%E4%BD%9C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gnome</title>
-      <link>https://CPurely.github.io/categories/gnome/</link>
-      <pubDate>Sat, 16 Dec 2017 02:24:25 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/categories/gnome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CUDA</title>
-      <link>https://CPurely.github.io/categories/cuda/</link>
-      <pubDate>Fri, 08 Dec 2017 05:01:04 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/categories/cuda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maya</title>
-      <link>https://CPurely.github.io/categories/maya/</link>
-      <pubDate>Mon, 04 Dec 2017 13:37:06 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/categories/maya/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://CPurely.github.io/categories/python/</link>
-      <pubDate>Tue, 28 Nov 2017 05:13:14 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>学术</title>
-      <link>https://CPurely.github.io/categories/%E5%AD%A6%E6%9C%AF/</link>
-      <pubDate>Fri, 24 Nov 2017 20:20:39 +0000</pubDate>
-      
-      <guid>https://CPurely.github.io/categories/%E5%AD%A6%E6%9C%AF/</guid>
+      <guid>https://CPurely.github.io/categories/%E6%9E%81%E5%AE%A2/</guid>
       <description></description>
     </item>
     
