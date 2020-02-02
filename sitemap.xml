@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://CPurely.github.io/%E6%B1%A0%E5%A1%98%E5%9B%BE%E9%89%B4/</loc>
-    <lastmod>2020-02-02T22:08:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://CPurely.github.io/%E5%85%B3%E4%BA%8E/</loc>
     <lastmod>2020-02-02T16:23:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,7 +10,7 @@
   
   <url>
     <loc>https://CPurely.github.io/</loc>
-    <lastmod>2020-02-02T22:08:54+08:00</lastmod>
+    <lastmod>2020-02-02T16:23:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -286,6 +279,11 @@
     <lastmod>2016-03-25T21:28:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/%E6%B1%A0%E5%A1%98%E5%9B%BE%E9%89%B4/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
