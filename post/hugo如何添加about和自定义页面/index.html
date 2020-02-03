@@ -48,7 +48,7 @@
 <meta itemprop="description" content="前言 已经很久没写博客了。不得不说，折腾真的很消耗人的热情。当初我也是充满热情的建立网站，但是因为我只有一台电脑有时工作需要在windows下">
 <meta itemprop="datePublished" content="2020-02-03T11:11:01&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-03T11:11:01&#43;08:00" />
-<meta itemprop="wordCount" content="1722">
+<meta itemprop="wordCount" content="1763">
 
 
 
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/%E6%9E%81%E5%AE%A2/"> 极客 </a>
             </div>
-          <span class="more-meta"> 约 1722 字 </span>
+          <span class="more-meta"> 约 1763 字 </span>
           <span class="more-meta"> 预计阅读 4 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -143,32 +143,28 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#前言">前言</a></li>
-        <li><a href="#重启网站">重启网站</a></li>
-        <li><a href="#网站添加about页面">网站添加About页面</a></li>
-        <li><a href="#把tiddlywiki整合到菜单栏">把tiddlywiki整合到菜单栏</a></li>
-        <li><a href="#参考">参考</a></li>
-      </ul>
-    </li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#重启网站">重启网站</a></li>
+    <li><a href="#网站添加about页面">网站添加About页面</a></li>
+    <li><a href="#把tiddlywiki整合到菜单栏">把tiddlywiki整合到菜单栏</a></li>
+    <li><a href="#参考">参考</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h3 id="前言">前言</h3>
+      <h2 id="前言">前言</h2>
 <p>已经很久没写博客了。不得不说，折腾真的很消耗人的热情。当初我也是充满热情的建立网站，但是因为我只有一台电脑有时工作需要在windows下，我的网站又是在linux下，频繁的切换系统太麻烦了，搬迁网站我想想也觉得也很麻烦。所以，我停下了。</p>
 <p>写博客之前也需要稍微考虑全面一点，要想好这个博客是记录什么？分享什么？说实话当初写的博客全是记录技术方面的东西，显得即枯燥又无聊，再次回看的时候发现我已经不懂其中写的一些东西了。</p>
 <p>我的博客，我却连标签与分类的作用都没有好好的思考，导致打得标签种类和分类差不多，网站结构冗余！没有好好用心运作，有点惭愧。</p>
 <p>我买的域名到期了，再次续费很贵，所以我再次把网站搬上了github，也省去了其他的麻烦。</p>
 <p>这次重新燃起了热情，希望我能坚持下去。</p>
-<h3 id="重启网站">重启网站</h3>
+<h2 id="重启网站">重启网站</h2>
 <p>得益于之前写的一键部署脚本deploy.sh，以及博客的原始文件保存在github上，我才能快速完成搬迁。</p>
 <p>首先做的第一件事就是重新安装hugo。</p>
 <p>安装完成之后把github上的CNAME文件删除（我买的域名失效了，所以这个文件也没用了），确保本地的源文件和github上一致，同时在github仓库的设置里面把Custom domain删除。</p>
 <p>最后再运行之前写好的deploy.sh脚本就可以重新上线网站啦～</p>
-<h3 id="网站添加about页面">网站添加About页面</h3>
+<h2 id="网站添加about页面">网站添加About页面</h2>
 <p>给网站菜单栏上加入About页面</p>
 <p>使用hugo命令：</p>
 <div class="highlight"><div class="chroma">
@@ -226,7 +222,7 @@ comment: false
 </div><p>这样好了之后，再次运行deploy.sh之后等几分钟就能在网站上看到新加的“about”页面啦。</p>
 <p>同理，我们也可以通过这种方式给自己的网站加入其他页面。</p>
 <p>我把tiddlywiki整合进我的网站也是用的这种方法。</p>
-<h3 id="把tiddlywiki整合到菜单栏">把tiddlywiki整合到菜单栏</h3>
+<h2 id="把tiddlywiki整合到菜单栏">把tiddlywiki整合到菜单栏</h2>
 <p>如果你不知道tiddlywiki那也没关系，详细内容你可以到tiddlywiki中文官网查看，现在只要知道它是一个html文件就行了。</p>
 <p>为了实现这个效果，我们首先重复一下之前的步骤</p>
 <div class="highlight"><div class="chroma">
@@ -254,7 +250,9 @@ comment: false
 <p>可以看到static这个文件夹有一个特性就是可以将里面的文件复制到public文件夹里面。我们可以将我们自定义的页面放到这个目录下，因为它不是hugo生成的，所以不会被覆盖。</p>
 <p>为了将网站上的wiki菜单栏按钮连接到tiddlywiki页面，我们在static文件夹下面新建一个和public文件夹中一样的wiki文件夹，然后我们把保存的tiddlywiki.html命名为index.html放到static的wiki文件夹下面。</p>
 <p>这样，public下面的wiki文件夹就会被static中的wiki文件夹替换掉，wiki页面会和tiddlywiki.html连接起来。当我们点击网站下的wiki菜单按钮就会跳到wiki页面啦！</p>
-<h3 id="参考">参考</h3>
+<h2 id="参考">参考</h2>
+<p>[]: <a href="https://luneshao.github.io/post/hugo-intro/">https://luneshao.github.io/post/hugo-intro/</a>	&ldquo;hugo介绍及使用&rdquo;
+[]: <a href="https://blog.olowolo.com/post/hugo-quick-start/">https://blog.olowolo.com/post/hugo-quick-start/</a>	&ldquo;Hugo 从入门到会用&rdquo;</p>
 
     </div>
 
