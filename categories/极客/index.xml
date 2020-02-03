@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>后院池塘</copyright>
-    <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2020 11:11:01 +0800</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/categories/%E6%9E%81%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo如何添加about和自定义页面</title>
+      <link>https://CPurely.github.io/post/hugo%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0about%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Mon, 03 Feb 2020 11:11:01 +0800</pubDate>
+      
+      <guid>https://CPurely.github.io/post/hugo%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0about%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2/</guid>
+      <description>前言 已经很久没写博客了。不得不说，折腾真的很消耗人的热情。当初我也是充满热情的建立网站，但是因为我只有一台电脑有时工作需要在windows下</description>
+    </item>
     
     <item>
       <title>plotnine的再次踩坑</title>

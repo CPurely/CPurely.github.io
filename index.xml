@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>后院池塘</copyright>
-    <lastBuildDate>Sun, 02 Feb 2020 23:17:08 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2020 11:11:01 +0800</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -28,6 +28,15 @@
       
       <guid>https://CPurely.github.io/%E5%85%B3%E4%BA%8E/</guid>
       <description>我是一个理工科研究生，即将启程前往异国他乡 我研究光学理论，三维显示技术 我梦想有朝一日能将三维显示技术带进普通人的视野 我喜欢摄影，音乐与动画 在</description>
+    </item>
+    
+    <item>
+      <title>Hugo如何添加about和自定义页面</title>
+      <link>https://CPurely.github.io/post/hugo%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0about%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Mon, 03 Feb 2020 11:11:01 +0800</pubDate>
+      
+      <guid>https://CPurely.github.io/post/hugo%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0about%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2/</guid>
+      <description>前言 已经很久没写博客了。不得不说，折腾真的很消耗人的热情。当初我也是充满热情的建立网站，但是因为我只有一台电脑有时工作需要在windows下</description>
     </item>
     
     <item>

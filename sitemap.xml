@@ -16,15 +16,50 @@
   </url>
   
   <url>
-    <loc>https://CPurely.github.io/</loc>
-    <lastmod>2020-02-02T23:17:08+08:00</lastmod>
+    <loc>https://CPurely.github.io/categories/</loc>
+    <lastmod>2020-02-03T11:11:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://CPurely.github.io/categories/</loc>
-    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
+    <loc>https://CPurely.github.io/tags/hugo/</loc>
+    <lastmod>2020-02-03T11:11:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/post/hugo%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0about%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2/</loc>
+    <lastmod>2020-02-03T11:11:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/post/</loc>
+    <lastmod>2020-02-03T11:11:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/tags/</loc>
+    <lastmod>2020-02-03T11:11:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/</loc>
+    <lastmod>2020-02-03T11:11:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://CPurely.github.io/categories/%E6%9E%81%E5%AE%A2/</loc>
+    <lastmod>2020-02-03T11:11:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -44,28 +79,7 @@
   </url>
   
   <url>
-    <loc>https://CPurely.github.io/post/</loc>
-    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://CPurely.github.io/tags/python/</loc>
-    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://CPurely.github.io/tags/</loc>
-    <lastmod>2019-01-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://CPurely.github.io/categories/%E6%9E%81%E5%AE%A2/</loc>
     <lastmod>2019-01-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -144,13 +158,6 @@
   <url>
     <loc>https://CPurely.github.io/post/gnome%E5%8E%BB%E9%99%A4%E6%81%BC%E4%BA%BA%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B6%E6%A0%8F%E5%BA%94%E7%94%A8%E6%8C%89%E9%92%AE/</loc>
     <lastmod>2018-10-07T21:23:39+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://CPurely.github.io/tags/hugo/</loc>
-    <lastmod>2018-10-04T19:41:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
