@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>后院池塘</copyright>
-    <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>台湾</title>
+      <link>https://CPurely.github.io/tags/%E5%8F%B0%E6%B9%BE/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/tags/%E5%8F%B0%E6%B9%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>回形针</title>
+      <link>https://CPurely.github.io/tags/%E5%9B%9E%E5%BD%A2%E9%92%88/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/tags/%E5%9B%9E%E5%BD%A2%E9%92%88/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>知网查重</title>
@@ -49,7 +67,7 @@
     </item>
     
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://CPurely.github.io/tags/python/</link>
       <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
       
@@ -58,7 +76,7 @@
     </item>
     
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://CPurely.github.io/tags/linux/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
       
