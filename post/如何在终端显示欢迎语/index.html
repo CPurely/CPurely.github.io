@@ -48,7 +48,7 @@
 <meta itemprop="description" content="以前就看到有的人的终端登录的时候会有一段欢迎的字符画，很好奇是什么。这两天根据别人的方法，我的终端也可以显示欢迎语啦！ 为了达到这个效果，首先">
 <meta itemprop="datePublished" content="2020-03-29T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-03-29T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="295">
+<meta itemprop="wordCount" content="293">
 
 
 
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/%E6%9E%81%E5%AE%A2/"> 极客 </a>
             </div>
-          <span class="more-meta"> 约 295 字 </span>
+          <span class="more-meta"> 约 293 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -146,22 +146,39 @@
 </div>
     <div class="post-content">
       <p>以前就看到有的人的终端登录的时候会有一段欢迎的字符画，很好奇是什么。这两天根据别人的方法，我的终端也可以显示欢迎语啦！</p>
-<p>为了达到这个效果，首先我们需要安装一个终端软件figlet，因为我用的mac所以使用以下命令安装：
-'&rsquo;&rsquo;
-brew install figlet
-'&rsquo;&rsquo;
-安装完之后你可以简单试试这个命令行软件
-'&rsquo;&rsquo;
-figlet hello world
-'&rsquo;&rsquo;
-输入以上命令你就能在终端上得到一幅hello world的字符画，很有意思，同时你也可以设置输出字体的样式。
-<img src="https://i.loli.net/2020/03/29/yN4pPgLbOfzEx7o.png" alt="yN4pPgLbOfzEx7o">
-为了能在启动的时候输出欢迎语，我们可以在zsh的配置文件里面加上：
-'&rsquo;&rsquo;
-figlet Welcome
-'&rsquo;&rsquo;
-然后使用source命令令配置生效，这样我们每次登录的时候就会出现welcome的欢迎语啦！
-<img src="https://i.loli.net/2020/03/29/q4aYvcbJDifVkuR.png" alt="q4aYvcbJDifVkuR"></p>
+<p>为了达到这个效果，首先我们需要安装一个终端软件figlet，因为我用的mac所以使用以下命令安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">brew install figlet
+</code></pre></td></tr></table>
+</div>
+</div><p>安装完之后你可以简单试试这个命令行软件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">figlet hello world
+</code></pre></td></tr></table>
+</div>
+</div><p>输入以上命令你就能在终端上得到一幅hello world的字符画，很有意思，同时你也可以设置输出字体的样式。</p>
+<p><img src="https://i.loli.net/2020/03/29/yN4pPgLbOfzEx7o.png" alt="yN4pPgLbOfzEx7o"></p>
+<p>为了能在启动的时候输出欢迎语，我们可以在zsh的配置文件里面加上：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">figlet Welcome
+
+</code></pre></td></tr></table>
+</div>
+</div><p>然后使用source命令令配置生效，这样我们每次登录的时候就会出现welcome的欢迎语啦！</p>
+<p><img src="https://i.loli.net/2020/03/29/q4aYvcbJDifVkuR.png" alt="q4aYvcbJDifVkuR"></p>
 <p>参考链接：
 <a href="https://sspai.com/post/59297">给你的终端加点料</a>
 <a href="https://www.reddit.com/r/Ubuntu/comments/cskuqg/figlet/">How to add figlet on every startup of terminal</a></p>
