@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>后院池塘</copyright>
-    <lastBuildDate>Mon, 03 Feb 2020 11:11:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CPurely.github.io/categories/%E6%9E%81%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何在终端显示欢迎语</title>
+      <link>https://CPurely.github.io/post/%E5%A6%82%E4%BD%95%E5%9C%A8%E7%BB%88%E7%AB%AF%E6%98%BE%E7%A4%BA%E6%AC%A2%E8%BF%8E%E8%AF%AD/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CPurely.github.io/post/%E5%A6%82%E4%BD%95%E5%9C%A8%E7%BB%88%E7%AB%AF%E6%98%BE%E7%A4%BA%E6%AC%A2%E8%BF%8E%E8%AF%AD/</guid>
+      <description>以前就看到有的人的终端登录的时候会有一段欢迎的字符画，很好奇是什么。这两天根据别人的方法，我的终端也可以显示欢迎语啦！ 为了达到这个效果，首先</description>
+    </item>
     
     <item>
       <title>Hugo如何添加about和自定义页面</title>
