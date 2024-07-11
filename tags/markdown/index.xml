@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>后院池塘</copyright>
-    <lastBuildDate>Fri, 29 Dec 2017 21:02:35 +0000</lastBuildDate>
-    
-	<atom:link href="https://CPurely.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 29 Dec 2017 21:02:35 +0000</lastBuildDate><atom:link href="https://CPurely.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>atom markdown配置与输出包含数学公式的pdf方法</title>
       <link>https://CPurely.github.io/post/atom-markdown%E9%85%8D%E7%BD%AE/</link>

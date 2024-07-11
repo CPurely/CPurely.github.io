@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.1 with theme even" />
+<meta name="generator" content="Hugo 0.80.0 with theme even" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/%E4%BD%BF%E7%94%A8logging%E4%BB%A3%E6%9B%BFprint%E8%B0%83%E8%AF%95python%E4%BB%A3%E7%A0%81/" />
@@ -46,13 +46,14 @@
 <meta property="article:modified_time" content="2018-10-31T00:00:00+00:00" />
 <meta itemprop="name" content="使用logging代替print调试python代码">
 <meta itemprop="description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，">
-<meta itemprop="datePublished" content="2018-10-31T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-10-31T00:00:00&#43;00:00" />
+<meta itemprop="datePublished" content="2018-10-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-10-31T00:00:00+00:00" />
 <meta itemprop="wordCount" content="941">
 
 
 
-<meta itemprop="keywords" content="python,debug,vim," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="python,debug,vim," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="使用logging代替print调试python代码"/>
 <meta name="twitter:description" content="引言 一直都是使用print打印输出信息来调试python代码，有个缺点就是代码完成之后需要将以前的print都删除或者注释掉， 这样既不美观，"/>
 
@@ -177,7 +178,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">log</span><span class="s1">&#39;</span><span class="p">)</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>创建了实例之后可以设置log的级别（后面也可以更改级别），可以设置的级别如下：</p>
@@ -226,7 +227,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">(</span><span class="p">)</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">()</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>处理器还可以设置格式化器用于日志输出格式．</p>
@@ -241,7 +242,7 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息</span>
 <span class="c1"># formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)</span>
-<span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span> 
+<span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span> 
 <span class="c1"># 设置格式化器</span>
 <span class="n">handler</span><span class="o">.</span><span class="n">setFormatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
 </code></pre></td></tr></table>
@@ -274,14 +275,14 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 创建logger实例</span>
-<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">log</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 <span class="c1"># 设置log级别</span>
 <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
 <span class="c1"># 创建handler(处理器)</span>
-<span class="n">handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">(</span><span class="p">)</span>
+<span class="n">handler</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">()</span>
 <span class="c1"># 创建log格式化器,这里有设置了两种，后一种最简单只有输出信息</span>
 <span class="c1"># formatter = logging.Formatter(&#39;[%(asctime)s] %(name)s:%(levelname)s:\n%(message)s&#39;)</span>
-<span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">formatter</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Formatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="c1"># 设置格式化器</span>
 <span class="n">handler</span><span class="o">.</span><span class="n">setFormatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span>
 <span class="c1"># 为Logger实例增加一个处理器</span>
@@ -425,7 +426,7 @@ endsnippet
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021
+    2024
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

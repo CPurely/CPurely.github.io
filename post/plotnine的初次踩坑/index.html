@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.1 with theme even" />
+<meta name="generator" content="Hugo 0.80.0 with theme even" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/plotnine%E7%9A%84%E5%88%9D%E6%AC%A1%E8%B8%A9%E5%9D%91/" />
@@ -46,13 +46,14 @@
 <meta property="article:modified_time" content="2019-01-02T00:00:00+00:00" />
 <meta itemprop="name" content="plotnine的再次踩坑">
 <meta itemprop="description" content="论文画图需要,今天又一次安装plotnine画图试试,忘记了之前怎么使用的,结果默认的示例代码居然没法显示图像!!! 示例代码如下: 1 2 3 4 5">
-<meta itemprop="datePublished" content="2019-01-02T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-01-02T00:00:00&#43;00:00" />
+<meta itemprop="datePublished" content="2019-01-02T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-01-02T00:00:00+00:00" />
 <meta itemprop="wordCount" content="192">
 
 
 
-<meta itemprop="keywords" content="python,plotnine," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="python,plotnine," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="plotnine的再次踩坑"/>
 <meta name="twitter:description" content="论文画图需要,今天又一次安装plotnine画图试试,忘记了之前怎么使用的,结果默认的示例代码居然没法显示图像!!! 示例代码如下: 1 2 3 4 5"/>
 
@@ -165,8 +166,8 @@
 <span class="kn">from</span> <span class="nn">plotnine.data</span> <span class="kn">import</span> <span class="o">*</span>
 
 
-<span class="p">(</span><span class="n">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">wt</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">mpg</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">)</span>
- <span class="o">+</span> <span class="n">geom_point</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>
+<span class="p">(</span><span class="n">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="s1">&#39;wt&#39;</span><span class="p">,</span> <span class="s1">&#39;mpg&#39;</span><span class="p">))</span>
+ <span class="o">+</span> <span class="n">geom_point</span><span class="p">())</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>但是使用ipython可以显示.回想了以前使用plotnine的时候好像print了一下,于是进行了以下尝试:</p>
@@ -189,8 +190,8 @@
 <span class="kn">from</span> <span class="nn">plotnine.data</span> <span class="kn">import</span> <span class="o">*</span>
 
 
-<span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">wt</span><span class="s1">&#39;</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">mpg</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">)</span>
- <span class="o">+</span> <span class="n">geom_point</span><span class="p">(</span><span class="p">)</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">ggplot</span><span class="p">(</span><span class="n">mtcars</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="s1">&#39;wt&#39;</span><span class="p">,</span> <span class="s1">&#39;mpg&#39;</span><span class="p">))</span>
+ <span class="o">+</span> <span class="n">geom_point</span><span class="p">())</span>
 <span class="k">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
@@ -280,7 +281,7 @@
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021
+    2024
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

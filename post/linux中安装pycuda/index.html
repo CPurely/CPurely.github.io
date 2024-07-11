@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.63.1 with theme even" />
+<meta name="generator" content="Hugo 0.80.0 with theme even" />
 
 
 <link rel="canonical" href="https://CPurely.github.io/post/linux%E4%B8%AD%E5%AE%89%E8%A3%85pycuda/" />
@@ -46,13 +46,14 @@
 <meta property="article:modified_time" content="2017-11-28T05:13:14+00:00" />
 <meta itemprop="name" content="Linux中安装pycuda">
 <meta itemprop="description" content="前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p">
-<meta itemprop="datePublished" content="2017-11-28T05:13:14&#43;00:00" />
-<meta itemprop="dateModified" content="2017-11-28T05:13:14&#43;00:00" />
+<meta itemprop="datePublished" content="2017-11-28T05:13:14+00:00" />
+<meta itemprop="dateModified" content="2017-11-28T05:13:14+00:00" />
 <meta itemprop="wordCount" content="565">
 
 
 
-<meta itemprop="keywords" content="Linux,Python,CUDA," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Linux,Python,CUDA," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux中安装pycuda"/>
 <meta name="twitter:description" content="前提是已经配置好了python的基本使用环境，如numpy等常用moduel的安装. 由于openSUSE自带两个版本的python,一个是p"/>
 
@@ -187,7 +188,7 @@ openSUSE虽然自带两个版本的python但是只有一个版本的pip即python
     error: <span class="nb">command</span> <span class="s1">&#39;gcc&#39;</span> failed with <span class="nb">exit</span> status <span class="m">1</span>
     
     ----------------------------------------
-Command <span class="s2">&#34;/usr/bin/python3 -u -c &#34;</span>import setuptools, tokenize<span class="p">;</span><span class="nv">__file__</span><span class="o">=</span><span class="s1">&#39;/tmp/pip-build-kjhruz5r/pycuda/setup.py&#39;</span><span class="p">;</span><span class="nv">f</span><span class="o">=</span>getattr<span class="o">(</span>tokenize, <span class="s1">&#39;open&#39;</span>, open<span class="o">)</span><span class="o">(</span>__file__<span class="o">)</span><span class="p">;</span><span class="nv">code</span><span class="o">=</span>f.read<span class="o">(</span><span class="o">)</span>.replace<span class="o">(</span><span class="s1">&#39;\r\n&#39;</span>, <span class="s1">&#39;\n&#39;</span><span class="o">)</span><span class="p">;</span>f.close<span class="o">(</span><span class="o">)</span><span class="p">;</span>exec<span class="o">(</span>compile<span class="o">(</span>code, __file__, <span class="s1">&#39;exec&#39;</span><span class="o">)</span><span class="o">)</span><span class="s2">&#34; install --record /tmp/pip-2_n06qxu-record/install-record.txt --single-version-externally-managed --compile&#34;</span> failed with error code <span class="m">1</span> in /tmp/pip-build-kjhruz5r/pycuda/
+Command <span class="s2">&#34;/usr/bin/python3 -u -c &#34;</span>import setuptools, tokenize<span class="p">;</span><span class="nv">__file__</span><span class="o">=</span><span class="s1">&#39;/tmp/pip-build-kjhruz5r/pycuda/setup.py&#39;</span><span class="p">;</span><span class="nv">f</span><span class="o">=</span>getattr<span class="o">(</span>tokenize, <span class="s1">&#39;open&#39;</span>, open<span class="o">)(</span>__file__<span class="o">)</span><span class="p">;</span><span class="nv">code</span><span class="o">=</span>f.read<span class="o">()</span>.replace<span class="o">(</span><span class="s1">&#39;\r\n&#39;</span>, <span class="s1">&#39;\n&#39;</span><span class="o">)</span><span class="p">;</span>f.close<span class="o">()</span><span class="p">;</span>exec<span class="o">(</span>compile<span class="o">(</span>code, __file__, <span class="s1">&#39;exec&#39;</span><span class="o">))</span><span class="s2">&#34; install --record /tmp/pip-2_n06qxu-record/install-record.txt --single-version-externally-managed --compile&#34;</span> failed with error code <span class="m">1</span> in /tmp/pip-build-kjhruz5r/pycuda/
 </code></pre></td></tr></table>
 </div>
 </div><p>安装这两个包即可解决</p>
@@ -237,8 +238,8 @@ zypper in boost_1_61-devel-1.61.0-4.2.x86_64
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/usr/local/cuda-9.0/bin<span class="si">${</span><span class="nv">PATH</span><span class="p">:</span><span class="p">+</span><span class="p">:</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}</span><span class="si">}</span>
-<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-9.0/lib64<span class="si">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="p">:</span><span class="p">+</span><span class="p">:</span><span class="si">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="si">}</span><span class="si">}</span>
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/usr/local/cuda-9.0/bin<span class="si">${</span><span class="nv">PATH</span><span class="p">:+:</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}}</span>
+<span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-9.0/lib64<span class="si">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="p">:+:</span><span class="si">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="si">}}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>然后使用命令使得环境变量生效，但是要立刻使用pycuda的话，电脑需要重启</p>
@@ -336,7 +337,7 @@ zypper in boost_1_61-devel-1.61.0-4.2.x86_64
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2021
+    2024
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
